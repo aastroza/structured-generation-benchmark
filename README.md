@@ -6,7 +6,7 @@ Guided Generation Evals.
 
 ### Datasets
 
-- [Berkeley Function Calling Leaderboard Dataset](https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard)
+- [Berkeley Function Calling Leaderboard](https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard)
 
 ### Evaluation
 
