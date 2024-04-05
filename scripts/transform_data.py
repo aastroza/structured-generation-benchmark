@@ -1,3 +1,5 @@
+# This script is necessary for converting the original dataset from the Gorilla-LLM HuggingFace Dataset to JSON Schema for outlines compatibility.
+
 import sys
 sys.path.append('..')
 
