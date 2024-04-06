@@ -21,7 +21,7 @@ def import_model():
 
 outlines_image = outlines_image.run_function(import_model)
 
-@stub.function(image=outlines_image, gpu=gpu.A100(memory=80))
+@stub.function(image=outlines_image, gpu=gpu.A100(memory=80), timeout=120)
 def generate(
     question: str = "Find the area of a triangle with a base of 10 units and height of 5 units.",
     schema: str = '''{"name": "calculate_triangle_area", "description": "Calculate the area of a triangle given its base and height.", "parameters": {"type": "object", "properties": {"base": {"type": "number", "description": "The base of the triangle."}, "height": {"type": "number", "description": "The height of the triangle."}, "unit": {"type": "string", "description": "The unit of measure (defaults to 'units' if not specified)"}}, "required": ["base", "height"]}}'''
@@ -33,8 +33,10 @@ def generate(
     )
 
     generator = outlines.generate.json(model, schema)
+
+    print(f"Responding to question: {question}")
     function_call = generator(
         f"{question}"
     )
-
+    print(f"Response: {function_call}")
     return function_call
