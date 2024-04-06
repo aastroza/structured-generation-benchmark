@@ -9,7 +9,7 @@ from eval.local import generate
 
 # Load original dataset
 with open(Path(ROOT_DIR, "data/processed/gorilla_openfunctions_v1_test_simple_jsonschema.jsonl"), "r") as f:
-    data = [json.loads(item) for item in list(f)[0:10]]
+    data = [json.loads(item) for item in list(f)]
 
 with open(Path(ROOT_DIR, "data/results/gorilla_openfunctions_v1_test_simple_outlines.jsonl"), "w") as f:
     for i in range(0, len(data), BATCH_SIZE):
