@@ -2,13 +2,11 @@ import json
 from pathlib import Path
 
 from eval.config import ROOT_DIR, BATCH_SIZE
+from eval.runner import stub, generate
 
 # Load original dataset
 with open(Path(ROOT_DIR, "data/processed/gorilla_openfunctions_v1_test_simple_jsonschema.jsonl"), "r") as f:
     data = [json.loads(item) for item in list(f)[0:10]]
-
-from eval.runner import stub, generate
-
 
 @stub.local_entrypoint()
 def main():
