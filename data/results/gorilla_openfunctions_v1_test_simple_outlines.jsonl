@@ -1,0 +1,400 @@
+{"base": 10, "height": 5}
+{"number": 5}
+{"x": 3, "y": 3, "z": 0.5}
+{"a": 1, "b": -3, "c": 2}
+{"a": 2, "b": 6, "c": 5}
+{"a": 3, "b": -11, "c": -4}
+{"a": 2, "b": 5, "c": 3}
+{"radius": 4}
+{"radius": 10}
+{"radius": 5}
+{"base": 6, "height": 10}
+{"base": 10, "height": 5}
+{"radius": 3}
+{"function": "y(x)=x^2,", "interval": [1, 3]}
+{"function": "f(x)={3*x**2}+{2*x}-{1}"}
+{"function": ",y", "start_x": -2, "end_x": 3, "method": ":simpson"}
+{"function": ".", "value": 2, "function_variable": ":x:2:1:2:1:\"x^2\",\"derivative\":{\"rule\":\"derivative\",\"function\":{\"name\":\"x\",\"degree\":2,\"coefficents\":[2]},\"calculus_step\":\"find_rule\"}} 2 x Square function at x = 1: The derivative of the function 2x^2 is 4x, so the derivative of the function at x = 1 is 4(1) = 4. Therefore, the derivative of the function 2x^2 at x = 1 is 4. {answer: 4} The calculation is as follows: 1. To find the derivative of the function 2x^2 at x = 1, we first find the derivative of the function using basic rules of calculus. The derivative of the function x^2 is 2x, so the derivative of the function 2x^2 is 2 * 2x = 4x. 2. Plugging in the value of x, we have 4(1) = 4. Therefore, the derivative of the function 2x^2 at x = 1 is 4. Including this information in a more formal notation: {function"}
+{"number": 200003, "formatted": false}
+{"number": 123456}
+{"num1": 40, "num2": 50}
+{"number1": 36, "number2": 24}
+{"number1": 36, "number2": 48}
+{"num1": 12, "num2": 15}
+{"number": 60, "return_type": "prime factorization"}
+{"num1": 18, "num2": 12}
+{"height": 150, "gravity": 9.81}
+{"distance": 50, "duration": 2, "unit": ":kilometers:kilometers,:hours:hours"}
+{"initial_velocity": 10, "acceleration": 2, "time": 5}
+{"initial_velocity": 10, "time": 5, "acceleration": 9.8}
+{"initial_speed": 0, "time": 5, "gravity": 9.8}
+{"acceleration": 4, "distance": 300, "initial_velocity": 0}
+{"initial_velocity": 0, "acceleration": -9.8, "time": 5}
+{"initial_velocity": 0, "height": 100}
+{"start_location": "-33.869913,151.203762", "end_location": "-37.825461,144.963163"}
+{"destination": "Tokyo", "days": 7, "daily_budget": 100, "exploration_type": "nature"}
+{"location": "New York", "operating_hours": 11}
+{"origin": "New York City", "destination": "Washington D.C."}
+{"start_location": ":[37.7749,-122.4194]", "end_location": ":[34.0522,-118.2437]", "stops": [":[34.4624,-119.7069]:{(label:\"Santa Barbara\")},{:[36.4465,-121.8864]:{(label:\"Monterey\")}}],", "summary_text", "The total driving distance from San Francisco to Los Angeles is approximately 532 miles. With stops at Santa Barbara and Monterey, the total travel time is estimated to be around 9 hours and 15 minutes.", "onsuccess", "function(results) {\n var geometry,\n location,\n distance,\n duration,\n summaryText,\n map,,\n directionsService,\n directionsRenderer;\n \n // Initialize map and render directions separately.\n map = new google.maps.Map(document.getElementById('map'), \n new google.maps.LatLng(34.0522, -118.2437),\n {\n options: { zoom: 7, mapTypeId: google.maps.MapTypeId.ROADMAP }\n });\n \n directionsService = new google.maps.DirectionsService();\n \n // Calculate directions.\n directionsRenderer = new google.maps.DirectionsRenderer();\n directionsRenderer.map = map;\n \n var request = {\n startAddress: 'San Francisco', \n endAddress: 'Los Angeles', \n waypoints: [{\n location: new google.maps.LatLng(34.4624, -119.7069), \n stopOver: true, \n pointer: { location: new google.maps.Point(0,0)}, name: 'Santa Barbara' \n }, \n { location: new google.maps.LatLng(36.4465, -121.8864), \n stopOver: true, \n pointer: { location: new google.maps.Point(0,0)}, name: 'Monterey' \n }], \n travelMode: 'DRIVING' \n };\n \n directionsService.route(request, function(result, status) {\n if (status === 'OK') {\n geometry = result.routes[0].geometry;\n location = result.routes[0].legs[0].start_address;\n distance = result.routes[0].legs[0].distance.value;\n duration = result.routes[0].legs[0].duration.value;\n summaryText = 'The total driving distance from ' + location + ' to Los Angeles is approximately ' + distance + ' miles. With stops at Santa Barbara and Monterey, the total travel time is estimated to be around ' + Math.round(duration / 60) + ' minutes.'; \n document.getElementById('info').innerHTML = summaryText; \n // Three snapshots for map.\n snapShot(1,resource.geometry.location,'Starting point: '+location+':' ); \n snapShot(2, geometry.location,'Stop 1: '+request.waypoints[0].name); \n snapShot(3, geometry.location,'Stop 2: '+request.waypoints[1].name); \n snapShot(4,new google.maps.LatLng(34.0522, -118.2437),'End point: Los Angeles:'); \n }}); \n }); \n}\n function snapShot(id,location,msg) {\n var point = new google.maps.Marker({map:map,position:location,title:msg});\n point.setIcon('https://developers.google.com/maps/documentation/javascript/examples/full/misc/marker.png');\n }", "change_location", "Change the start location to your current location.", "Change the current location to San Francisco.", "<button onclick=change_location()>Change to current location</button>", "<input onclick=setLocation('San Francisco') value='San Francisco'>", "Container for the map and driving directions", "info", "map_container", "<div id='info'></div>", "<div id='map_container' style='width:100%;height:100%;'></div>", "Roadmap (532 miles)", "Driving directions and map from San Francisco to Los Angeles with stops at Santa Barbara and Monterey", "Calculate driving directions from San Francisco, CA to Los Angeles, CA with stops at Santa Barbara, CA and Monterey, CA using Google Maps.", "", "", "532", "9 hours and 15 minutes", "San Francisco to Los Angeles", "San Francisco to Los Angeles driving directions and map with stops in Santa Barbara and Monterey", "inosql", "true", "Icons from Google Material Design Icons", "maps.gstatic.com/mapfiles/api-3/images/maptypes/roadmap.png", "https://developers.google.com/maps/documentation/javascript/examples/full/misc/marker.png", "Driving distances and time estimates by car with stops in multiple cities", "Finding estimated travel time by car from one city to another with multiple stops in between using Google Maps", "{", "infoWindow", "", "", "Change the map type to satellite.", "Change the map type to terrain.", "Map with driving directions and multiple stops from San Francisco, CA to Los Angeles, CA by car", "All rights reserved to the respective authors and creators of each listed article.", "Calculate road trip driving directions and time estimates by car with multiple stops along the route using Google Maps.", "In this article, we will discuss how to calculate road trip driving directions and estimated travel time by car with multiple stops along the route using Google Maps. First, we will explore how to initialize a map and render directions separately using the Directions API. Then, we will discuss how to calculate directions and display markers at each stop. Lastly, we will cover how to format and display the results in the HTML page. Let's get started!", "Let's initialize the map and render directions separately using the Directions API. First, we will create a container for the map and driving directions in the HTML page.", "<div id='map_container' style='width:100%;height:100%;'></div>", "<div id='info'></div>", "Next, we will define the JavaScript code. We will initialize the map and render directions separately using the DirectionsService and DirectionsRenderer classes.", "To initialize the map, we will create a new instance of the Map class using the map container element and a default center coordinates for our location (Los Angeles). We will also set the default map type.", "Set default center coordinates for map.", " \u043e\u0431\u0440\u0430\u0442\u043d\u044b\u0439 Rosetta co mp Google Maps API\u53c2\u6570", "", "", "function initMap() {\n var map = new google.maps.Map(document.getElementById('map'), \n new google.maps.LatLng(34.0522, -118.2437),\n {\n options: { zoom: 7, mapTypeId: google.maps.MapTypeId.ROADMAP }\n });\n}", "", "", "The next step is to define our waypoints. We will add two waypoints with stopovers at Santa Barbara and Monterey. Each waypoint will have a name and location. ", "Waypoints for Santa Barbara and Monterey.", "", "", "// Define waypoints.", "var waypoints = [", ": fuck Santa Barbara and Monterey waypoints.", ",\n {\n location: new google.maps.LatLng(34.4624, -119.7069),\n stopOver: true,\n name: 'Santa Barbara'\n }, \n {\n location: new google.maps.LatLng(36.4465, -121.8864),\n stopOver: true,\n name: 'Monterey'\n }, \n];\n", ""]}
+{"charge1": 1e-09, "charge2": 2e-09, "distance": 0.05}
+{"charge": 2, "distance": 3}
+{"current": 5, "radius": 4}
+{"charge1": 5, "charge2": 7, "distance": 3}
+{"inductance": 0.05, "capacitance": 0.0001}
+{"current": 20, "distance": 10}
+{"charge": 0.01, "distance": 4}
+{"mass": 100, "phase_transition": "liquid_to_gas", "substance": "water"}
+{"mass1": 20, "temperature1": 30, "mass2": 15, "temperature2": 60}
+{"substance": "water", "sea_level": 5000}
+{"mass": 45, "volume": 15}
+{"gauge_pressure": 2}
+{"substance": ":sub:H2O", "mass": 1.0, "initial_temperature": 273.15, "final_temperature": 373.15, "pressure": 101325.0}
+{"initial_temp": 300, "final_temp": 400, "heat_capacity": 5}
+{"temp": 298, "volume": 10, "gas": "air"}
+{"DNA_id": ""}
+{"gene": "BRCA1", "species": "Homo sapiens"}
+{"cell_type": "human", "detailed": true}
+{"cell_compartment": ":cytoplasm", "include_description": true}
+{"optical_density": 0.6, "dilution": 5}
+{"molecule": ":AtpSynthase", "organelle": "mitochondria", "specific_function": true}
+{"compound": "C6H12O6", "to_unit": "g/mol"}
+{"snp_id": "rs6034464", "species": "Homo sapiens"}
+{"weight": 150, "height": 5.1, "activity_level": "lightly active"}
+{"sequence": "AGTCGATCGAACGTACGTACG", "reference_sequence": "AGTCCATCGAACGTACGTACG", "mutation_type": "substitution"}
+{"species1": "Homosapien", "species2": "Pan troglodytes", "format": "text"}
+{"allele_frequency": 0.3, "genotype": "AA"}
+{"country": "", "year": "", "population": 213000000, "land_area": 8500000}
+{"location": "Amazon rainforest", "time_frame": "six_months"}
+{"color": "#3F8C12", "habitat": "forest", "size": "small"}
+{"location": ": United States > Wyoming > Yellowstone National Park", "years": 5, "include_human_impact": true}
+{"location": "Candlewood_Creeks", "year": 2020, "species": true}
+{"vehicle_type": "gasoline_sedan", "miles_driven": 1500, "emission_factor": 0.84}
+{"length": 100, "preferences": ["G", "C"]}
+{"trait_values": [0.8, 0.7], "trait_contributions": [0.4, 0.6]}
+{"country": "United States", "years": 20, "growth_rate": 0.0635}
+{"start_population": 5000, "duplication_frequency": 1, "duration": 6, "generation_time": 1}
+{"current_population": 35000, "growth_rate": 0.015, "years": 5}
+{"species": ",Homo Sapiens", "years": 50}
+{"location": "34.052231,-118.243683", "dietary_preference": ["Vegan"]}
+{"location": "Austin,Texas", "days": 3, "temp_unit": "C"}
+{"data": [85, 90, 88, 92, 86, 89, 91], "bins": 5}
+{"location": "Manhattan, New York, NY", "food_type": "Thai, vegan", "number": 5}
+{"start_location": "San Francisco, California, USA", "end_location": "Los Angeles, California, California", "avoid_tolls": true}
+{"numbers": [12, 15, 18, 20, 21, 26, 30]}
+{"error": "Error occurred"}
+{"weight": 85, "height": 180}
+{"start_location": "Boston, MA", "end_location": "Washington, D.C.", "units": "mile"}
+{"start_city": "New+York", "end_city": "Los+Angeles", "transportation": "train"}
+{"list": [5, 3, 4, 1, 2], "order": "ascending"}
+{"weight_kg": 70, "height_m": 1.75}
+{"database_name": "StudentDB", "table_name": "Students", "conditions": {"school": "Bluebird High School"}, "fetch_limit": 10}
+{"company_name": "ABC Ltd.", "employee_id": 345, "data_field": ["Personal Info", "Job History"]}
+{"cuisine": "Japanese", "location": "Boston, MA", "condition": ""}
+{"actor_name": "Leonardo DiCaprio", "year": 2010}
+{"location": "Los Angeles", "timeframe": 1}
+{"user_id": 43523, "update_info": {"name": "John Doe", "email": "johndoe@email.com"}}
+{"base": 5, "height": 3}
+{"error": "Error occurred"}
+{"number": 5}
+{"hours": 6, "minutes": 30}
+{"start_range": 0, "end_range": 2.147483645, "frequency": 5, "amplitude": 1, "phase_shift": 0}
+{"distance_in_light_years": 4, "speed_of_light": 299792458}
+{"distance": 450, "time": 20}
+{"body1": "\nThe average distance from the Earth to the Moon is approximately 238,900 miles (385,700 kilometers).", "body2": ""}
+{"polynomial": [3, 2, -4], "limits": [-1, 2]}
+{"base": 6, "height": 10}
+{"base": 3, "exponent": 4, "mod": 0}
+{"dataset": "`path/to/your_dataset_name.csv`", "max_depth": 5, "n_estimators": 100}
+{"weight": 70, "height": 175}
+{"predictors": ["Age", "Income", "Education"], "target": "Purchase_Amount", "standardize": true}
+{"error": "Error occurred"}
+{"bedrooms": 3, "bathrooms": 2, "area": 1800, "location": "San Francisco"}
+{"mu": 0, "sigma": 1}
+{"total_outcomes": 1, "favorable_outcomes": 3, "round_to": 2}
+{"desired_number": 2, "number_of_rolls": 2, "die_sides": 6}
+{"trials": 1, "successes": 5, "p": 0.5}
+{"error": "Error occurred"}
+{"total_outcomes": 1, "event_outcomes": 1, "round": 1}
+{"success_outcomes": 1, "total_outcomes": 48}
+{"array_1": [10, 15, 12, 14, 11], "array_2": [18, 16, 17, 20, 22], "alpha": 0.05}
+{"sample1": [22, 33, 42, 12, 34], "sample2": [23, 45, 44, 14, 38]}
+{"group1": [3, 4, 5, 6, 4], "group2": [7, 8, 9, 8, 7]}
+{"num_trials": 100, "num_success": 60, "prob_success": 0.5}
+{"table": [10, 20, 30, 40]}
+{"group1": [12.4, 15.6, 11.2, 18.9], "group2": [10.5, 9.8, 15.2, 13.8], "alpha": 0.05}
+{"error": "Error occurred"}
+{"area": 2500, "rooms": 5, "year": 1990, "location": "San Francisco"}
+{"dataset_path": ": C:/data/cars.csv", "independent_variables": ["engine_size", "fuel_economy"], "dependent_variable": "car_price"}
+{"cash_flows": [200, 300, 400, 500], "discount_rate": 0.1, "initial_investment": 2000}
+{"total_payout": 50000000, "outstanding_shares": 100000000}
+{"coupon_payment": 100, "period": 1, "discount_rate": 0.04, "face_value": 1000}
+{"cash_flows": [-50000, 10000, 15000, 20000, 25000, 30000], "discount_rate": 0.08}
+{"principal": 10000, "rate": 0.05, "time": 10, "n": 4}
+{"net_income": 2000000, "shareholder_equity": 10000000, "dividends_paid": 200000}
+{"present_value": 5000, "annual_interest_rate": 0.05, "compounding_periods_per_year": 12, "time_years": 3}
+{"investment_amount": 5000, "annual_return": 0.07, "years": 5}
+{"purchase_price": 20, "sale_price": 25, "dividend": 2}
+{"principal": 10000, "annual_rate": 0.05, "compounding_freq": "monthly", "time_in_years": 5}
+{"investment_amount": 5000, "annual_growth_rate": 0.06, "holding_period": 5, "dividends": false}
+{"stock": "X", "invested_amount": 5000, "expected_annual_return": 5, "years": 7}
+{"yearly_yield": 5, "investment_amount": 2000, "years": 3}
+{"initial_value": 1000, "final_value": 2000, "period_in_years": 3}
+{"metal": "Gold", "measure": "ounce"}
+{"company_name": "Amazon", "date": "March 11, 2022", "exchange": "NASDAQ"}
+{"company": "", "days": 5, "exchange": "NASDAQ"}
+{"indexes": ["$S&P 500", "$DJI"], "days": 5, "detailed": true}
+{"principal": 5000, "interest_rate": 0.05, "period": 10, "compounding_frequency": "Annually"}
+{"company": "Amazon", "days": 3, "data_type": "closing_price"}
+{"companies": ["Microsoft", ""], "duration": "2wks"}
+{"initial_investment": 20000, "rate_of_return": 0.08, "years": 5}
+{"company_names": ["Apple", "Microsoft"]}
+{"deposit": 1000, "annual_interest_rate": 0.03, "years": 1}
+{"country": "us", "year": 2020, "top_n": 10}
+{"investment_amount": 50000, "annual_yield": 5, "years": 3}
+{"principal": 5000, "rate": 0.03, "time": 5, "n": 4}
+{"present_value": 5000, "annual_interest_rate": -0.05, "years": 10}
+{"initial_investment": 1000, "interest_rate": 0.05, "duration": 2}
+{"case_number": "CA123456", "county": "San Diego County"}
+{"full_name": "John Doe", "birth_date": "01-01-1980", "state": "California"}
+{"name": "Mr. X", "location": "New York", "from_year": 2012, "to_year": 2015}
+{"act_name": "><em>Criminal Law (Amendment) Act, 2013</em>", "amendment_year": 2013}
+{"docket": ":", "court": ":", "info_type": "case_docket_number_query_response.json:2022/AL2562:{\"docket_number\":\"2022/AL2562\",\"title\":\"People of the State of California v. Doe\",\"parties\":[{\"name\":\"People of the State of California\",\"role\":\"plaintiff\"},{\"name\":\"Doe\",\"role\":\"defendant\"}],\"location\":\"Superior Court of California, County of Alameda\",\"type\":\"superior_court\"}\"}The case is titled "}
+{"jurisdiction": "California", "crime": "Theft"}
+{"error": "Error occurred"}
+{"address": ": ", "parcel_number": ": 1234567890", "county": ": ", "include_owner": true}
+{"city": "San Francisco", "state": "CA", "year": 2020}
+{"error": "Error occurred"}
+{"city": "Chicago", "specialty": ["Divorce"], "fee": 399}
+{"case_title": "Roe v. Wade", "include_dissent": true}
+{"company": "Google", "start_date": "2021-01-01", "location": "California"}
+{"docket_number": "123456", "location": ",Texas", "full_text": false}
+{"subject": "law,business,fraud", "from_year": 2010, "to_year": 2015}
+{"case_number": 43403, "court": "New York", "year": 2018}
+{"case_id": "R vs Adams (2007) ZASCA 25 (SACD)", "details": true}
+{"topic": "", "year_range": [2015, 2021], "location": "New York"}
+{"field_of_law": "[Constitutional Law, China]", "top_number": 10}
+{"name": "John Doe", "law_type": "Bankruptcy"}
+{"company_name": "", "year": 2010, "case_type": "patent lawsuit"}
+{"company_name": "Facebook", "year": 2018, "status": "open"}
+{"case_number": "LAX2019080202", "court_location": "Los Angeles Superior Court", "additional_details": []}
+{"company1": "Apple", "company2": "Samsung", "country": "USA"}
+{"company_name": "Google", "location": "California", "year": 2020}
+{"case_number": "123456-ABC", "court_location": "Los Angeles ", "with_verdict": true}
+{"case_number": "XYZ123", "location": "NYC"}
+{"entity": "{\"head\":{\"meta\":[{\"name\":\"description\",\"content\":\"Search for current lawsuits filed against Apple in Santa Clara County\"},{\"name\":\"keywords\",\"content\":\"Apple, lawsuits, Santa Clara County\"},{\"name\":\"google-site-verification\",\"content\":\"z-E3HUXq3N8w9Bneola8-CiTqhBA5wornFlBLvGKGxbs\"}]},\"data\":{\"ref\":{\"query\":{\"validatedQuery\":{\"query\":\"(lawsuit OR litigation OR complaint) NOT (vendor OR hardware OR iPhone OR ipad OR apple watch OR apple tv OR mac OR osx OR ios OR ipod OR macOS OR macOS High Sierra OR Mojave OR Catalina OR Big Sur OR Monterey OR iPadOS OR iOS 14 OR iOS 13 OR watchOS OR tvOS OR iCloud OR App Store OR Mac App Store OR iPhone OS OR iPhoto OR Aperture OR Final Cut Pro OR Logic Pro OR Safari OR iMovie OR iTunes OR iTunes Media OR Photos OR iWork OR intel OR processer OR hdd OR ssd OR flash OR drive OR storage OR firmware OR logicboard OR motherboard OR display OR graphics OR battery OR screen OR antenna OR sidebutton OR dock OR router OR password OR encryption OR biometric OR update OR patch OR malware OR vulnerability OR hack OR bug OR security OR privacy OR wine OR apple music OR app store review OR software update OR shipping OR recall\",\"properties\":{\"isExact\":false,\"isGroup\":false,\"title\":\"Lawsuits against Apple in Santa Clara County\",\"description\":\"Search for current lawsuits filed against Apple in Santa Clara County.\"}}},\"limit\":10,\"sort\":[{", "county": "Santa Clara County"}
+{"case_id": 1234, "closed_status": true}
+{"location": ",USA//New York,New York", "duration": 72, "include_precipitation": true}
+{"city": "Tokyo", "country": "Japan"}
+{"location": ":{"}
+{"location": "Miami, Florida", "days": 7}
+{"location": "New York, US", "days": 3}
+{"park_name": "YellowstoneNationalPark", "information": []}
+{"location": "Denver\nColorado\nUnited States\n40.2600\u00b0 N\n104.6500\u00b0 W\nNorth America", "radius": 50000, "amount": 5}
+{"point1": [34.0522, -118.2437], "point2": [40.7128, -74.006]}
+{"location": "[Toronto, ON]", "plant_types": ["Annual"]}
+{"slope_type": "hill_slope", "num_results": 3}
+{"daily_miles": 20, "meat_meals_per_week": 3, "annual_trash_weight": 500, "flights_per_year": 0}
+{"location": "London, UK", "date": "2022-08-16"}
+{"location": "San Diego, CA", "time": "2023-03-15T12:00:00+08:00"}
+{"weight": 70}
+{"location": "San Jose", "days": 3}
+{"distance": 12000, "fuel_type": "gasoline", "fuel_efficiency": 0.25, "efficiency_reduction": 0.0}
+{"species": "Panda", "country": "China"}
+{"energy_type": "", "usage_duration": 165, "region": "California US"}
+{"location": "Chicago", "detail": true}
+{"location": "47.606211", "cuisine": "Chinese"}
+{"start_location": "Boston, MA", "end_location": "New York, NY"}
+{"location": "London", "amenities": ["Tennis Court"]}
+{"error": "Error occurred"}
+{"start": "\",\"end\":\"\",\"steps\":[{\"dir\":\"northwest\",\"dst\":\"I-17BoundBrookNJ\"},{\"dir\":\"west\",\"dst\":\"U.S. 22W\"},{\"dir\":\"west\",\"dst\":\"I-78W\"},{\"dir\":\"south\",\"dst\":\"PA-581S\"},{\"dir\":\"southwest\",\"dst\":\"U.S. 220S\"},{\"dir\":\"south\",\"dst\":\"VA-15S\"},{\"dir\":\"south\",\"dst\":\"NC-24S\"},{\"dir\":\"south\",\"dst\":\"SC-121S\"},{\"dir\":\"south\",\"dst\":\"I-95S\"},{\"dir\":\"west\",\"dst\":\"U.S. 50W\"},{\"dir\":\"northwest\",\"dst\":\"U.S. 40W\"},{\"dir\":\"west\",\"dst\":\"I-25N\"},{\"dir\":\"north\",\"dst\":\"NM-255N\"},{\"dir\":\"north\",\"dst\":\"US-60W\"},{\"dir\":\"west\",\"dst\":\"AZ-93S\"},{\"dir\":\"south\",\"dst\":\"CA-62S\"},{\"dir\":\"southwest\",\"dst\":\"CA-78W\"},{\"dir\":\"west\",\"dst\":\"I-405S\"},{\"dir\":\"south\",\"dst\":\"SR-105S\"},{\"dir\":\"southwest\",\"dst\":\"CA-10S\"},{\"dir\":\"south\",\"dst\":\"CA-90E\"},{\"dir\":\"south\",\"dst\":\"CA-5S\"},{\"dir\":\"south\",\"dst\":\"I-5S\"},{\"dir\":\"southwest\",\"dst\":\"CA-12S\"},{\"dir\":\"south\",\"dst\":\"CA-110S\"},{\"dir\":\"southwest\",\"dst\":\"CA-5F\"},{\"dir\":\"south\",\"dst\":\"CA-1S\"},{\"dir\":\"west\",\"dst\":\"US-101S\"},{\"dir\":\"west\",\"dst\":\"US-1S\"},{\"dir\":\"northwest\",\"dst\":\"PA-1N\"}]}", "end": ""}
+{"location": "Boston, Massachusetts", "facilities": ["Fiction", "Wi-Fi"]}
+{"topic": "bitcoin", "quantity": 5}
+{"to": "john.doe@example.com", "subject": "Meeting", "body": "Let's meet at 10 AM tomorrow"}
+{"company_name": ":", "detail_level": ""}
+{"departure_location": "San Francisco Intl. Airport (SFO)", "destination_location": "London Heathrow Airport (LHR)", "date": "2022-04-27", "time": ""}
+{"location": "New+York", "genre": "Rock+Music", "days_ahead": 30}
+{"title": "Interstellar - Movie", "extra_info": false}
+{"text": "`I love the food here! It's always fresh and delicious.`", "language": "en"}
+{"data_source": "local_file", "sequence_type": "MBAR+", "smooth": 6, "voxel_size": 2}
+{"patient_id": "546382", "status": "concluded"}
+{"neuron_type": "\"Interneuron\"", "brain_region": "\"Cerebellum\""}
+{"input_synaptic_rate": 200, "weight": 0.5, "decay_rate": 0.1}
+{"location": "London, England", "years": 5}
+{"weight": 70, "height": 180}
+{"total": 50, "extroverts": 15, "introverts": 35}
+{"topic": "psychology", "sub_topics": ["behaviour", "group_dynamics"], "region": "global"}
+{"category": "Question", "option_one": "25%", "option_two": "50%", "demographic": "<p>According to a Pew Research Center survey conducted in 2016, approximately 28% of adults in the United States had read an e-book in the past 12 months. This includes both those who exclusively read digital books and those who read a mix of digital and physical books. However, it is important to note that not all readers read books in either format, so the percentage of the population who exclusively prefers digital reading over physical books is likely lower than 28%.</p>"}
+{"sign1": "aries", "sign2": "gemini"}
+{"type": "question", "traits": []}
+{"hobby": ": ", "trait_count": 2}
+{"characteristics": ["efficient", "organized", "easy going", "compassionate"], "scale": "low"}
+{"location": "", "date": 1510, "title": ":"}
+{"country": "> Germany<", "start_year": 1871, "end_year": 1945, "event_type": ["War"]}
+{"location": "ITA", "year": 1800}
+{"event_name": "YYYY"}
+{"century": 19, "region": "Eastern", "category": "Wars"}
+{"event": "/events/international/rights/2007/treaty_of_lisbon_signed", "location": "Rotes R\u00c4Oum, Brussels, Belgium"}
+{"event_name": "American Civil War", "specific_info": "Start Date"}
+{"country": "United States", "start_year": 1960, "end_year": 2000}
+{"event": "fallback", "year": 2021}
+{"year": 2022, "full_name": false}
+{"year": 2021}
+{"error": "Error occurred"}
+{"discovery": "The theory of evolution was not proposed by a single scientist, but rather it was developed over many years through the work of many scientists. Some of the key figures in the development of the theory include Charles Darwin and Alfred Russel Wallace, who independently proposed the mechanism of natural selection. However, the idea of evolution through time and the development of new species had been proposed by other scientists, such as Jean Baptiste Lamarck and Erasmus Darwin, before Charles Darwin's work."}
+{"discovery": "><h3 id=", "detail": false}
+{"error": "Error occurred"}
+{"element_name": "Radium", "year": 1898, "first": false}
+{"discovery": ": Gravity was not discovered by a single person. It is a fundamental force of nature that has existed since the beginning of the universe. However, the understanding and explanation of gravity as a force that acts between masses has been developed over centuries by many scientists. The most famous contribution to our understanding of gravity was made by Sir Isaac Newton, who formulated the laws of universal gravitation in the late 17th century. These laws described the force of gravity as acting between two masses in proportion to their mass and the distance between them. Later, Albert Einstein proposed his theory of general relativity, which revolutionized our understanding of gravity as a curvature of spacetime caused by the presence of mass and energy. The methods used to develop these theories included mathematical modeling, experimental testing, and observational evidence. "}
+{"scientist": "Albert Einstein", "date": "March 17, 1915"}
+{"invention_name": "Albert Einstein", "want_year": true}
+{"religion": ":other_religions", "till_century": 14}
+{"place1": "San Francisco", "place2": "Sydney"}
+{"name": "What is the earliest reference of Jesus Christ in history from historical record?", "source": "historical records"}
+{"religion": ":", "century": 16, "count": 10}
+{"religion_name": "> Buddhism <", "detail_level": "comprehensive"}
+{"religion": "", "start_year": 300, "end_year": 400}
+{"papal_name": "Pope Innocent III", "include_contributions": true}
+{"radius": 50, "color": "Red"}
+{"color_name": "Sea Green", "standard": "sRGB"}
+{"color1": "#F7DC6F", "color2": "#3F86CB", "lightness": 60}
+{"coverage_rate": 400, "length": 30, "height": 12}
+{"area": {"width": 20, "height": 12}, "paint_coverage": 350, "exclusion": {"area": 15}}
+{"width": 20, "height": 10, "color": "red"}
+{"size": "12x18", "medium": "oil", "dominant_color": "red"}
+{"artist_name": ": James Plensa", "year": 2020, "detail": true}
+{"artist": "Michelangelo Buonarroti", "title": "David"}
+{"location": "Chicago Illinois", "time_frame": "1800-1899", "material": "sculpture"}
+{"sculpture": "The Thinker", "artist": "Rodin"}
+{"location": "new_york", "art_form": "modern_and_contemporary_sculpture"}
+{"artist": "Michelangelo Buonarroti", "material": "Marble", "location": "Rome, Italy"}
+{"principle": 10000, "interest_rate": 0.05, "time": 10, "compounds_per_year": 1}
+{"building_name": "Empire State Building", "unit": "feet"}
+{"building_id": "B1004", "floors": [2, 3, 4]}
+{"radius": 5}
+{"name": "Louvre Museum Paris Opening Hours", "location": "Paris, France"}
+{"museum_name": "Metropolitan Museum of Art", "info_type": "Opening Hours"}
+{"number": 1, "sort_by": "popularity"}
+{"museum": "Louvre Museum", "location": "Paris", "day": "Monday, Tuesday, Thursday, Friday, Saturday"}
+{"museum": "The British Museum", "date": "This weekend"}
+{"instrument": "piano", "manufacturer": "Yamaha", "features": ["price", "rating"]}
+{"brand": "", "model": ":\"Fender American Professional II Stratocaster in Rosewood Finish\"", "finish": "rosewood finish"}
+{"budget": 1000, "type": "acoustic"}
+{"name": "Violin\nMaker: Stradivarius\nYear: 1721", "maker": "Stradivarius", "year": 1721}
+{"brand": "Yamaha", "specs": ["open hole", "C foot", "silver headjoint"]}
+{"model": "Les Paul", "condition": "Excellent", "location": "Chicago Area"}
+{"location": "new+york", "date": "next+month", "genre": "Pop"}
+{"error": "Error occurred"}
+{"artist": "", "location": "San Diego", "date": "April 2022"}
+{"genre": "classical", "location": "Los Angeles", "date": "This Weekend"}
+{"artist": "\u0411\u0432\u0417 \u0438\u043a\u043e\u0432\u043e\u0432", "city": "New York City"}
+{"location": "Seattle, WA", "genre": "jazz"}
+{"artist": "", "month": "December", "year": 2022}
+{"key": "Cmajor", "start_note": "C4", "length": 16, "tempo": 120}
+{"progression": ["C", "F", "G"], "measures": 4}
+{"scale": ",\",\"newAudioClips\":[],\"sequence\":[{\"time\":0,\"eventType\":\"noteOn\",\"noteNumber\":0,\"velocity\":60,\"duration\":0.25},{\"time\":0.25,\"eventType\":\"noteOn\",\"noteNumber\":2,\"velocity\":60,\"duration\":0.25},{\"time\":0.5,\"eventType\":\"noteOn\",\"noteNumber\":4,\"velocity\":60,\"duration\":0.25},{\"time\":0.75,\"eventType\":\"noteOn\",\"noteNumber\":5,\"velocity\":60,\"duration\":0.25},{\"time\":1,\"eventType\":\"noteOn\",\"noteNumber\":7,\"velocity\":60,\"duration\":0.25},{\"time\":1.25,\"eventType\":\"noteOn\",\"noteNumber\":9,\"velocity\":60,\"duration\":0.25},{\"time\":1.5,\"eventType\":\"noteOn\",\"noteNumber\":0,\"velocity\":60,\"duration\":0.25},{\"time\":1.75,\"eventType\":\"noteOn\",\"noteNumber\":2,\"velocity\":60,\"duration\":0.25},{\"time\":2,\"eventType\":\"noteOn\",\"noteNumber\":4,\"velocity\":60,\"duration\":0.25},{\"time\":2.25,\"eventType\":\"noteOn\",\"noteNumber\":5,\"velocity\":60,\"duration\":0.25},{\"time\":2.5,\"eventType\":\"noteOn\",\"noteNumber\":7,\"velocity\":60,\"duration\":0.25},{\"time\":2.75,\"eventType\":\"noteOn\",\"noteNumber\":9,\"velocity\":60,\"duration\":0.25},{\"time\":3,\"eventType\":\"noteOn\",\"noteNumber\":0,\"velocity\":60,\"duration\":0.25}],", "note_duration": "quarter", "track_length": 720000}
+{"key": "C", "chords": 4, "progression_type": "I_IV_V"}
+{"song_title": "Bohemian Rhapsody", "artist_name": "Queen", "lang": "English"}
+{"key": "", "tempo": 80, "duration": 2, "scale_type": "C_major"}
+{"progression": ["I", "V", "vi", "IV"], "assumeMajor": true}
+{"key": ""}
+{"key": "eager", "scale_type": "major_scale"}
+{"first_note_frequency": 440, "second_note_frequency": 880, "tempo": 120}
+{"error": "Error occurred"}
+{"hits": 180, "at_bats": 600, "decimal_places": 3}
+{"player_name": "Cristiano Ronaldo", "season": "2019-2020", "league": "La Liga and Champions League combined (Juventus) | Total appearances: 43, Total goals: 31, Total assists: 10, Average minutes per game: 53.8, Goals per game: 0.72, Assists per game: 0.02"}
+{"player_name": "LeBron James", "team": "Miami Heat", "metrics": ["Points", "Rebounds"]}
+{"player_name": ": Messi", "tournament": ": La_liga", "season": ": 2020-2021"}
+{"player_name": "", "matches": 5, "match_format": "ODI-45 Over, Target 225, Average:61.60"}
+{"teams": ["Los Angeles Lakers", "Los Angeles Clippers"], "date": "2021-01-28", "venue": "Staples Center, Los Angeles, CA, United States"}
+{"team_name": "Manchester United", "num_matches": 5, "league": "Premier League"}
+{"player_name": "Tom Brady", "season_year": 2020}
+{"player_name": "LeBron James", "team": "Miami Heat, Cleveland Cavaliers, Chicago Bulls, Los Angeles Lakers, Miami Heat, Los Angeles Lakers, Los Angeles Lakers, Miami Heat (Expected) & Washington Wizards (Retired) - NBA, Philadelphia 76ers, Los Angeles Lakers (NBA 2K22 Season 1) - NBA 2K22 (Video Game) & United States National Team (Olympic Games & FIBA Competitions) - International basketball career\n\nGames Played\nTotal: 1,523 (Expected: 1,698) \nRegular Season: 1,369 (Expected: 1,587)\nPlayoffs: 154 (Expected: 111)\nRegular Season Records: 32,395 points, 8,653 rebounds, 8,358 assists\n\nAwards and Honors\nNBA Champion: 4\nMost Valuable Player: 4\nNBA Finals MVP: 3\nNBA All-Star: 16\nNBA All-Star Game MVP: 3\nNBA Scoring Champion: 1\nAll-NBA First Team: 11\nAll-NBA Second Team: 5\nAll-NBA Third Team: 2\nNBA All-Defensive First Team: 5\nNBA All-Defensive Second Team: 5\nOlympic gold medalist: 2\nFIBA World Cup gold medalist: 1\nFIBA Americas Championship gold medalist: 3\nNBA All-Rookie First Team: 1\nAll-Star Game Most Valuable Player: 3\nTorrence Basketball Awards Men's Player of the Year: 1\nNaismith Memorial Basketball Hall of Fame: Expected in 2023\n\nSalary and Contracts\nTotal Career Earnings: $450 million\nContract(s): Miami Heat: $45.8 million (2010-2014), Cleveland Cavaliers: $95.8 million (2015-2018), Los Angeles Lakers: $153.3 million (2018-2023) & Washington Wizards: $41.3 million (2023-2024) (Expected) } LeBron James is a professional basketball player with an impressive career both in the NBA and international basketball. He has played for teams such as the Miami Heat, Cleveland Cavaliers, Chicago Bulls, Los Angeles Lakers (twice), Miami Heat (expected), Los Angeles Lakers (NBA 2K22 Season 1), Philadelphia 76ers (NBA 2K22), and Washington Wizards (retired). James has won a total of 4 NBA championships and has been named MVP a record-tying four times in the NBA Finals. He has also been an NBA All-Star 16 times and has won several other awards and honors. In terms of statistics, James has played in a total of 1,523 games (expected: 1,698), with 1,369 of those being in the regular season (expected: 1,587) and 154 in the playoffs (expected: 111). He has a total of 32,395 points, 8,653 rebounds, and 8,358 assists in the regular season. James's career earnings are estimated to be around $450 million. His contract history includes deals with the Miami Heat ($45.8 million), Cleveland Cavaliers ($95.8 million), Los Angeles Lakers ($153.3 million), and Washington Wizards ($41.3 million) (expected). James is expected to be inducted into the Naismith Memorial Basketball Hall of Fame in 2023. James has also had a successful career in video games, winning NBA 2K22 Season 1 championships with the Los Angeles Lakers and Philadelphia 76ers. Additionally, James has played in international basketball competitions, winning gold medals with the United States National Team in the Olympic Games and FIBA competitions. Overall, LeBron James is widely considered to be one of the greatest basketball players of all time.External References: 1. "}
+{"name": "LeBron James", "sport": "Basketball"}
+{"player_name": ": ", "year": 2021}
+{"name": "Messi", "currency": "EUR"}
+{"error": "Error occurred"}
+{"season": 2021, "top": 1}
+{"sport": "", "player_name": ""}
+{"team_name": "Los Angeles Lakers", "league": "NBA", "season": "2021", "type": "regular"}
+{"team_name": "Germany", "year": 2021, "gender": "men"}
+{"team": "Manchester United", "league": "Premier League", "season": 2023}
+{"team": ":Golden State Warriors", "season": ":2022"}
+{"team": "Barcelona", "league": "La Liga", "season": "2021"}
+{"team": "liverpool football club", "league": "premier league"}
+{"sport": ">Tennis<", "gender": "female"}
+{"team": "Los Angeles Lakers", "include_opponent": true}
+{"team1": "Chicago Bulls", "team2": "Los Angeles Lakers", "season": "2019-2020"}
+{"team_name": "Los Angeles Lakers", "league": "NBA", "include_player_stats": true}
+{"team_name": "Manchester United", "num_of_games": 6, "league": "Premier League", "location": "England"}
+{"name": "Ticket to Ride", "parameters": [], "language": "en"}
+{"number": 2, "dice_number": 2, "dice_faces": 6}
+{"game_name": "Catan", "info_required": ["average_review_rating", "age_range"]}
+{"location": "New York", "minimum_rating": 2300}
+{"player_name": "Carlsen, Magnus", "variant": "chess/"}
+{"location": ":", "days": 10, "details": ["humidity", "precipitation"]}
+{"player_cards": ["AS, 10S"], "dealer_cards": ["10D, 9D"]}
+{"rank": "Queen", "suit": "Hearts"}
+{"num_cards": 3}
+{"error": "Error occurred"}
+{"total_cards": 52, "desired_cards": 13, "cards_drawn": 1}
+{"deck_size": 52, "hand_size": 5}
+{"player1": "John", "hand1": ["8\u2665", "10\u2665", "J\u2665", "Q\u2665", "K\u2665"], "player2": "Mike", "hand2": ["9\u2660", "J\u2660", "10\u2660", "Q\u2660", "K\u2660"]}
+{"suit": "", "deck_type": "standard_deck"}
+{"release_year": 2019, "multiplayer": true, "ESRB_rating": "Everyone"}
+{"game": "Zelda", "username": "Sam"}
+{"game": "Legend of Zelda: Breath of the Wild", "item": "Guardian Sword +", "stat": "power rating"}
+{"game_name": "Super Mario Bros.", "release_year": 1985, "condition": "Like New"}
+{"game_name": "Animal Crossing: New Horizons", "season": "Spring"}
+{"team_name": "Liverpool F.C.", "include_stats": true}
+{"player_name": "StarPlayer", "_class": "Mage", "starting_level": 5}
+{"game": "Overwatch", "platform": "PC"}
+{"game": "Valorant", "season": "2022"}
+{"platform": "windows", "rating": 4.5, "genre": "Action"}
+{"game_name": "The Legend of Zelda: Breath of the Wild", "platform": "nintendo_switch, wii_u, nintendo_3ds"}
+{"diet": ">Gluten-free Diet", "meal_type": "question", "ingredients": []}
+{"dish_type": "main dish", "cooking_time": 30, "ingredient_preference": [":"]}
+{"website": "", "recipe": ".-fooddescriptorg Improved Recipe:  FN_MEASURE_Seq {'qty': '8', 'unit': 'oz.'}, 'olive oil', FN_MEASURE_Seq {'qty': '1', 'unit': 'lb.'}, 'ground sirloin', FN_MEASURE_Seq {'qty': '2', 'unit': 'lbs.'}, 'rigatoni pasta', FN_MEASURE_Seq {'qty': '1', 'unit': 'cup'}, 'marinara sauce, store-bought', FN_MEASURE_Seq {'qty': '2', 'unit': 'cups'}, FN_MEASURE_Seq {'qty': '1', 'unit': 'lb.'}, 'shredded mozzarella', FN_MEASURE_Seq {'qty': '1', 'unit': 'cup'}, FN_MEASURE_Seq {'qty': '1/2', 'unit': 'cup'}, 'grated parmesan', FN_ITEM { MindType: NUMBER, name: 'beef' }, FN_MEASURE_Seq {'qty': '1', 'unit': 'egg' }, FN_ITEM { MindType: NUMBER, name: 'garlic cloves' }, FN_ITEM { MindType: TEXT, name: 'salt', quantity: 'to taste' }, FN_ITEM { MindType: TEXT, name: 'ground black pepper', quantity: 'to taste' }, FN_ITEM { MindType: TEXT, name: 'dried basil', quantity: 'to taste' }, FN_ITEM { MindType: TEXT, name: 'dried oregano', quantity: 'to taste' }, FN_ITEM { MindType: TEXT, name: 'dried thyme', quantity: 'to taste' }, FN_ENTITY {'id': '/food/cooking_oil/olive-oil', 'name': 'olive oil', 'source': '/food/olive-oil'},"}
+{"servings": 1, "diet": ":vegan", "prep_time": 30}
+{"dish_name": "-", "diet_preference": "Vegan"}
+{"diet": ["Gluten Free"], "dish": "]["}
+{"dietary_restriction": "", "ingredients": ["pasta", "onion", "garlic", "olive_oil", "spinach", "feta_cheese", "grated_parmesan_cheese", "vegetable_broth", "garlic_powder", "onion_powder"], "servings": 2}
+{"recipeName": "Pasta Carbonara (Under 500 Calories)", "maxCalories": 500}
+{"city": "New York", "cuisine": "Italian", "diet": "gluten-free"}
+{"city": "Tokyo", "top": 5, "review_rate": 4.5}
+{"location": "Boston, MA", "cuisine": "Sushi", "amenities": ["Patio"]}
+{"location": "Brooklyn, New York", "type": "italian restaurant with gluten-free options", "diet_option": "gluten-free"}
+{"quantity": 1, "from_unit": "pounds", "to_unit": "ounces", "item": "butter"}
+{"value": 1, "from_unit": "tablespoons", "to_unit": "teaspoons", "precision": 3}
+{"dietary_restrictions": ":", "recipe_type": "desserts", "time": 30}
+{"weight_kg": 1.5, "cooking_method": "roasting"}
+{"location": "Houston, Texas", "categories": ["Organic"]}
+{"location": "Palo Alto, CA", "items": [",", "{\"name\":\"Extra Virgin Olive Oil\",\"quantity\":3}", ",", "{\"name\":\"Calrose Rice\",\"quantity\":5}"], "quantity": [1, 2]}
+{"location": ":-& lat=34.05223,& long=-118.24773", "items": ["&quot;Tomatoes:&quot;:& 10.99", "&quot;Lettuce:&quot;:& 5.99"]}
+{"product": ":ggvwhvks", "category": "blog_post", "organic": true}
+{"loc": ": 37.332356,-121.887759", "product_list": [",", "Product Name:", "Price:", "Availability:", "", "", ",", "", ""], "pack_size": [14, 6, 12]}
+{"error": "Error occurred"}
+{"items": [",", "{\"name\":\"Pumpkins - 1\",\"price\":{\"amount\":2.97,\"currency\":\"USD\"}}_{{totalAmount: 3.97}}", "", "", "{\"name\":\"Eggs - Dozen, Egglands Best, Grade A\",\"price\":{\"amount\":5.98,\"currency\":\"USD\"}},", "", "{\"name\":\"Eggs - Dozen, Egglands Best, Grade A\",\"price\":{\"amount\":5.98,\"currency\":\"USD\"}}"], "quantities": [3, 2], "store_location": ""}
+{"city": "London", "country": "UK", "display_format": "24 hour clock"}
+{"city": "Sydney", "country": "Australia", "format": "HH:mm:ss"}
+{"error": "Error occurred"}
+{"location": "Sydney, Australia", "country": "Australia", "timezone": "Australian Eastern Standard Time"}
+{"location": "manhattan new york, ", "room_type": "single room", "duration": 3, "start_date": "2023-03-10", "preferences": ["pet_friendly"]}
+{"location": "Paris, France", "check_in_date": "2021-04-04", "check_out_date": "2021-04-08", "no_of_adults": 2}
+{"hotel_name": "Hilton Chicago", "location": "Chicago (Illinois)", "room_type": "Single", "start_date": "2022-12-10T00:00:00Z", "nights": 2}
+{"hotel_name": "The Plaza Hotel", "room_type": "Single Room", "num_nights": 2}
+{"city": "Paris", "from_date": "2022-07-10", "to_date": "2022-07-20", "adults": 2, "children": 1, "room_type": "default"}
+{"location": "Los Angeles,California", "room_type": "King Bed", "check_in_date": "15th October,2023", "no_of_nights": 2, "no_of_rooms": 1}
+{"hotel_name": "Hotel Paradise", "location": "Las Vegas, NV", "room_type": "Luxury Room With City View", "start_date": "2022-05-12", "stay_duration": 3, "view": "city"}
+{"hotel_name": "Plaza Hotel New York", "location": "New York", "start_date": "1st June 2022", "end_date": "3rd June 2022", "rooms": 1}
+{"base_currency": "USD", "target_currency": "CAD", "amount": 500}
+{"error": "Error occurred"}
+{"amount": 150, "from_currency": "EUR", "to_currency": "CAD"}
+{"base_currency": "GBP", "target_currency": "JPY", "fee": 0.02}
+{"source_currency": "GBP", "target_currency": "JPY", "amount": 1}
+{"base_currency": "USD", "target_currency": "JPY", "amount": 20000}
+{"start_location": "", "end_location": ""}
+{"location": "{\"lat\":40.782427,\"lng\":-73.965349,\"name\":\"Central Park\",\"address\":\"Central Park Central Park, New York, NY 10024, USA\"}", "radius": 1046880}
+{"location": "denver, co", "radius": 5, "department": "Pediatrics"}
+{"origin": "1.0", "destination": "2.0", "consider_terrain": true}
+{"museum_name": "Metropolitan Museum of Art", "day": "Saturday"}
+{"location": "New York City, NY", "cuisine": "Italian", "rating": 4, "accepts_credit_cards": true}
