@@ -1,6 +1,6 @@
-# guided-generation-benchmark
+# structured-generation-benchmark
 
-Guided Generation Evals.
+Structured Generation Evals.
 
 ## Function Calling
 
