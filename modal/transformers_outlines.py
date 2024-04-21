@@ -11,7 +11,7 @@ outlines_image = Image.debian_slim(python_version="3.11").pip_install(
     "einops==0.7.0"
 )
 
-@app.cls(image=outlines_image, secrets=[Secret.from_dotenv()], gpu=gpu.H100(), timeout=300)#gpu=gpu.A100(memory=80)
+@app.cls(image=outlines_image, secrets=[Secret.from_dotenv()], gpu=gpu.H100(), timeout=300)
 class Model:
     def __init__(self, model_name: str) -> None:
         import outlines
