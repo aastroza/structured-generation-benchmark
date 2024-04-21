@@ -2,9 +2,9 @@
 
 To use Large Language Models (LLMs) effectively and reliably, it's essential to include structured generation techniques. Being able to get outputs like regular expressions, JSON, or a Pydantic data model is key for making useful software.
 
-But what's the real effect of using libraries like [Outlines](https://github.com/outlines-dev/outlines) or [Instructor](https://github.com/jxnl/instructor/)?
+But what's the real effect of using libraries like [Outlines](https://github.com/outlines-dev/outlines) or [Instructor](https://github.com/jxnl/instructor/) to achieve that goal?
 
-The goal of this repository is to put together evaluations to answer this question.
+This repository has put together evaluations to answer this question.
 
 ## Function Calling
 
