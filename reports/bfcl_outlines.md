@@ -6,7 +6,7 @@
 
 ## Methodology
 
-- We deployed a [modal function](modal/transformers_outlines.py) to run open-source models using [Transfomers](https://github.com/huggingface/transformers) + [Outlines](https://github.com/outlines-dev/outlines).
+- We deployed a [modal function](modal/transformers_outlines.py) to run open-source models using [Transformers](https://github.com/huggingface/transformers) + [Outlines](https://github.com/outlines-dev/outlines).
 - We created different [model handlers](evals/bfcl/scripts) to run the [Gorilla BFCL scripts](https://github.com/ShishirPatil/gorilla/tree/c6221060a9d50d0c7e7705f1ac95b9e5c4a95252) [April 6, 2024 version] for the `AST simple` evaluation category.
 - We [evaluated](evals/bfcl/score) and reported the [results](evals/bfcl/result) comparing them with the [Leaderboard Website](https://github.com/ShishirPatil/gorilla/tree/bdd9d0ac13b6d61ebe1cbfed3903cd16939f1d5f) [April 14, 2024 version].
 
@@ -56,19 +56,19 @@
 
 ### Mistral-7B-Instruct-v0.2
 
-[Code]() | [Results] | [Score]
+[Code](../evals/bfcl/scripts/mistral_outlines_handler.py) | [Results](../evals/bfcl/result/mistralai_Mistral-7B-Instruct-v0.2/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/mistralai_Mistral-7B-Instruct-v0.2/simple_score.json)
 
 ### Deepseek-v1.5
 
-[Code] | [Results] | [Score]
+[Code](../evals/bfcl/scripts/deepseek_outlines_handler.py) | [Results](../evals/bfcl/result/deepseek-ai_deepseek-coder-7b-instruct-v1.5/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/deepseek-ai_deepseek-coder-7b-instruct-v1.5/simple_score.json)
 
 ### Gemma-7b-it
 
-[Code] | [Results] | [Score]
+[Code](../evals/bfcl/scripts/gemma_outlines_handler.py) | [Results](../evals/bfcl/result/google_gemma-7b-it/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/google_gemma-7b-it/simple_score.json)
 
 ### Meta-Llama-3-8B-Instruct
 
-[Code] | [Results] | [Score]
+[Code](../evals/bfcl/scripts/llama_outlines_handler.py) | [Results](../evals/bfcl/result/meta-llama_Meta-Llama-3-8B-Instruct/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/meta-llama_Meta-Llama-3-8B-Instruct/simple_score.json)
 
 
 ## Conclusion
