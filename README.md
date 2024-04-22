@@ -23,4 +23,4 @@ The ability of the LLM to call functions.
 ### Reports
 
 - [Outlines Function Calling Evaluation](reports/bfcl_outlines.md)
-- [Instructor Function Calling Evaluation](reports/instructor_outlines.md)
+- [Instructor Function Calling Evaluation](reports/bfcl_instructor.md)
