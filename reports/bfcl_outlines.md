@@ -75,21 +75,28 @@ The **results in bold** are those we added using Outlines. The rest of the rows 
 
 ## Discussion
 
-### Mistral-7B-Instruct-v0.2
+### Mistral-7B-Instruct-v0.2 (7th, 85.5%)
 
 [Code](../evals/bfcl/scripts/mistral_outlines_handler.py) | [Results](../evals/bfcl/result/mistralai_Mistral-7B-Instruct-v0.2/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/mistralai_Mistral-7B-Instruct-v0.2/simple_score.json)
 
-### Deepseek-v1.5
+Our first intuition was to explore the potential of structured generation in enhancing the performance of a 7B model on the Function Calling task. `Mistral-7B-Instruct-v0.2` achieved an impressive accuracy of 85.5%, securing the 7th position on the leaderboard. Notably, this result stands as the highest score among all Mistral models in the table, suggesting that structured generation may play a significant role in enabling smaller models to tackle complex tasks effectively.
 
-[Code](../evals/bfcl/scripts/deepseek_outlines_handler.py) | [Results](../evals/bfcl/result/deepseek-ai_deepseek-coder-7b-instruct-v1.5/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/deepseek-ai_deepseek-coder-7b-instruct-v1.5/simple_score.json)
-
-### Gemma-7b-it
+### Gemma-7b-it (from 34th, 42.18% to 10th, 84.25%)
 
 [Code](../evals/bfcl/scripts/gemma_outlines_handler.py) | [Results](../evals/bfcl/result/google_gemma-7b-it/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/google_gemma-7b-it/simple_score.json)
 
-### Meta-Llama-3-8B-Instruct
+We wanted to see if a base 7B model could reach the top of the leaderboard by using the power of structured generation. `google/gemma-7b-it` was already the best 7B model on the leaderboard before our tests. However, when we combined it with Outlines, it showed a huge jump in performance. It went from the 34th position with an accuracy of 42.18% to an impressive 10th place, achieving an accuracy of 84.25%. This big improvement highlights the potential of structured generation to boost the performance of base models.
+
+### Deepseek-v1.5 (from 35th, 38.91% to 3rd, 87%)
+
+`deepseek-coder-7b-instruct-v1.5`
+
+[Code](../evals/bfcl/scripts/deepseek_outlines_handler.py) | [Results](../evals/bfcl/result/deepseek-ai_deepseek-coder-7b-instruct-v1.5/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/deepseek-ai_deepseek-coder-7b-instruct-v1.5/simple_score.json)
+
+### Meta-Llama-3-8B-Instruct (11th, 84.25%)
 
 [Code](../evals/bfcl/scripts/llama_outlines_handler.py) | [Results](../evals/bfcl/result/meta-llama_Meta-Llama-3-8B-Instruct/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/meta-llama_Meta-Llama-3-8B-Instruct/simple_score.json)
 
+We couldn't resist testing the latest sensation in the world of language models. When combined with structured generation, `Meta-Llama-3-8B-Instruct` achieved an impressive accuracy of 84.25%, securing the 11th position on the leaderboard. 
 
 ## Conclusion
