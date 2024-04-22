@@ -1,7 +1,7 @@
 # Outlines Function Calling Evaluation
 
 > [!NOTE]
-> This report originates from the [Outlines](https://github.com/outlines-dev/outlines) community's proposal to build a dataset for evaluating structured generation. If you want to participate, join our [Discord](https://discord.gg/ZxBxyWmW5n).
+> This report originates from the [Outlines](https://github.com/outlines-dev/outlines) community's proposal to find a good dataset for evaluating structured generation. If you want to participate, join our [Discord](https://discord.gg/ZxBxyWmW5n).
 
 ## Goal
 
