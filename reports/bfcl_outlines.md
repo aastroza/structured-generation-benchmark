@@ -15,7 +15,9 @@ We want to explore some interesting questions: Can structured generation work be
 
 ## Benchmark
 
-There is a dataset generated from real-world data that has been released for the construction of the [**Berkeley Function-Calling Leaderboard**](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard). It consists of 2,000 question-function-answer pairs across multiple languages, diverse application domains, and complex use cases. Additionally, it includes the [code to reproduce the benchmark](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard), which serves as a sort of framework for evaluation. If you want to learn more about this outstanding initiative, we recommend reading [this blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).
+There is a dataset generated from real-world data that has been released for the construction of the [**Berkeley Function-Calling Leaderboard**](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard). It consists of 2,000 question-function-answer pairs across multiple languages, diverse application domains, and complex use cases[^2]. Additionally, it includes the [code to reproduce the benchmark](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard), which serves as a sort of framework for evaluation. If you want to learn more about this outstanding initiative, we recommend reading [this blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).
+
+[^2]: [Patil, S. G., Zhang, T., Wang, X., & Gonzalez, J. E. (2023). Gorilla: Large Language Model Connected with Massive APIs. arXiv preprint arXiv:2305.15334.](https://arxiv.org/abs/2305.15334)
 
 In the Outlines community, we decided to start with the 'AST Simple' category, as described by the authors:
 
