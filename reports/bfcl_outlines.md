@@ -1,16 +1,29 @@
 # Outlines Function Calling Evaluation
 
+> [!NOTE]
+> This report originates from the [Outlines](https://github.com/outlines-dev/outlines) community's proposal to build a dataset for evaluating structured generation. If you want to participate, join our Discord.
+
 ## Goal
 
 ## Benchmark
 
+There is a dataset generated from real-world data that has been released for the construction of the [**Berkeley Function-Calling Leaderboard**](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard). It consists of 2,000 question-function-answer pairs across multiple languages, diverse application domains, and complex use cases. Additionally, it includes the [code to reproduce the benchmark](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard), which serves as a sort of framework for evaluation. If you want to learn more about this outstanding initiative, we recommend reading [this blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).
+
+In the Outlines community, we decided to start with the 'AST Simple' category, as described by the authors:
+
+> Simple Function: The evaluation of a single function includes the simplest but most commonly seen format, where the user provides a single JSON function document. Only one function call will be invoked.
+
+It's exactly the use case we've been facing in our efforts to integrate LLMs to power software.
+
 ## Methodology
 
-- We deployed a [modal function](modal/transformers_outlines.py) to run open-source models using [Transformers](https://github.com/huggingface/transformers) + [Outlines](https://github.com/outlines-dev/outlines).
+- We deployed a [**Modal** function](modal/transformers_outlines.py) to run open-source models using [Transformers](https://github.com/huggingface/transformers) + [Outlines](https://github.com/outlines-dev/outlines). [Modal](https://modal.com/) is an easy-to-use cloud platform useful to run generative AI models. Soon, we will [write in more detail about our experience deploying structured generation there](https://github.com/aastroza/modal-outlines-examples).
 - We created different [model handlers](evals/bfcl/scripts) to run the [Gorilla BFCL scripts](https://github.com/ShishirPatil/gorilla/tree/c6221060a9d50d0c7e7705f1ac95b9e5c4a95252) [April 6, 2024 version] for the `AST simple` evaluation category.
 - We [evaluated](evals/bfcl/score) and reported the [results](evals/bfcl/result) comparing them with the [Leaderboard Website](https://github.com/ShishirPatil/gorilla/tree/bdd9d0ac13b6d61ebe1cbfed3903cd16939f1d5f) [April 14, 2024 version].
 
 ## Results
+
+The **results in bold** are those we added using Outlines. The rest of the rows are the results already reported on the Leaderboard.
 
 | Rank | Model                                            | Simple Function AST |
 |------|--------------------------------------------------|---------------------|
