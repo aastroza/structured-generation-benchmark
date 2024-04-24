@@ -72,8 +72,8 @@ This is exactly the use case we've been facing in our efforts to integrate LLMs 
 
 We use the evaluation process for simple functions within the GFCL framework. This process involves comparing the output of a model directly with the expected function document and potential correct answers. Below is a flowchart that details this step-by-step evaluation process.
 
-![evaluation flowchart](figures/)
-Evaluating function calls. Image from [GFCL blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).>
+![evaluation flowchart](images/metric_flowchart.jpeg)
+Evaluating function calls. Image from [GFCL blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).
 
 Then, accuracy is calculated by counting the validated function calls and comparing them with the total number of simple test category cases.
 
