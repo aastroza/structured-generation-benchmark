@@ -20,11 +20,13 @@ There is a dataset generated from real-world data that has been released[^2] for
 [^2]: [Yan, F., Mao, H., Ji, C. C.-J., Zhang, T., Patil, S. G., Stoica, I., & Gonzalez, J. E. (2024). Berkeley Function Calling Leaderboard.](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html)
 [^3]: [Patil, S. G., Zhang, T., Wang, X., & Gonzalez, J. E. (2023). Gorilla: Large Language Model Connected with Massive APIs. arXiv preprint arXiv:2305.15334.](https://arxiv.org/abs/2305.15334)
 
+### Data
+
 In the Outlines community, we decided to start with the 'AST Simple' category, as described by the authors:
 
 > Simple Function: The evaluation of a single function includes the simplest but most commonly seen format, where the user provides a single JSON function document. Only one function call will be invoked.
 
-Here is an example from the database:
+Here is an example from one of the 400 records in this evaluation category:
 
 ```python
 question = 'Find the area of a triangle with a base of 10 units and height of 5 units.'
@@ -65,6 +67,15 @@ calculate_triangle_area(base=10, height=5, unit='units')
 ```
 
 This is exactly the use case we've been facing in our efforts to integrate LLMs to power software.
+
+### Metric
+
+We use the evaluation process for simple functions within the GFCL framework. This process involves comparing the output of a model directly with the expected function document and potential correct answers. Below is a flowchart that details this step-by-step evaluation process.
+
+![evaluation flowchart](figures/)
+Evaluating function calls. Image from [GFCL blog post](https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html).>
+
+Then, accuracy is calculated by counting the validated function calls and comparing them with the total number of simple test category cases.
 
 ## Methodology
 
