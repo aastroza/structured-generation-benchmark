@@ -67,3 +67,5 @@ We tried to directly compare how well structured generation works against fine-t
 We couldn't resist testing the latest sensation in the world of language models. When combined with structured generation, `Meta-Llama-3-8B-Instruct` achieved an impressive accuracy of 84.25%, securing the 7th position on the leaderboard. 
 
 ## Conclusion
+
+Our study shows that structured generation greatly improves how LLMs handle function calling tasks. Through testing, we found that structured generation matches traditional fine-tuning in terms of accuracy and efficiency, especially for smaller models. It also leads to more understanding of complex inputs. Looking ahead, we plan to expand our use of the GFCL benchmark's evaluation categories and explore or develop more diverse datasets.
