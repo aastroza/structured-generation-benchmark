@@ -24,7 +24,47 @@ In the Outlines community, we decided to start with the 'AST Simple' category, a
 
 > Simple Function: The evaluation of a single function includes the simplest but most commonly seen format, where the user provides a single JSON function document. Only one function call will be invoked.
 
-It's exactly the use case we've been facing in our efforts to integrate LLMs to power software.
+Here is an example from the database:
+
+```python
+question = 'Find the area of a triangle with a base of 10 units and height of 5 units.'
+```
+
+To answer the question, the LLM has access to the function defined by this JSON Schema:
+
+```json
+{
+  "title": "calculate_triangle_area",
+  "type": "object",
+  "description": "Calculate the area of a triangle given its base and height.",
+  "properties": {
+    "base": {
+      "type": "integer",
+      "description": "The base of the triangle."
+    },
+    "height": {
+      "type": "integer",
+      "description": "The height of the triangle."
+    },
+    "unit": {
+      "type": "string",
+      "description": "The unit of measure (defaults to 'units' if not specified)"
+    }
+  },
+  "required": [
+    "base",
+    "height"
+  ]
+}
+```
+
+The expected response:
+
+```python
+calculate_triangle_area(base=10, height=5, unit='units')
+```
+
+This is exactly the use case we've been facing in our efforts to integrate LLMs to power software.
 
 ## Methodology
 
