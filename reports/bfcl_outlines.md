@@ -26,7 +26,7 @@ In the Outlines community, we decided to start with the 'AST Simple' category, a
 
 > Simple Function: The evaluation of a single function includes the simplest but most commonly seen format, where the user provides a single JSON function document. Only one function call will be invoked.
 
-Here is an example from one of the 400 records in this evaluation category:
+Here is an example from one of the 400 records in the python section of this evaluation category:
 
 ```python
 question = 'Find the area of a triangle with a base of 10 units and height of 5 units.'
@@ -89,7 +89,7 @@ Then, accuracy is calculated by counting the validated function calls and compar
 
 [Code](../evals/bfcl/scripts/mistral_outlines_handler.py) | [Results](../evals/bfcl/result/mistralai_Mistral-7B-Instruct-v0.2/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/mistralai_Mistral-7B-Instruct-v0.2/simple_score.json)
 
-![mistral ranking](../evals/bfcl/figures/Mistral_bar_plot.png)
+![mistral ranking](../evals/bfcl/figures/Mistral_simple_function_ast_bar_plot.png)
 
 Our first intuition was to explore the potential of structured generation in enhancing the performance of a 7B model on the Function Calling task. `Mistral-7B-Instruct-v0.2` achieved an impressive accuracy of 85.5%, securing the 5th position on the leaderboard. Notably, this result stands as the highest score among all Mistral models in the table, suggesting that structured generation may play a significant role in enabling smaller models to tackle complex tasks effectively.
 
@@ -97,7 +97,7 @@ Our first intuition was to explore the potential of structured generation in enh
 
 [Code](../evals/bfcl/scripts/gemma_outlines_handler.py) | [Results](../evals/bfcl/result/google_gemma-7b-it/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/google_gemma-7b-it/simple_score.json)
 
-![gemma ranking](../evals/bfcl/figures/Gemma_bar_plot.png)
+![gemma ranking](../evals/bfcl/figures/Gemma_simple_function_ast_bar_plot.png)
 
 We wanted to see if a base 7B model could reach the top of the leaderboard by using the power of structured generation. `google/gemma-7b-it` was already the best 7B model on the leaderboard before our tests. However, when we combined it with Outlines, it showed a huge jump in performance. It went from the 37th position with an accuracy of 42.18% to an impressive 7th place, achieving an accuracy of 84.25%. This big improvement highlights the potential of structured generation to boost the performance of base models.
 
@@ -105,7 +105,7 @@ We wanted to see if a base 7B model could reach the top of the leaderboard by us
 
 [Code](../evals/bfcl/scripts/deepseek_outlines_handler.py) | [Results](../evals/bfcl/result/deepseek-ai_deepseek-coder-7b-instruct-v1.5/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/deepseek-ai_deepseek-coder-7b-instruct-v1.5/simple_score.json)
 
-![deepseek ranking](../evals/bfcl/figures/Deepseek_bar_plot.png)
+![deepseek ranking](../evals/bfcl/figures/Deepseek_simple_function_ast_bar_plot.png)
 
 We tried to directly compare how well structured generation works against fine-tuning. We chose `deepseek-coder-7b-instruct-v1.5`, a model that is used as the base for the fine-tuned Gorilla model. By combining it with Outlines, we saw a remarkable improvement in performance. The model jumped from the 38th position with an accuracy of 38.91% to an amazing 3rd place, achieving an accuracy of 87%. This result is very important because it matches the performance of the fine-tuned `Gorilla-OpenFunctions-v2` model, which is based on the same architecture. The success of this test raises important questions about the different ways to improve model performance. It suggests that structured generation may, in some cases, be a good and efficient alternative to fine-tuning.
 
@@ -113,7 +113,7 @@ We tried to directly compare how well structured generation works against fine-t
 
 [Code](../evals/bfcl/scripts/llama_outlines_handler.py) | [Results](../evals/bfcl/result/meta-llama_Meta-Llama-3-8B-Instruct/gorilla_openfunctions_v1_test_simple_result.json) | [Score](../evals/bfcl/score/meta-llama_Meta-Llama-3-8B-Instruct/simple_score.json)
 
-![llama ranking](../evals/bfcl/figures/Meta_bar_plot.png)
+![llama ranking](../evals/bfcl/figures/Meta_simple_function_ast_bar_plot.png)
 
 We couldn't resist testing the latest sensation in the world of language models. When combined with structured generation, `Meta-Llama-3-8B-Instruct` achieved an impressive accuracy of 84.25%, securing the 7th position on the leaderboard. 
 
