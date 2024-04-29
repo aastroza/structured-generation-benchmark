@@ -1,0 +1,551 @@
+iterator,category,question,pydantic_model_file
+0,simple,Find the area of a triangle with a base of 10 units and height of 5 units.,model_000.py
+1,simple,Calculate the factorial of 5 using math functions.,model_001.py
+2,simple,Calculate the hypotenuse of a right triangle given the lengths of the other two sides as 4 and 5.,model_002.py
+3,simple,"Find the roots of a quadratic equation with coefficients a=1, b=-3, c=2.",model_003.py
+4,simple,"Solve a quadratic equation where a=2, b=6, and c=5",model_004.py
+5,simple,"Find the roots of a quadratic equation given coefficients a = 3, b = -11, and c = -4.",model_005.py
+6,simple,"What are the roots of the quadratic equation where a=2, b=5 and c=3 ?",model_006.py
+7,simple,What is the circumference of a circle with a radius of 4 inches?,model_007.py
+8,simple,What's the area of a circle with a radius of 10?,model_008.py
+9,simple,Calculate the area of a circle with a radius of 5 units.,model_009.py
+10,simple,Calculate the area of a right-angled triangle given the lengths of its base and height as 6cm and 10cm.,model_010.py
+11,simple,What is the area of a triangle with base of 10 units and height of 5 units?,model_011.py
+12,simple,Calculate the circumference of a circle with radius 3,model_012.py
+13,simple,Calculate the area under the curve y=x^2 from x=1 to x=3.,model_013.py
+14,simple,Calculate the derivative of the function 3x^2 + 2x - 1.,model_014.py
+15,simple,Calculate the area under the curve from x = -2 to x = 3 for the function y = x^3 using simpson method.,model_015.py
+16,simple,Calculate the derivative of the function 2x^2 at x = 1.,model_016.py
+17,simple,Find the prime factors of 450,model_017.py
+18,simple,Find the prime factors of the number 123456.,model_018.py
+19,simple,Calculate the greatest common divisor of two numbers: 40 and 50,model_019.py
+20,simple,Find the highest common factor of 36 and 24.,model_020.py
+21,simple,"Find the Greatest Common Divisor (GCD) of two numbers, say 36 and 48.",model_021.py
+22,simple,"Calculate the greatest common divisor of two given numbers, for example 12 and 15.",model_022.py
+23,simple,What is the prime factorization of the number 60? Return them in the form of dictionary,model_023.py
+24,simple,Find the greatest common divisor (GCD) of 12 and 18,model_024.py
+25,simple,"Calculate the final velocity of an object falling from a 150 meter building, assuming initial velocity is zero.",model_025.py
+26,simple,Calculate the velocity of a car that travels a distance of 50 kilometers for a duration of 2 hours?,model_026.py
+27,simple,"Calculate the final velocity of a vehicle after accelerating at 2 meters/second^2 for a duration of 5 seconds, starting from a speed of 10 meters/second.",model_027.py
+28,simple,Calculate the displacement of a car given the initial velocity of 10 and acceleeration of 9.8 within 5 seconds.,model_028.py
+29,simple,What is the final speed of an object dropped from rest after falling for 5 seconds if we neglect air resistance?,model_029.py
+30,simple,What is the final velocity of a vehicle that started from rest and accelerated at 4 m/s^2 for a distance of 300 meters?,model_030.py
+31,simple,"Calculate the final velocity of an object, knowing that it started from rest, accelerated at a rate of 9.8 m/s^2 for a duration of 5 seconds.",model_031.py
+32,simple,Calculate the final speed of an object dropped from 100 m without air resistance.,model_032.py
+33,simple,Get directions from Sydney to Melbourne using the fastest route.,model_033.py
+34,simple,Create an itinerary for a 7 days trip to Tokyo with daily budgets not exceeding $100 and prefer exploring nature.,model_034.py
+35,simple,Find an all vegan restaurant in New York that opens until at least 11 PM.,model_035.py
+36,simple,Find the shortest driving distance between New York City and Washington D.C.,model_036.py
+37,simple,Find the estimated travel time by car from San Francisco to Los Angeles with stops at Santa Barbara and Monterey.,model_037.py
+38,simple,What is the electrostatic potential between two charged bodies of 1e-9 and 2e-9 of distance 0.05?,model_038.py
+39,simple,Calculate the electric field at a point 3 meters away from a charge of 2 coulombs.,model_039.py
+40,simple,Calculate the magnetic field produced at the center of a circular loop carrying current of 5 Ampere with a radius of 4 meters,model_040.py
+41,simple,Calculate the electromagnetic force between two charges of 5C and 7C placed 3 meters apart.,model_041.py
+42,simple,Calculate the resonant frequency of an LC circuit given capacitance of 100µF and inductance of 50mH.,model_042.py
+43,simple,Calculate the magnetic field strength 10 meters away from a long wire carrying a current of 20 Amperes.,model_043.py
+44,simple,Calculate the electric field strength 4 meters away from a charge of 0.01 Coulombs.,model_044.py
+45,simple,Calculate the energy (in Joules) absorbed or released during the phase change of 100g of water from liquid to steam at its boiling point.,model_045.py
+46,simple,Calculate the final temperature when 20 kg of water at 30 degree Celsius is mixed with 15 kg of water at 60 degree Celsius.,model_046.py
+47,simple,Find the boiling point and melting point of water under the sea level of 5000m.,model_047.py
+48,simple,What is the density of a substance with a mass of 45 kg and a volume of 15 m³?,model_048.py
+49,simple,Calculate the absolute pressure in pascals given atmospheric pressure of 1 atm and a gauge pressure of 2 atm.,model_049.py
+50,simple,What is the change in entropy in Joules per Kelvin of a 1kg ice block at 0°C if it is heated to 100°C under 1 atmosphere of pressure?,model_050.py
+51,simple,"Calculate the entropy change for a certain process given an initial temperature of 300K, a final temperature of 400K, and a heat capacity of 5J/K.",model_051.py
+52,simple,"Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.",model_052.py
+53,simple,Retrieve the sequence of DNA molecule with id `DNA123`.,model_053.py
+54,simple,Identify the protein sequence of a given human gene 'BRCA1'.,model_054.py
+55,simple,Find me detailed information about the structure of human cell,model_055.py
+56,simple,What are the names of proteins found in the plasma membrane?,model_056.py
+57,simple,"Calculate the cell density in a sample with an optical density of 0.6, where the experiment dilution is 5 times.",model_057.py
+58,simple,What is the function of ATP synthase in mitochondria?,model_058.py
+59,simple,Calculate the molecular weight of Glucose (C6H12O6) in grams/mole.,model_059.py
+60,simple,Find the type of gene mutation based on SNP (Single Nucleotide Polymorphism) ID rs6034464.,model_060.py
+61,simple,Predict whether a person with weight 150lbs and height 5ft 10in who is lightly active will get type 2 diabetes.,model_061.py
+62,simple,Analyze the DNA sequence 'AGTCGATCGAACGTACGTACG' for any potential substitution mutations based on a reference sequence 'AGTCCATCGAACGTACGTACG'.,model_062.py
+63,simple,Find out how genetically similar a human and a chimp are in percentage.,model_063.py
+64,simple,"What is the genotype frequency of AA genotype in a population, given that allele frequency of A is 0.3?",model_064.py
+65,simple,Calculate the Population Density for Brazil in 2022 if the population is 213 million and the land area is 8.5 million square kilometers.,model_065.py
+66,simple,Get me data on average precipitation in the Amazon rainforest for the last six months.,model_066.py
+67,simple,Identify a small green bird in forest.,model_067.py
+68,simple,Predict the growth of forest in Yellowstone National Park for the next 5 years including human impact.,model_068.py
+69,simple,Find out the population and species of turtles in Mississippi river in 2020.,model_069.py
+70,simple,What is the carbon footprint of a gas-powered vehicle driving 1500 miles in a year?,model_070.py
+71,simple,Generate a DNA sequence with 100 bases including more G (Guanine) and C (Cytosine).,model_071.py
+72,simple,"Calculate the expected evolutionary fitness of a creature, with trait A contributing to 40% of the fitness and trait B contributing 60%, if trait A has a value of 0.8 and trait B a value of 0.7.",model_072.py
+73,simple,What's the projected population growth in United States in the next 20 years?,model_073.py
+74,simple,"Calculate the evolution rate of a bacteria population, start with 5000 bacteria, each bacteria duplicates every hour for 6 hours.",model_074.py
+75,simple,Estimate the population size of elephants of 35000 in the next 5 years given the current growth rate of 0.015.,model_075.py
+76,simple,Get me the predictions of the evolutionary rate for Homo Sapiens for next 50 years using Darwin model,model_076.py
+77,simple,Find a nearby restaurant that serves vegan food in Los Angeles.,model_077.py
+78,simple,Get the average temperature in Austin for the next 3 days in Celsius.,model_078.py
+79,simple,"Create a histogram for student scores with the following data: 85, 90, 88, 92, 86, 89, 91 and set bin range to 5.",model_079.py
+80,simple,"I want to find 5 restaurants nearby my location, Manhattan, offering Thai food and a vegan menu.",model_080.py
+81,simple,Find the fastest route from San Francisco to Los Angeles with toll roads avoided.,model_081.py
+82,simple,"Calculate the average of list of integers [12, 15, 18, 20, 21, 26, 30].",model_082.py
+83,simple,"Calculate the distance between two GPS coordinates (33.4484 N, 112.0740 W) and (34.0522 N, 118.2437 W) in miles.",model_083.py
+84,simple,Calculate the Body Mass Index (BMI) of a person with a weight of 85 kilograms and height of 180 cm.,model_084.py
+85,simple,"What's the approximate distance between Boston, MA, and Washington, D.C. in mile?",model_085.py
+86,simple,"Find the shortest distance between two cities, New York and Los Angeles, through the train and you can transfer.",model_086.py
+87,simple,"Sort the list [5, 3, 4, 1, 2] in ascending order.",model_087.py
+88,simple,Calculate the BMI (Body Mass Index) of a person who weighs 70kg and is 1.75m tall.,model_088.py
+89,simple,Fetch all records for students studying Science in 'Bluebird High School' from the StudentDB.,model_089.py
+90,simple,Retrieve Personal Info and Job History data of a specific employee whose ID is 345 in company 'ABC Ltd.',model_090.py
+91,simple,"Get the highest rated sushi restaurant in Boston, that opens on Sundays.",model_091.py
+92,simple,Find all movies starring Leonardo DiCaprio in the year 2010 from IMDB database.,model_092.py
+93,simple,Fetch me the list of IMAX movie releases in theaters near LA for the next week.,model_093.py
+94,simple,"Update my customer information with user id 43523 'name':'John Doe', 'email':'johndoe@email.com' in the database.",model_094.py
+95,simple,Calculate the area of a triangle with base 5m and height 3m.,model_095.py
+96,simple,Find records in database in user table where age is greater than 25 and job is 'engineer'.,model_096.py
+97,simple,Calculate the factorial of the number 5,model_097.py
+98,simple,What will be the angle between the hour and minute hands of a clock at 6:30 PM?,model_098.py
+99,simple,Plot a sine wave from 0 to 2 pi with a frequency of 5 Hz.,model_099.py
+100,simple,How much time will it take for the light to reach earth from a star 4 light years away?,model_100.py
+101,simple,Calculate the speed of an object in km/h if it traveled 450 meters in 20 seconds.,model_101.py
+102,simple,What's the distance in milesfrom the Earth to the Moon?,model_102.py
+103,simple,"Calculate the area under the curve y=3x^2 + 2x - 4, between x = -1 and x = 2.",model_103.py
+104,simple,Calculate the area of a triangle with base 6 and height 10.,model_104.py
+105,simple,Calculate the power of 3 raised to the power 4.,model_105.py
+106,simple,"Train a random forest classifier on dataset your_dataset_name with maximum depth of trees as 5, and number of estimators as 100.",model_106.py
+107,simple,Calculate the Body Mass Index for a person with a weight of 70 kg and a height of 175 cm.,model_107.py
+108,simple,"Run a linear regression model with predictor variables 'Age', 'Income' and 'Education' and a target variable 'Purchase_Amount'. Also apply standardization.",model_108.py
+109,simple,Generate a random forest model with 100 trees and a depth of 5 on the provided data my_data.,model_109.py
+110,simple,"Predict the price of the house in San Francisco with 3 bedrooms, 2 bathrooms and area of 1800 square feet.",model_110.py
+111,simple,Generate a random number from a normal distribution with mean 0 and standard deviation 1.,model_111.py
+112,simple,Calculate the probability of drawing a king from a deck of cards.,model_112.py
+113,simple,What's the probability of rolling a six on a six-sided die twice in a row?,model_113.py
+114,simple,Find the probability of getting exactly 5 heads in 10 fair coin tosses.,model_114.py
+115,simple,Calculate the probability of getting exactly 5 heads in 8 tosses of a fair coin.,model_115.py
+116,simple,What's the probability of drawing a king from a well shuffled standard deck of 52 cards?,model_116.py
+117,simple,What are the odds of pulling a heart suit from a well-shuffled standard deck of 52 cards? Format it as ratio.,model_117.py
+118,simple,"Perform a two-sample t-test on my experiment data of Control [10, 15, 12, 14, 11] and Treated [18, 16, 17, 20, 22] group with alpha equals to 0.05",model_118.py
+119,simple,"Perform a hypothesis test for two independent samples with scores of Sample1: [22,33,42,12,34] and Sample2: [23,45,44,14,38] at a significance level of 0.05.",model_119.py
+120,simple,"Run a two sample T-test to compare the average of Group A [3, 4, 5, 6, 4] and Group B [7, 8, 9, 8, 7] assuming equal variance.",model_120.py
+121,simple,Calculate the probability of observing 60 heads if I flip a coin 100 times with probability of heads 0.5.,model_121.py
+122,simple,"Perform a Chi-Squared test for independence on a 2x2 contingency table [ [10, 20], [30, 40] ]",model_122.py
+123,simple,"Perform a two-sample t-test to determine if there is a significant difference between the mean of group1 (e.g., 12.4, 15.6, 11.2, 18.9) and group2 (e.g., 10.5, 9.8, 15.2, 13.8) at the significance level 0.05.",model_123.py
+124,simple,"Find the statistical significance between two set of variables, dataset_A with the values 12, 24, 36 and dataset_B with the values 15, 30, 45.",model_124.py
+125,simple,"Predict house price in San Francisco based on its area of 2500 square feet, number of rooms as 5 and year of construction is 1990.",model_125.py
+126,simple,What is the coefficient of determination (R-squared) for a model using engine size and fuel economy variables to predict car_price with a dataset in path C:/data/cars.csv?,model_126.py
+127,simple,"Find the Net Present Value (NPV) of an investment, given cash_flows=[200,300,400,500], a discount rate of 10%, and an initial investment of $2000.",model_127.py
+128,simple,What's the quarterly dividend per share of a company with 100 million outstanding shares and total dividend payout of 50 million USD?,model_128.py
+129,simple,Calculate the discounted cash flow of a bond that is giving a coupon payment of $100 annually for next 5 years with discount rate 4%.,model_129.py
+130,simple,"What's the NPV (Net Present Value) of a series of cash flows: [-50000, 10000, 15000, 20000, 25000, 30000] discounted at 8% annually?",model_130.py
+131,simple,"Calculate the compound interest for an initial principal amount of $10000, with an annual interest rate of 5% and the number of times interest applied per time period is 4 and the time the money is invested for 10 years.",model_131.py
+132,simple,"Calculate the company's return on equity given its net income of $2,000,000, shareholder's equity of $10,000,000, and dividends paid of $200,000.",model_132.py
+133,simple,Predict the future value of a $5000 investment with an annual interest rate of 5% in 3 years with monthly compounding.,model_133.py
+134,simple,Predict the total expected profit of stocks XYZ in 5 years given I have invested $5000 and annual return rate is 7%.,model_134.py
+135,simple,"Calculate the return on investment for a stock bought at $20, sold at $25, with a dividend of $2.",model_135.py
+136,simple,Find the compound interest for an investment of $10000 with an annual interest rate of 5% compounded monthly for 5 years.,model_136.py
+137,simple,"Calculate the projected return on a $5000 investment in ABC company's stock, if the expected annual growth rate is 6% and the holding period is 5 years.",model_137.py
+138,simple,Calculate the future value of my portfolio if I invest $5000 in stock 'X' with an expected annual return of 5% for 7 years.,model_138.py
+139,simple,"What is the estimated return on a mutual fund, given that it has a yearly yield of 5%, an investment amount of $2000 and a time period of 3 years?",model_139.py
+140,simple,"Calculate the Compound Annual Growth Rate (CAGR) for an initial investment of $2000, final value of $3000 in a period of 4 years.",model_140.py
+141,simple,Get current Gold price per ounce.,model_141.py
+142,simple,"Find the NASDAQ stock price for the company Amazon at closing March.11, 2022.",model_142.py
+143,simple,'Get stock price of Apple for the last 5 days in NASDAQ.',model_143.py
+144,simple,Find the market performance of the S&P 500 and the Dow Jones over the past 5 days.,model_144.py
+145,simple,"Calculate the compounded interest for an initial principal of $5000, annual interest rate of 5%, and compounding period of 10 years.",model_145.py
+146,simple,What's the price of Amazon stock for the last 3 days?,model_146.py
+147,simple,Retrieve stock prices of Microsoft and Google for the last 2 weeks.,model_147.py
+148,simple,"Calculate the future value of an investment with an annual rate of return of 8%, an initial investment of $20000, and a time frame of 5 years.",model_148.py
+149,simple,What's the current stock price of Apple and Microsoft?,model_149.py
+150,simple,"Calculate the return of investment of a bank's savings account with a deposit of $1000, annual interest rate of 3% for 1 year.",model_150.py
+151,simple,Find the highest grossing banks in the U.S for year 2020.,model_151.py
+152,simple,Calculate the balance of a mutual fund given a total investment of $50000 with a 5% annual yield after 3 years.,model_152.py
+153,simple,"Calculate the compounded interest on an initial deposit of $5000 at an annual interest rate of 3% for 5 years, compounded quarterly.",model_153.py
+154,simple,Calculate the Future Value of a $5000 investment made today for a term of 10 years at an annual interest rate of 5%,model_154.py
+155,simple,Calculate the future value of my investment of $1000 with an annual interest rate of 5% over 2 years.,model_155.py
+156,simple,Look up details of a felony crime record for case number CA123456 in San Diego County,model_156.py
+157,simple,Find out if an individual John Doe with a birthday 01-01-1980 has any prior felony convictions in California.,model_157.py
+158,simple,Find the information of criminal cases of Mr. X in New York between 2012 and 2015.,model_158.py
+159,simple,Give me the details of Criminal Law Amendment Act of 2013.,model_159.py
+160,simple,Who was the victim in the case docket numbered 2022/AL2562 in California?,model_160.py
+161,simple,Find out the possible punishments for the crime of theft in California in detail.,model_161.py
+162,simple,Generate a customized law contract between John and Alice for rental agreement in California.,model_162.py
+163,simple,"Provide me with the property records of my house located at 123 main street, with parcel number 1234567890 in Santa Clara county. Include owners information in the response.",model_163.py
+164,simple,Provide me the official crime rate of violent crime in San Francisco in 2020.,model_164.py
+165,simple,"Retrieve cases from 2020 about theft crimes in Los Angeles, California",model_165.py
+166,simple,Find a lawyer specializing in divorce cases and charge fee less than 400 dollars per hour in Chicago.,model_166.py
+167,simple,Retrieve the details of a Supreme Court case titled 'Roe v. Wade'.Include dissent information.,model_167.py
+168,simple,"Search for ongoing lawsuits related to the company 'Google' filed after January 1, 2021 in California.",model_168.py
+169,simple,Find the details of the court case identified by docket number 123456 in Texas. Don't return full text,model_169.py
+170,simple,Find a historical law case about fraud from 2010 to 2015.,model_170.py
+171,simple,Fetch details of a law case with number 43403 in New York court for year 2018.,model_171.py
+172,simple,How to obtain the detailed case information of the R vs Adams legal case?,model_172.py
+173,simple,Find state law cases related to land disputes in the past 5 years from 2015 to 2021 in New York.,model_173.py
+174,simple,Get me the top 10 landmark cases in constitutional law in China.,model_174.py
+175,simple,How many months of experience a Lawyer John Doe has on handling Bankruptcy cases.,model_175.py
+176,simple,Find details of patent lawsuits involving the company 'Apple Inc.' from the year 2010.,model_176.py
+177,simple,Find all Patent lawsuit cases of Facebook in 2018.,model_177.py
+178,simple,Find details about lawsuit case numbered 'LAX2019080202' in the Los Angeles court.,model_178.py
+179,simple,Find the latest court case between Apple and Samsung occured in USA.,model_179.py
+180,simple,Find the lawsuits filed against the company Google in California in the year 2020.,model_180.py
+181,simple,Get details of a lawsuit with case number '123456-ABC' filed in Los Angeles court with verdict,model_181.py
+182,simple,Retrieve all the lawsuit details for case number XYZ123,model_182.py
+183,simple,Search for current lawsuits filed against Apple in Santa Clara County.,model_183.py
+184,simple,I need the details of the lawsuit case with case ID of 1234 and verify if it's already closed.,model_184.py
+185,simple,What will be the weather in New York in the next 72 hours including the precipitation?,model_185.py
+186,simple,"What is the temperature in celsius and humidity level of Tokyo, Japan right now?",model_186.py
+187,simple,"What's the current temperature and humidity in Seattle, Washington?",model_187.py
+188,simple,"What is the humidity level in Miami, Florida in the upcoming 7 days?",model_188.py
+189,simple,"Get weather information for New York, USA for the next 3 days with details.",model_189.py
+190,simple,What's the elevation and area of Yellowstone National Park?,model_190.py
+191,simple,"Find me the 5 tallest mountains within 50km of Denver, Colorado.",model_191.py
+192,simple,"Calculate the slope gradient in degree between two points on a landscape with coordinates (40.7128, -74.0060) and (34.0522, -118.2437).",model_192.py
+193,simple,Find the best local nurseries in Toronto with a good variety of annual plants.,model_193.py
+194,simple,What are the top three plants suitable for a hill slope in terms of erosion prevention?,model_194.py
+195,simple,"Calculate the carbon footprint of my lifestyle, assuming I drive 20 miles a day, consume 3 meat meals a week, and produce 500 lbs of trash in a year.",model_195.py
+196,simple,What is the air quality index in London 2022/08/16?,model_196.py
+197,simple,Find the air quality index in San Diego at 12pm.,model_197.py
+198,simple,Calculate the required water daily intake for a person with weight 70 kg.,model_198.py
+199,simple,Find air quality index in San Jose for next three days.,model_199.py
+200,simple,"How much CO2 is produced annually by a gas-fueled car that travels 12,000 miles per year, with fuel efficiency of 25% ?",model_200.py
+201,simple,Estimate the population of pandas in the wild in China.,model_201.py
+202,simple,How many greenhouse gas emissions would I save if I switched to renewable energy sources for 3 months in California?,model_202.py
+203,simple,Can you find me the latest information about air quality index and pollution data for Chicago?,model_203.py
+204,simple,Find restaurants near me within 10 miles that offer Chinese cuisine in Seattle.,model_204.py
+205,simple,Find out the current traffic situation from Boston driving to New York.,model_205.py
+206,simple,Find the nearest park with a tennis court in London.,model_206.py
+207,simple,"Get the shortest driving distance between New York, USA and Miami, USA.",model_207.py
+208,simple,Get me the directions from New York to Los Angeles avoiding highways and toll roads.,model_208.py
+209,simple,"Locate the nearest public library in Boston, Massachusetts with English fiction section and free Wi-Fi.",model_209.py
+210,simple,Get 5 latest news on Bitcoin in US,model_210.py
+211,simple,Send an email to John Doe at john.doe@example.com with the subject 'Meeting' and body 'Let's meet at 10 AM tomorrow'.,model_211.py
+212,simple,Give me detail information about stocks of Apple Inc.,model_212.py
+213,simple,Book a direct flight from San Francisco to London for 2022-04-27 afternoon,model_213.py
+214,simple,Search for upcoming month rock concerts in New York.,model_214.py
+215,simple,Give me a brief on movie 'Interstellar',model_215.py
+216,simple,Analyze the sentiment of a customer review 'I love the food here! It's always fresh and delicious.'.,model_216.py
+217,simple,"Analyze my fMRI data in ~/data/myfMRI.nii from a multi-band sequence, that is smoothed at 6mm with an isotropic voxel size of 2mm.",model_217.py
+218,simple,"Given patient with id 546382, retrieve their brain MRI report with the status 'concluded'.",model_218.py
+219,simple,What are the coordinates of the neuron in a rat's all part of the brain that produces GABA neurotransmitters?,model_219.py
+220,simple,Calculate the neuronal activity based on synaptic input rate of 200 and weight 0.5 and decay rate of 0.1.,model_220.py
+221,simple,What will be the population growth in London over the next five years?,model_221.py
+222,simple,Can you calculate my Body Mass Index (BMI) given my weight is 70 kg and height is 180 cm?,model_222.py
+223,simple,Find social behaviors and patterns in a group size of 50 with extroverted members being 15 and introverted members being 35.,model_223.py
+224,simple,Find the most followed person on twitter who tweets about psychology related to behaviour and group dynamics.,model_224.py
+225,simple,What is the percentage of population preferring digital reading over physical books?,model_225.py
+226,simple,Find the compatibility score in percentage of Aries with Gemini.,model_226.py
+227,simple,Get me strength and weakness traits for ENFJ personality type.,model_227.py
+228,simple,Find three personality traits of people who like jogging.,model_228.py
+229,simple,"What's my Big Five Personality trait scores given that I am efficient, organized, easy going and compassionate?",model_229.py
+230,simple,Who was the King of France in 1510?,model_230.py
+231,simple,Provide key war events in German history from 1871 to 1945.,model_231.py
+232,simple,What was the full name king of England in 1800?,model_232.py
+233,simple,When did the Treaty of Tordesillas take place? Put it in the format of YYYY.,model_233.py
+234,simple,Find important Wars in European history during the 19th century.,model_234.py
+235,simple,When was the signing of the Treaty of Lisbon?,model_235.py
+236,simple,Get start date on the American Civil War.,model_236.py
+237,simple,Get historical GDP data for United States from 1960 to 2000.,model_237.py
+238,simple,Who was the president of the United States during the American Civil War?,model_238.py
+239,simple,Who was the full name of the president of the United States in 1861?,model_239.py
+240,simple,Who was the President of the United States in 1940?,model_240.py
+241,simple,Who was the U.S. president during the Civil War?,model_241.py
+242,simple,Who is the scientist that first proposed the theory of evolution?,model_242.py
+243,simple,Who discovered the neutron? Give me detail information.,model_243.py
+244,simple,What year was the law of universal gravitation published by Isaac Newton?,model_244.py
+245,simple,Who discovered radium?,model_245.py
+246,simple,Who discovered Gravity and what was the method used?,model_246.py
+247,simple,"What was Albert Einstein's contribution to science on March 17, 1915?",model_247.py
+248,simple,Who invented the theory of relativity and in which year?,model_248.py
+249,simple,Tell me more about Christianity and its history till the 14th century,model_249.py
+250,simple,What's the time difference between San Francisco and Sydney?,model_250.py
+251,simple,What is the earliest reference of Jesus Christ in history from historical record?,model_251.py
+252,simple,Find ten major historical events related to Christianity in the 16th century sort by importance.,model_252.py
+253,simple,Retrieve the full historyof Buddhism,model_253.py
+254,simple,Retrieve the historic dates and facts related to Christianity between year 300 and 400.,model_254.py
+255,simple,Get the biography and main contributions of Pope Innocent III.,model_255.py
+256,simple,Generate an image of a circle with a radius of 50 pixels and color 'Red'.,model_256.py
+257,simple,Can you help me identify the basic RGB value of Sea Green color?,model_257.py
+258,simple,Mix yellow and blue colors and adjust the lightness level to 60 percent.,model_258.py
+259,simple,Calculate the total quantity of paint needed to cover a wall of 30 feet by 12 feet using a specific brand that covers 400 square feet per gallon.,model_259.py
+260,simple,"Calculate how many gallons of paint is required to paint a wall with width of 20ft and height of 12ft, assuming 1 gallon covers approximately 350 sq.ft. Don't include window area of 15 sq.ft.",model_260.py
+261,simple,Draw a rectangle with a width of 20 units and height of 10 units in red.,model_261.py
+262,simple,Change my painting's medium to oil and change size to 12x18 with red dominant color.,model_262.py
+263,simple,Find me the most recent art sculpture by James Plensa with detailed description.,model_263.py
+264,simple,Find the size of the sculpture with title 'David' by Michelangelo.,model_264.py
+265,simple,Find me sculptures near Chicago that were made in the 19th century.,model_265.py
+266,simple,What is the value of the sculpture 'The Thinker' by Rodin?,model_266.py
+267,simple,Find the top rated modern sculpture exhibition happening in New York in the upcoming month.,model_267.py
+268,simple,"Find me the sculptures of Michelangelo with material Marble in Rome, Italy.",model_268.py
+269,simple,"Calculate the compound interest of an investment of $10,000 at an interest rate of 5% compounded yearly for 10 years.",model_269.py
+270,simple,Can you give me the height and width of Empire State building in feet?,model_270.py
+271,simple,"What is the structural dynamic analysis of the building with building Id B1004 for 2nd, 3rd and 4th floors?",model_271.py
+272,simple,Calculate the area and circumference of a circle with a radius of 5 units.,model_272.py
+273,simple,Find out the open hours for the Louvre Museum in Paris.,model_273.py
+274,simple,Find information about the opening hours of the Metropolitan Museum of Art.,model_274.py
+275,simple,Get the list of top 5 popular artworks at the Metropolitan Museum of Art. Please sort by popularity.,model_275.py
+276,simple,Get the working hours of Louvre Museum in Paris.,model_276.py
+277,simple,Find the working hours and ticket price of The British Museum for this weekend.,model_277.py
+278,simple,Find me the average price and ratings of piano from Yamaha.,model_278.py
+279,simple,What's the retail price of a Fender American Professional II Stratocaster in Rosewood Finish?,model_279.py
+280,simple,Find an acoustic instrument within my budget of $1000.,model_280.py
+281,simple,"Find the details about the musical instrument 'Violin' from 'Stradivarius' maker, made in the year 1721.",model_281.py
+282,simple,"Find a Yamaha flute with the specifications of open hole, C foot, and silver headjoint available for sale.",model_282.py
+283,simple,Find the price of a used Gibson Les Paul guitar in excellent condition in the Chicago area.,model_283.py
+284,simple,Get information about the pop concerts in New York for next month.,model_284.py
+285,simple,Find me a Rock concert in Chicago with ticket availability under $100.,model_285.py
+286,simple,Get concert details for the artist Beyonce performing in San Diego April 2022.,model_286.py
+287,simple,Find me a classical concert this weekend in Los Angeles with cheap tickets.,model_287.py
+288,simple,Get me two tickets for next Eminem concert in New York City.,model_288.py
+289,simple,Find concerts near me in Seattle that plays jazz music.,model_289.py
+290,simple,What's the timing and location for The Weeknd's concert happening in December?,model_290.py
+291,simple,"Generate a melody in C major scale, starting with the note C4, 16 measures long, at 120 beats per minute.",model_291.py
+292,simple,"Compose a simple piano melody with a progression of C, F and G for 4 measures.",model_292.py
+293,simple,Create a mix track using notes of C major scale and duration of each note being quarter of a second with a duration of 3 minutes.,model_293.py
+294,simple,Generate a major chord progression in C key with four chords.,model_294.py
+295,simple,Find the lyrics to the song 'Bohemian Rhapsody' by Queen.,model_295.py
+296,simple,Generate a major C scale progression with tempo 80 BPM and duration 4 beats.,model_296.py
+297,simple,"music.theory.chordProgression(progression=['I', 'V', 'vi', 'IV'])",model_297.py
+298,simple,What key signature does C# major have?,model_298.py
+299,simple,What is the musical scale associated with C sharp major?,model_299.py
+300,simple,Calculate the duration between two notes of 440Hz and 880Hz frequency based on harmonic rhythm.,model_300.py
+301,simple,What is the third major chord in C major scale?,model_301.py
+302,simple,Calculate the batting average for a baseball player who has 180 hits and 600 at-bats. Round to 3 decimals.,model_302.py
+303,simple,Get the player stats of Cristiano Ronaldo in the 2019-2020 season,model_303.py
+304,simple,Get point and rebound stats for player 'LeBron James' from last basketball game,model_304.py
+305,simple,Calculate the overall goal and assist of soccer player Messi in La Liga 2020-2021 season,model_305.py
+306,simple,"Find average batting score of a cricketer, Virat Kohli for past 10 matches",model_306.py
+307,simple,"Who won the basketball game between Lakers and Clippers on Jan 28, 2021?",model_307.py
+308,simple,What are the next five matches for Manchester United and who are they playing against in Premier League?,model_308.py
+309,simple,Find me the record of Tom Brady in the 2020 NFL season.,model_309.py
+310,simple,What are the career stats of basketball player LeBron James?,model_310.py
+311,simple,Find me the detailed profile of basketball player Lebron James,model_311.py
+312,simple,What are the statistics of Ronaldo's matches in 2021?,model_312.py
+313,simple,What's the total worth in euro of Messi according to latest data?,model_313.py
+314,simple,Find all the major achievements of the footballer Lionel Messi.,model_314.py
+315,simple,Get the NBA team's ranking with the best defence in the 2021 season.,model_315.py
+316,simple,"Find the current world rank of a Tennis player, Serena Williams.",model_316.py
+317,simple,Find the ranking of LA Lakers in the NBA 2021 regular season.,model_317.py
+318,simple,What is the FIFA ranking of Germany's men soccer team for the year 2021?,model_318.py
+319,simple,What is the ranking of Manchester United in Premier League?,model_319.py
+320,simple,"Fetch the basketball league standings, where Golden State Warriors stand in current 2022-2023 season with details",model_320.py
+321,simple,What's the ranking of Barcelona in the 2021 La Liga season?,model_321.py
+322,simple,Get the current ranking for Liverpool Football Club in the Premier League.,model_322.py
+323,simple,Who is ranked as the top player in woman tennis?,model_323.py
+324,simple,Find the score of last game for Los Angeles Lakers including its opponent name.,model_324.py
+325,simple,Who won the last match between Chicago Bulls and Los Angeles Lakers?,model_325.py
+326,simple,Get the latest game score and statistics for Los Angeles Lakers in NBA.,model_326.py
+327,simple,Give me the schedule of Manchester United for the next 6 games in Premier League.,model_327.py
+328,simple,Find the rating and player count of the board game 'Ticket to Ride'.,model_328.py
+329,simple,Calculate the odds of rolling a 7 with two dice in the board game Monopoly.,model_329.py
+330,simple,What's the average review rating and the age range for the board game 'Catan'?,model_330.py
+331,simple,Find the top chess players in New York with a rating above 2300.,model_331.py
+332,simple,What's the chess classical rating of Magnus Carlsen?,model_332.py
+333,simple,"Find the high and low temperatures, humidity, and precipitation for London, United Kingdom for the next 3 days.",model_333.py
+334,simple,"Check who is the winner in a game of blackjack given player having A and 10, dealer having 10 and 9. The Ace is considered 1.",model_334.py
+335,simple,Find a Card of rank 'Queen' and suit 'Hearts' in the deck.,model_335.py
+336,simple,"Shuffle a deck of cards, and draw 3 cards from the top.",model_336.py
+337,simple,"In a texas holdem game, Who won in the poker game with players Alex, Sam, Robert and Steve given the cards Alex':['A of spades', 'K of spades'], 'Sam': ['2 of diamonds', '3 of clubs'], 'Robert': ['Q of hearts', '10 of hearts'], 'Steve': ['4 of spades', '5 of spades']?",model_337.py
+338,simple,What is the probability of drawing a heart card from a deck of 52 cards?,model_338.py
+339,simple,What is the probability of getting a full house in poker?,model_339.py
+340,simple,"Determine the winner in a Poker game with John having a Hand of 8♥, 10♥, J♥, Q♥, K♥ and Mike having 9♠, J♠, 10♠, Q♠, K♠.",model_340.py
+341,simple,What are the odds of drawing a heart card from a deck without joker?,model_341.py
+342,simple,Find all multi-player games released in 2019 with an ESRB rating of 'Everyone',model_342.py
+343,simple,Fetch player statistics of 'Zelda' on Switch for user 'Sam'.,model_343.py
+344,simple,What's the power rating for the Weapon 'Guardian Sword+' in the game 'Legend of Zelda: Breath of the Wild'?,model_344.py
+345,simple,Find the value of a vintage Super Mario Bros. game from 1985 like new.,model_345.py
+346,simple,Get all collectable items from the game 'Animal Crossing: New Horizons' during the Spring season.,model_346.py
+347,simple,Get me the details of the last game played by Liverpool F.C. Include its statistics.,model_347.py
+348,simple,"Create a new player profile for the game with name 'StarPlayer' and character class 'Mage', set the starting level to 5.",model_348.py
+349,simple,Find the highest score achieved by any player in the online game 'Overwatch' on PC globally.,model_349.py
+350,simple,Get the highest scoring player of game 'Valorant' in 2022 season.,model_350.py
+351,simple,Find me a multiplayer game with rating above 4.5 and compatible with Windows 10.,model_351.py
+352,simple,Get the average user score for the game 'The Legend of Zelda: Breath of the Wild' from GameSpot.,model_352.py
+353,simple,What are some gluten-free recipes for dinner?,model_353.py
+354,simple,Find a vegan soup recipe that takes under 30 minutes to make.,model_354.py
+355,simple,How many calories in the Beef Lasagna Recipe from Foodnetwork.com?,model_355.py
+356,simple,"Find me a recipe that serves 2 people, is vegan, and takes under 30 minutes to prepare.",model_356.py
+357,simple,Get the recipe for vegan chocolate cake including the steps for preparation.,model_357.py
+358,simple,Find a gluten-free cookie recipe that takes less than 30 minutes to prepare.,model_358.py
+359,simple,Give me a recipe for a vegetarian pasta with cheese for 2 servings.,model_359.py
+360,simple,Find a recipe for pasta carbonara which contains only less than 500 calories.,model_360.py
+361,simple,Find Italian restaurants near New York city that serves gluten-free options.,model_361.py
+362,simple,What are the top five sushi restaurants with high reviews i.e. above 4/5 in Tokyo?,model_362.py
+363,simple,Find the closest sushi restaurant with a patio in Boston.,model_363.py
+364,simple,Can I find an Italian restaurant with Gluten-free options near Brooklyn?,model_364.py
+365,simple,How many ounces in 2 pounds of butter?,model_365.py
+366,simple,How many teaspoons are in 2 tablespoons for accurate measurement in my recipe?,model_366.py
+367,simple,Find me a vegan recipe for brownies which prep time is under 30 minutes.,model_367.py
+368,simple,How much time will it take to cook a roast chicken of 1.5 kg?,model_368.py
+369,simple,Find a grocery store near me with organic fruits and vegetables in Houston.,model_369.py
+370,simple,Order three bottles of olive oil and a five pound bag of rice from Safeway in Palo Alto.,model_370.py
+371,simple,Check the price of tomatoes and lettuce at the Whole Foods in Los Angeles.,model_371.py
+372,simple,Find the top five organic bananas brands on the basis of rating from Whole Foods store.,model_372.py
+373,simple,"I want to buy apples, rice, and 12 pack of bottled water from a Walmart near San Jose. Show me the product information and stock availability.",model_373.py
+374,simple,"Check the amount of protein, calories and carbs in an avocado from Walmart.",model_374.py
+375,simple,Check the total price for three pumpkins and two dozen eggs at Walmart.,model_375.py
+376,simple,"What time is it currently in London, UK in 24 hour format?",model_376.py
+377,simple,"What is the current time in Sydney, Australia?",model_377.py
+378,simple,Convert time 3pm from New York time zone to London time zone.,model_378.py
+379,simple,"What's the current time in Sydney, Australia?",model_379.py
+380,simple,"Book a single room at a pet friendly hotel near Manhattan, New York for 3 nights starting from March 10th, 2023.",model_380.py
+381,simple,Check if any Hilton Hotel is available for two adults in Paris from April 4th to April 8th?,model_381.py
+382,simple,"Book a single room for two nights at the Hilton Hotel in Chicago, starting from 10th December 2022.",model_382.py
+383,simple,I would like to book a single room for two nights at The Plaza hotel.,model_383.py
+384,simple,"Book a hotel room for two adults and one child in Paris, France from July 10, 2022 to July 20, 2022.",model_384.py
+385,simple,"Book a hotel room with king size bed in Los Angeles for 2 nights starting from 15th October,2023.",model_385.py
+386,simple,"Book a luxury room in Hotel Paradise, Las Vegas, with a city view for 3 days starting from May 12, 2022.",model_386.py
+387,simple,Book a hotel room at the Plaza Hotel in New York for 3 nights starting from 1st June 2022,model_387.py
+388,simple,How many Canadian dollars can I get for 500 US dollars?,model_388.py
+389,simple,Calculate the current cost in British Pounds if I need to convert 200 US dollars.,model_389.py
+390,simple,Convert 150 Euros to Canadian dollars.,model_390.py
+391,simple,Get the exchange rate from British pounds to Japanese yen with the fee 0.02 included.,model_391.py
+392,simple,Get me the latest exchange rate from British Pounds to Japanese Yen.,model_392.py
+393,simple,How much will 20000 Japanese Yen be in United States Dollar?,model_393.py
+394,simple,Get me the travel distance and duration from the Eiffel Tower to the Louvre Museum,model_394.py
+395,simple,Find the nearest parking lot within 2 miles of Central Park in New York.,model_395.py
+396,simple,"Find a hospital within 5 km radius around Denver, Colorado with pediatrics department.",model_396.py
+397,simple,"Find the distance between New York and Boston, accounting for terrain.",model_397.py
+398,simple,What are the opening hours of the Metropolitan Museum of Art on Saturday?,model_398.py
+399,simple,Find me the best Italian restaurants in New York City with average customer ratings of more than 4 and accepts credit cards.,model_399.py
+0,java,"How can I initialize the GIS geometry presentation in a user interface, providing a specific result set controller `mapController` and a composite UI element `mapArea` to display the GIS data?",model_000.py
+1,java,"How can I generate SQL completion proposals for a table named 'Customers' in a database, considering that I prefer using short names and the additional parameters include a limit of '50' and a schema filter set to 'public'?",model_001.py
+2,java,"How can I generate the full SQL creation script with a header for a Firebird database view named 'EmployeeView', using a progress monitor `dbMonitor` and the original source 'SELECT * FROM Employee WHERE status = 'active''?",model_002.py
+3,java,How can I resolve a tablespace reference named 'USERSPACE1' in a DB2 database using a data source object `db2DataSource` and a progress monitor `dbMonitor`?,model_003.py
+4,java,How can I prepare a JDBC statement for a DB2 view named 'EmployeeView' within the schema 'HR' using an active JDBC session object `jdbcSession`?,model_004.py
+5,java,"How can I initialize a plain text presentation for a result set controller named 'dataController' within a parent composite UI element 'compositeParent', ensuring that the text area is read-only and supports multi-line input, horizontal and vertical scrolling?",model_005.py
+6,java,"How can I update the data in a spreadsheet view within a database application, ensuring that metadata is refreshed, existing data is appended, and the current state is preserved?",model_006.py
+7,java,"How do I copy an NIO resource to a new path '/backup/data.txt' on the filesystem, ensuring that the copy operation overwrites any existing file at the destination, and track the progress using a progress monitor `progressTracker`?",model_007.py
+8,java,"How can I update the contents of a file in the non-blocking file system with an input stream `fileStream`, ensuring that the operation is forced and history is not kept, while monitoring the progress with `progressMonitor`?",model_008.py
+9,java,"How can I serialize a `MultiPoint` object with 5 points (1,2) (3,4) (5,6), (7,8) (9,10) into a ByteBuffer using 'XyzmMode.XYZ' for spatial data storage in a HANA database?",model_009.py
+10,java,How can I update the launcher information in the JNI Bridge with the launcher path '/usr/local/bin/dbeaver' and the launcher name 'DBeaverLauncher'?,model_010.py
+11,java,What is the value of the 'EnableExtensions' property in the Windows registry `WinReg` object under the HKEY_LOCAL_MACHINE root when checking the system policies for the DBeaver application?,model_011.py
+12,java,How do I change the current schema to 'AnalyticsDB' in the Exasol execution context while monitoring the progress with a monitor object named 'progressMonitor'?,model_012.py
+13,java,How do I prepare a JDBC statement to retrieve the privilege names and grantor names for system privileges of a specific Altibase grantee named 'JohnDoe' in a `JDBC_session`?,model_013.py
+14,java,"In the SmartRefreshLayout library, how can I trigger the finish event for a 'FunGame' header with a `gameLayout` object, indicating that the refresh was successful?",model_014.py
+15,java,How do I decode a 9-patch image from an input stream `imageInputStream` and write the decoded PNG image to an output stream `imageOutputStream`?,model_015.py
+16,java,How can I create an `InvokePolymorphicNode` for a given instruction data `instructionData` that represents a range invocation in a Java decompiler?,model_016.py
+17,java,How can I attach generic type information to a constructor invocation instruction `newConstructorInsn` within a method `initMethod` in a Java decompiler analysis tool?,model_017.py
+18,java,How can I obtain the third page of role counts with a page size of 20 when using the SysRoleController's method for querying role counts in a system management application?,model_018.py
+19,java,"How can I display the personal information page for a user in a web application, if I have a model object `webModel` and an HTTP request `userRequest` with the parameter 'username' set to 'john_doe'?",model_019.py
+20,java,How can I update the HBase mapping configuration for a specific file named 'user-mapping.yml' with a new configuration object `newMappingConfig` that does not change the outer adapter key?,model_020.py
+21,java,"How can I handle an exception event `ioExceptionEvent` that occurred in the channel context `nettyChannelContext` during a network communication session, and ensure the channel is closed after logging the error with the message 'something goes wrong with channel'?",model_021.py
+22,java,"How can I update the new status to 2 for a list of product IDs [101, 202, 303] in the product management system?",model_022.py
+23,java,"How can I obtain a list of new home products that contain 'LED TV' in their product name, have a recommendation status of 1, and want to retrieve the third page of results with 20 items per page?",model_023.py
+24,java,"How can I change the visibility of product categories with IDs 101, 102, and 103 to hidden in the e-commerce platform's admin panel?",model_024.py
+25,java,How can I update the sort order of a recommended subject with ID 42 to a new sort value 5 using the controller responsible for SMS home recommendations?,model_025.py
+26,java,"How do I create a callable statement for executing a stored procedure `CALL totalSales(?)` with a result set that is scroll insensitive, read only, and has a close cursors at commit holdability, using a proxy connection object `proxyConn`?",model_026.py
+27,java,"What are the indices of the two numbers in the array [2, 7, 11, 15] that add up to the target sum of 9?",model_027.py
+28,java,"How can I create a scheduled executor service that periodically updates Elasticsearch credentials from a file named 'es_credentials.properties' every 30 seconds, using the basic credentials provided in the variable `basicAuthCredentials`?",model_028.py
+29,java,How can I test that the 'zipkin.collector.activemq.concurrency' property with a value of '10' is correctly applied to the ActiveMQCollector.Builder's concurrency setting when configuring a Zipkin server?,model_029.py
+30,java,"How can I asynchronously store the value '42' with the key 'answer' in a Redisson cache, only if the key does not already exist, and obtain a CompletableFuture that will complete with an Optional containing the previous value?",model_030.py
+31,java,How can I obtain a reactive queue with the name 'taskQueue' using a custom serialization codec `jsonCodec` in a reactive programming model with Redisson?,model_031.py
+32,java,"How can I asynchronously attempt to acquire a permit from a Redisson expirable semaphore with a wait time of 5 seconds, a lease time of 2 minutes, and using the TimeUnit of SECONDS?",model_032.py
+33,java,How can I asynchronously store the value 'John Doe' with the key 'employee:1234' in a Redisson map cache and ensure it's processed correctly?,model_033.py
+34,java,"How can I schedule a cleanup task to run after 5 minutes using a timer in a service manager, considering the task is represented by the `cleanupTask` TimerTask object?",model_034.py
+35,java,How can I perform a bitwise AND operation on Redis keys 'user:online:today' and 'user:online:yesterday' and store the result in the key 'user:online:both' using Redisson?,model_035.py
+36,java,"How can I decode a list of alternating key-value objects into a list of map entries for state processing, given the list `['userID', 42, 'username', 'johndoe', 'isActive', true]` and a state object `processingState`?",model_036.py
+37,java,How can I process a markup text `buildOutput` for a specific build context `jenkinsBuild` to apply console annotations in a Jenkins environment?,model_037.py
+38,java,"How can I create a stubbed source map for a nested document structure in Elasticsearch, if I have a filtered source map `docFields` that only includes fields 'name' and 'address'?",model_038.py
+39,java,"How can I append the node ID to the StringBuilder `logBuilder` from a LogEvent `logEvent` in Elasticsearch, assuming the node ID is available?",model_039.py
+40,java,How can I notify the routing nodes observer that a previously unassigned shard `shardA` is now in the initializing state `shardB` in an Elasticsearch cluster?,model_040.py
+41,java,How can I configure an `ObjectParser` instance named `searchHitParser` to parse the inner hits fields for a search result in an Elasticsearch application?,model_041.py
+42,java,How can I create a term query for a field type `usernameField` that searches for the value 'JohnDoe' in a case-insensitive manner within an Elasticsearch test case?,model_042.py
+43,java,"How do I create a spy instance for an Elasticsearch test framework, given the mock creation settings `mockSettings`, a mock handler `mockHandler`, and an object `testObject` to be spied upon?",model_043.py
+44,java,"How can I initialize the DES cipher in Java for encryption with 'DESede' algorithm, 'CBC' mode, and 'PKCS5Padding' padding scheme?",model_044.py
+45,java,How can I validate that the environment variable map `envVariables` for a process builder contains exactly 5 entries?,model_045.py
+46,java,How can I validate that the caller-sensitive method has correctly injected an invoker class for the `CSM` instance `csmInstance` and that the expected class is `MyExpectedClass.class` in a unit test?,model_046.py
+47,java,"How can I output a formatted Java constant declaration for a large Base64 encoded string representing a certificate, with the constant name 'CERTIFICATE' and the value being a 1024-character long Base64 string with 'MIIFdTCCBF2gAwIBAgISESG'?",model_047.py
+48,java,"How can I instantiate a dummy server with SSL encryption for testing purposes, using the IP address `192.168.1.10` and port `8080`, and a pre-configured SSL context named `testSSLContext`?",model_048.py
+49,java,How do I send HTTP response headers with a status code of 404 and a content length of 1500 bytes for a non-HEAD request in an HTTP/2 test exchange?,model_049.py
+50,java,"How can I simulate the deletion of documents matching a query in an Elasticsearch test environment, using a `DeleteByQueryRequest` object named `deleteQueryRequest` and an `ActionListener` named `testListener` that listens for `BulkByScrollResponse`?",model_050.py
+51,java,"How can I execute the master operation to gather the usage statistics of the Cross-Cluster Replication (CCR) feature in Elasticsearch, including the number of follower indices and auto-follow patterns, using a given `usageRequest` and a `clusterState`, and handle the results using an `actionListener`?",model_051.py
+52,java,"In a Java XML processing context, how can I obtain a list of all child elements of type `Element` from a `Node` representing a SAML assertion `SAMLAssertionNode`?",model_052.py
+53,java,How can I create a predicate that determines if a `Join` object represents a full master node with a state older than the local node's accepted term of 42 and accepted version of 7?,model_053.py
+54,java,"How can I initiate a shard operation on a searchable snapshot for a specific request `snapshotRequest`, shard routing `shardRouteInfo`, and task `snapshotTask`, and handle the result asynchronously using the listener `operationListener`?",model_054.py
+55,java,"How can I create a new searchable snapshot directory for a shard with ID 5 in the 'daily-snapshots' repository, using the index settings for the 'logs' index with variable `indexSettingsForLogs`, given that the shard path is '/data/nodes/0/indices/logs/5', the current time in nanoseconds is provided by a supplier 'currentTimeNanos', and the necessary services like 'repositoriesService', 'cacheService', 'threadPool', 'blobStoreCacheService', and 'sharedBlobCacheService' are already initialized?",model_055.py
+56,java,"How do I parse the HTTP response body from an entity `httpResponseEntity` using a specific parser function `responseParser` that handles the content, with a parser configuration `defaultParserConfig` in an Elasticsearch multi-cluster search test?",model_056.py
+57,java,"How can I determine the boolean value of a configuration setting 'enableLogging' which is currently set to 'yes', and if the setting is not specified, default to 'false'?",model_057.py
+58,java,"How can I serialize a map of data `userProfile` with keys 'name', 'age', and 'email' into an XContentBuilder object, ensuring there are no self-references and including start and end object headers in the output?",model_058.py
+59,java,"How can I truncate the translog for a shard located at the path '/var/data/elasticsearch/nodes/0/indices/1shard', using the terminal interface for output and the index directory at '/var/data/elasticsearch/nodes/0/indices/1shard/index'?",model_059.py
+60,java,"In Elasticsearch, how can I build a nested query for a search context `mainSearchContext` and update the inner hits context `hitsContext` for a nested path 'user.address', ensuring that unmapped paths are not ignored?",model_060.py
+61,java,"How can I create an exponential decay scoring function for an Elasticsearch query, targeting the 'timestamp' field, with an origin point of 'now', a scale of '10d', an offset of '2d', and a decay factor of 0.5?",model_061.py
+62,java,"How can I create a range query for a field named 'temperature' that fetches records with values from 20.5 to 30.0 degrees, including the lower bound but excluding the upper bound, using the query type 'FLOAT'?",model_062.py
+63,java,"How can I create a query to find documents in an Elasticsearch index where the 'age' field values are within the range of 30 to 40, inclusive of 30 but exclusive of 40?",model_063.py
+64,java,"How can I create a new field type for a date script in Elasticsearch, with the field name 'timestamp', using a specific date field script factory `dateFactory`, a script `dateScript`, metadata containing the key 'format' with value 'epoch_millis', and handling script errors with the policy 'FAIL'?",model_064.py
+65,java,"How can I generate the XContent with xContentBuilderInstance for a RootObjectMapper that includes default settings for dynamic date formats, dynamic templates, date detection, and numeric detection, while skipping runtime fields?",model_065.py
+66,java,"How can I create a child runtime field for a composite field named 'compositeField1' in Elasticsearch, using the parser context 'mappingParserContext', with the parent script factory 'compositeScriptFactory' and handling script errors with 'onScriptError.IGNORE'?",model_066.py
+67,java,"How do I generate a DMG setup script for an application named 'PhotoEditor' located at '/Applications/PhotoEditor.app', with a custom background image and ensuring the script reflects the correct volume URL and installation directory when creating a macOS package using jpackage?",model_067.py
+68,java,"How do I ensure that the application image directory exists and has a valid name when preparing parameters for creating a macOS installer package, given that the application image path is '/Applications/MyApp.app' and the application name is 'MyApp'?",model_068.py
+69,java,"How can I ensure that the signs of the BigDecimal elements in the array `durations` are aligned from index 2 to index 5, considering that the elements represent different units of time in a duration object?",model_069.py
+70,java,"How do I signal the end of an XML element with the qualified name `{namespaceURI='http://www.example.com', localPart='item', prefix='ex'}` and augmentation information `augmentations` in an XML processing application that uses namespaces?",model_070.py
+71,java,"How can I switch the execution from coroutine with ID 5 to coroutine with ID 10, passing an argument 'resultData' to the target coroutine, ensuring that coroutine 10 is available, in a Java XML processing context?",model_071.py
+72,java,How can I append a substring of characters from a character array `textBuffer` starting at index 5 with a length of 10 characters to a text stream while handling XML serialization?,model_072.py
+73,java,"How can I retrieve the encoding information for UTF-8 in a Java application, allowing the use of Java encoding names?",model_073.py
+74,java,"How do I handle surrogate pairs in XML serialization, specifically for a high surrogate value of 55357 and a low surrogate value of 56832, when the content is not within a CDATA section?",model_074.py
+75,java,How can I determine if the system property 'enableXmlSecurityFeature' is set to enable the security feature 'XML_SECURITY' in a Java XML processing environment?,model_075.py
+76,java,How can I execute the step method to update the graphics of an intro animation with a width of 800 pixels and a height of 600 pixels?,model_076.py
+77,java,How can I validate that the user-provided password 'P@ssw0rd!' matches the encrypted password 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' stored in the system for authentication?,model_077.py
+78,java,How can I configure an option parser to require the 'output-format' option unless either the 'quiet' or 'verbose' options are provided in a command-line application?,model_078.py
+79,java,"How can I obtain an InputSource for the entity with a system identifier 'http://astro.com/stylesheets/toptemplate' when parsing an XML document using a SAX filter factory, with publicid '1234'?",model_079.py
+80,java,What is the compiled pattern for a failure message in a graph constraint system when checking for forbidden nodes in the 'failOn' category for rule number 42?,model_080.py
+81,java,"How can I perform a garbage collection test using the data from the 'humongous-test-case.json', execute a custom garbage collector, verify the object references using the `referenceChecker` function, and analyze the garbage collector log named 'gc-analysis.log' to ensure it contains 'GC pause' but does not contain 'OutOfMemoryError'?",model_081.py
+82,java,"How can I execute the `runIt` method to perform a test that includes creating an object of the tested class, invoking a method with a breakpoint, and logging the output to a `System.out` stream, using the arguments array `testArgs`?",model_082.py
+83,java,"How can I execute a performance test in Java with 500 iterations, outputting the results to a `System.out` stream, and using command-line arguments that specify a wait time of 2 minutes?",model_083.py
+84,java,"How can I validate that the private, package-private, and public inner fields of a `RedefClass` instance `myRedefClass` all have the value 100, and log a complaint if they do not?",model_084.py
+85,java,"How can I execute the `runIt` method to test if a class has been correctly instrumented, using the command-line arguments `['/path/to/classes', '60']` and a `PrintStream` object `logStream`, assuming the original class value is `12345L` and the new expected value after instrumentation is `54321L`?",model_085.py
+86,java,"In a Java debugging test environment, how can I execute the `runThis` method with a specific set of command-line arguments, such as `['-v', '--no-strict']`, and direct the output to a `PrintStream` object named `debugOutput`?",model_086.py
+87,java,How do I create a VMDeathRequest with a suspend policy of EVENT_THREAD and a property 'testProperty' set to 'deathEvent001' in a Java debugging session?,model_087.py
+88,java,"How can I create a MethodEntryRequest for a specific thread `mainThread`, class `com.example.MainClass`, with a suspend policy of `EventRequest.SUSPEND_ALL`, and a custom property `testProperty` in a JDI test environment?",model_088.py
+89,java,"How can I execute the test runner `runThis` with arguments to set the wait time to 2 minutes and output the logs to a specific print stream `testLogStream`, considering the debuggee name is 'TestDebuggee'?",model_089.py
+90,java,"How can I execute the test that checks for source paths in a debug environment, using the arguments array `['-v', '-p']` and directing the output to a `System.out` stream?",model_090.py
+91,java,"How can I execute the 'runIt' method to process command-line arguments for a debug session, and log the output to a specific PrintStream, using the arguments array ['suspend', 'log'] and a PrintStream variable named 'debugLog'?",model_091.py
+92,java,How can I locate the absolute path to the class file for 'com.example.MyClass' if the class path includes the directories '/usr/local/classes' and '/home/user/java/libs'?,model_092.py
+93,java,"How do I execute the jar agent with the options 'trace' and 'log' for instrumentation purposes in a Java application, assuming the instrumentation object is named `appInstrumentation`?",model_093.py
+94,java,Can I determine if the symbol 'getVersion' is readable in the native function interface library associated with the current object?,model_094.py
+95,java,"How can I execute a generic operation on an inlined object with the argument 'HelloWorld' using a specialized node `InlinableNodeInstance`, considering that the operation is bound to a specific node library `NodeLibraryInstance`, using receiver `ExportInlinedObject1Instance`?",model_095.py
+96,java,"How can I generate a CodeTree for a call conversion in a Truffle DSL processor, using a non-static method named 'convertValue', which requires a frame parameter named 'frameVar' and a return value represented by 'returnValueCode'?",model_096.py
+97,java,"How can I generate introspection information for a class `NodeClass` representing a node in a Truffle DSL processor, and specify that the introspection is not inlined?",model_097.py
+98,java,What is the probability of a loop condition being true if it has been evaluated as true 150 times and false 50 times?,model_098.py
+99,java,How can I create a delegate library instance for a custom library type `MyCustomLibrary` using a factory object `myFactory` and an existing delegate instance `existingDelegate` that is not adoptable?,model_099.py
+0,javascript,How can I validate user input in a form field with the ID 'userInputField' after the user has finished typing?,model_000.py
+1,javascript,How can I extract all data entries with the attribute 'data-active' set to true from a list element stored in a variable named 'listElement'?,model_001.py
+2,javascript,"How can I extract the last transaction ID that has a status of 'completed' or 'failed' from a database log located at '/var/log/db.log', using 'utf-8' encoding, and process the information with a processing function?",model_002.py
+3,javascript,How can I send a 'submit' action to a React form with the ID 'loginForm' at a coordinate that is 30% from the top and 60% from the left?,model_003.py
+4,javascript,"How can I verify if an email address 'example@domain.com' conforms to the standard email format, optionally allowing for custom domain validation with 'domain.com'?",model_004.py
+5,javascript,"Given the manageReactState function, which encapsulates state management logic for React applications including shared state handling and performance optimization, write a line of code to initialize this function. Assume you have an initial state object `initialStateObject`, a map of reducer functions `reducersMap`, a logger middleware `loggerMiddleware`, and an application of middleware as enhancers. Also, assume the existence of custom hooks `useStateSelectorHook` and `useDispatchActionHook` for state access and updates within React components. Use applyMiddleware('myMiddleWare') as enhancers.",model_005.py
+6,javascript,How can I create a mapping that assigns each of the first 4 elements from a given array to the category 'transition' for use in CSS transitions?,model_006.py
+7,javascript,"When analyzing JSON data structures, how can I extract all key-value pairs that follow a specific key within a data analysis context object named 'dataAnalysisContext' that initially has a key of 'userId'?",model_007.py
+8,javascript,How can I determine if an email form element referred to as 'emailForm' includes an input with the name attribute 'emailAddress'?,model_008.py
+9,javascript,"How can I analyze a JSON payload `responseData` to verify if it contains a specific key for API response validation, and trigger the corresponding processing logic? You should set keyToCheck to `expectedKey` and `processKeyFunction` as processingCallBack variable",model_009.py
+10,javascript,How can I obtain a collection of records from the 'employeeRecords' database where the 'department' field is 'Sales' using a custom query function in javascript using function variable `getSales`?,model_010.py
+11,javascript,"How can I sort a list of items  myItemList alphabetically and ascendingly, but place items with a status of 'urgent' at the top, assuming the list is an array of objects with 'name' and 'status' properties?",model_011.py
+12,javascript,"How can I implement a 'dataFetch' operation with an API endpoint URL of 'https://api.example.com/data', expecting the response to be a JSON object containing '{""key"": ""value""}', given a request configuration object '{""method"": ""GET""}'?",model_012.py
+13,javascript,"How can I generate a dynamic chart with user-provided data `userDataArray` and apply a scaling factor of 3 for the axis values, linking it to a given dashboard `dashboardElement`?",model_013.py
+14,javascript,"How can I generate a data accessor for a chart component named 'BarChart', with a module name 'chartModule', in a data visualization library `visualizationLibrary`, to fetch and update its 'DataPoints' and 'Labels' through a configuration object named 'config'?",model_014.py
+15,javascript,"How can I generate a new ChartSeries with initial settings including axis labels `axisLabelsArray`, data points `dataPointsArray`, and a default color scheme `defaultColor`, and then integrate it into a specific chart layout `chartLayoutObject`?",model_015.py
+16,javascript,"How do I compute the updated coordinates for a set of vertices (10, 15) and (20, 25) after rotating them around a pivot point (12, 17) by 30 degrees?",model_016.py
+17,javascript,"How can I generate a notification handler for an application `app` that filters messages based on priority level 3, linked to a messaging service 'messagingSvc', and categorized under notification type 2?",model_017.py
+18,javascript,"What is the final velocity for an object in free fall after t seconds, given the gravity g and initial velocity v0?",model_018.py
+19,javascript,"How can I configure a ShaderMaterial for a Three.js scene with specific properties 'materialProps', using textures 'textureList', and within the 3D object 'meshObject'?",model_019.py
+20,javascript,How do I add a 'click' event listener to a button element 'myButton' that triggers a function named 'handleButtonClick' and stops the event from propagating by setting options's stopProgation to true?,model_020.py
+21,javascript,"How can I locate a product in a list of products Product A, Product B, Product C where the 'productId' is equal to 123?",model_021.py
+22,javascript,How can I reset a state property called 'userSession' to 'null' in a React component?,model_022.py
+23,javascript,"How can I generate an authorization token for a user with username 'johndoe', valid for '3600' seconds, issued by 'myapp.net', with a role of 'admin', and encoded with 'HS256' algorithm?",model_023.py
+24,javascript,What is the best way to extract the unique elements from an array and return them sorted in ascending order? For a list of numbers 3 1 2 1 4 3,model_024.py
+25,javascript,How can I track the 'submitForm' action on a 'formHandler' object but only when the form has is required and is valid email validation flags set?,model_025.py
+26,javascript,How do I change the content of a div with the ID 'contentBox' and new content 'Hello World' by invoking the 'update' action?,model_026.py
+27,javascript,"How can I validate an object named 'serviceProvider' to ensure it complies with React's prop-type constraints for a component, specifically by checking that it is not an instance of a Promise, nor contains any methods that could lead to side effects, when passed as a prop to the component 'UserProfile'?",model_027.py
+28,javascript,"How can I retrieve a list of books bookA,bookB, bookC with a specific author J.K. Rowling from a collection called 'library'?",model_028.py
+29,javascript,"How do I schedule a sequence of events where 'setupStage' uses setupStageFunction precedes 'cleanupStage' using cleanStageFunction, ensuring only 3 events can happen at the same time?",model_029.py
+30,javascript,"How can I replace the current text in an editor with 'Hello, World!' starting from position 5 and covering the next 7 characters?",model_030.py
+31,javascript,"How can I process and transform all decorators of a TypeScript declaration node named 'myNode', within a container named 'myContainer'?",model_031.py
+32,javascript,"How can I process a queue of file watch objects named 'fileWatchQueue' with a polling interval of 500 milliseconds, starting from index 0 and handling 10 files at a time to check for modifications?",model_032.py
+33,javascript,"How can I ensure that a new line is emitted before the leading comments of a node with position 42 in a TypeScript file, using a lineMap object named 'tsLineMap' and a writer object named 'tsWriter'?",model_033.py
+34,javascript,How can I apply a function named 'processType' to each type in a union type object named 'unionTypeObj' to analyze its properties?,model_034.py
+35,javascript,"How can I check if two TypeScript declaration objects, one representing a parameter parameterObject and the other a variable declaration variableDeclarationObject, have identical declaration flags considering their optionality, privacy, protection level, asynchronicity, abstractness, readonly status, and static nature?",model_035.py
+36,javascript,How can I update the label of a breaknode in my abstract syntax tree to 'loopEnd' if its current label is not already 'loopEnd'?,model_036.py
+37,javascript,How can I add statements for initializing properties named 'width' and 'height' for a receiver object named 'shape' into an existing statements array named 'shapeStatements'?,model_037.py
+38,javascript,"How can I determine the appropriate directory to monitor for changes, starting from a failed lookup location directory full path '/projects/myApp/node_modules/react', to ensure efficient file watching in a TypeScript project?",model_038.py
+39,javascript,"How can I determine if a synthetic rest parameter should be added to a function declaration that already contains a variadic type in its last parameter, given the declaration object 'funcDeclaration' and its parameters array 'funcParameters'?",model_039.py
+40,javascript,"How can I determine the value to be used for a property named 'maxItems' in a configuration object, given that the default value is 10 and the object value 12 , but the configuration object does not explicitly define 'maxItems'?",model_040.py
+41,javascript,"How can I create a queue with a myWorkerFunction that processes tasks, setting the concurrency level to 5 and without specifying a payload size?",model_041.py
+42,javascript,"How can I create a task queue with a concurrency of 5, where tasks are functions that log a message to the console, and ensure that when the queue becomes saturated, it logs 'Queue is saturated', and when it becomes unsaturated, it logs 'Queue is unsaturated'?",model_042.py
+43,javascript,How can I execute a callback function named 'processResult' that handles an error 'null' and a result value of 'Operation successful'?,model_043.py
+44,javascript,How can I execute a custom callback function named 'processNode' on a specific node named 'currentNode' with a state object 'nodeState' during a tree traversal?,model_044.py
+45,javascript,How can I asynchronously retrieve a map of remote Git references and their corresponding commit hashes for a repository URL 'https://github.com/yarnpkg/berry' from a starting directory '/home/user/projects'?,model_045.py
+46,javascript,"How can I update the property 'version' of an object named 'packageInfo' to '1.2.3', ensuring the update only occurs if the new value differs from the existing one or if 'version' is not already a property of the object?",model_046.py
+47,javascript,How can I calculate the difference in days between the dates '2023-04-01' and '2023-04-15' using a specific time unit of 'days'?,model_047.py
+48,javascript,"How can I update the DOM event listeners from an old virtual node oldVirtualNode to a new one newVirtualNode, considering the new virtual node has a click event that needs to be normalized and updated?",model_048.py
+49,javascript,"How can I determine the appropriate boolean string representation for the 'contenteditable' attribute when the value provided is 'plaintext-only', ensuring it's a valid value for contenteditable?",model_049.py
