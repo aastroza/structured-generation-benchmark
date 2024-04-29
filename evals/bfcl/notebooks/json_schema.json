@@ -1,0 +1,19 @@
+{
+  "title": "convertEnumeratedValue",
+  "type": "object",
+  "description": "This function converts a given key-value pair to a 'true' or 'false' string based on specific conditions. It specifically handles falsy values, the string 'false', and validates the 'contenteditable' attribute's value.",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "The attribute key to be evaluated."
+    },
+    "value": {
+      "type": "string",
+      "description": "The value associated with the key."
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}
