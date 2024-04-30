@@ -17,6 +17,6 @@ class Integrate(BaseModel):
     start_x: int = Field(..., description='The starting x-value to integrate over.')
     end_x: int = Field(..., description='The ending x-value to integrate over.')
     method: Optional[str] = Field(
-        None,
+        'trapezoid',
         description="The method of numerical integration to use. Choices are 'trapezoid' or 'simpson'. Default is 'trapezoid'.",
     )
