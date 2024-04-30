@@ -17,6 +17,6 @@ class MusicGeneratorGenerateMelody(BaseModel):
     )
     length: int = Field(..., description='The number of measures in the melody.')
     tempo: Optional[int] = Field(
-        None,
+        120,
         description='The tempo of the melody, in beats per minute. Optional parameter. If not specified, defaults to 120.',
     )

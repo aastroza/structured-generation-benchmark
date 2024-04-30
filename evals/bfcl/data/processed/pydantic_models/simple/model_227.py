@@ -18,5 +18,5 @@ class Trait(Enum):
 class GetPersonalityTraits(BaseModel):
     type: str = Field(..., description='The personality type.')
     traits: Optional[List[Trait]] = Field(
-        None, description="List of traits to be retrieved, default is ['strengths']."
+        [Trait.strengths], description="List of traits to be retrieved, default is ['strengths']."
     )

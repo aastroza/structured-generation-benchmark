@@ -13,9 +13,9 @@ class GetCrimeRate(BaseModel):
     city: str = Field(..., description='The name of the city.')
     state: str = Field(..., description='The state where the city is located.')
     type: Optional[str] = Field(
-        None, description="Optional. The type of crime. Default is 'violent'"
+        'violent', description="Optional. The type of crime. Default is 'violent'"
     )
     year: Optional[int] = Field(
-        None,
+        2001,
         description='Optional. The year for the crime rate data. Default is year 2001.',
     )

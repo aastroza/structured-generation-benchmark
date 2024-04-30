@@ -25,10 +25,10 @@ class FindExhibition(BaseModel):
         ..., description='The form of art the exhibition is displaying e.g., sculpture.'
     )
     month: Optional[str] = Field(
-        None,
+        'upcoming',
         description='The month of exhibition. Default value will return upcoming events if not specified.',
     )
     user_ratings: Optional[UserRatings] = Field(
-        None,
+        UserRatings.low,
         description="Select exhibitions with user rating threshold. Default is 'low'",
     )

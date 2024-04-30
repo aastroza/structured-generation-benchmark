@@ -13,6 +13,6 @@ class ConcertGetDetails(BaseModel):
     artist: str = Field(..., description="Name of the artist/band who's performing.")
     location: str = Field(..., description='City where the concert is taking place.')
     date: Optional[str] = Field(
-        None,
+        '04-2024',
         description="Date of the concert in 'mm-yyyy' format. Default is the current month if not specified.",
     )

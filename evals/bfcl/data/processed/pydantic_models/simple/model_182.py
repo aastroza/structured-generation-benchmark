@@ -14,10 +14,10 @@ class LawsuitInfo(BaseModel):
         ..., description='The unique identifier of the lawsuit case'
     )
     year: Optional[int] = Field(
-        None,
+        2023,
         description='The year in which the lawsuit case was initiated. Default is latest year if not specified.',
     )
     location: Optional[str] = Field(
-        None,
+        'all',
         description="The location or court jurisdiction where the case was filed. Default is 'all'.",
     )

@@ -15,6 +15,6 @@ class MapRoutingFastestRoute(BaseModel):
     )
     end_location: str = Field(..., description='The destination for the journey.')
     avoid_tolls: Optional[bool] = Field(
-        None,
+        False,
         description='Option to avoid toll roads during the journey. Default is false.',
     )

@@ -28,6 +28,6 @@ class MultiplayerGameFinder(BaseModel):
         description='Desired minimum game rating on a 5.0 scale. This is a float type value.',
     )
     genre: Optional[Genre] = Field(
-        None,
+        Genre.Action,
         description="Desired game genre, e.g. Action, Adventure, Racing. Default is 'Action'.",
     )

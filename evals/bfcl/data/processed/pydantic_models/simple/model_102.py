@@ -13,5 +13,5 @@ class CalculateDistance(BaseModel):
     body1: str = Field(..., description='The first celestial body.')
     body2: str = Field(..., description='The second celestial body.')
     unit: Optional[str] = Field(
-        None, description="The unit of measurement, default is 'km'."
+        'km', description="The unit of measurement, default is 'km'."
     )

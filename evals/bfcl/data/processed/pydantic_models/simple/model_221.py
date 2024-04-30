@@ -17,6 +17,6 @@ class PopulationGrowthEstimate(BaseModel):
         ..., description='Number of years into the future for the estimate.'
     )
     rate: Optional[float] = Field(
-        None,
+        1.2,
         description='Expected annual growth rate in percentage. Default is 1.2. This is a float type value.',
     )

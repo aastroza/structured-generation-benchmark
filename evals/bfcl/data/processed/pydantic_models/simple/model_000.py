@@ -13,5 +13,5 @@ class CalculateTriangleArea(BaseModel):
     base: int = Field(..., description='The base of the triangle.')
     height: int = Field(..., description='The height of the triangle.')
     unit: Optional[str] = Field(
-        None, description="The unit of measure (defaults to 'units' if not specified)"
+        'units', description="The unit of measure (defaults to 'units' if not specified)"
     )

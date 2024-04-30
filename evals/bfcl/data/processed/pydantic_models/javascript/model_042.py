@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 class B(BaseModel):
     e: Optional[str] = Field(
-        None,
+        '',
         description='The initial task or an array of tasks to be added to the queue. Default null',
     )
     t: float = Field(
@@ -19,6 +19,6 @@ class B(BaseModel):
         description='The concurrency level of the task queue. This is a float type value.',
     )
     n: Optional[float] = Field(
-        None,
+        0.0,
         description='The payload size for each task worker. Optional parameter. Default 0.0 This is a float type value.',
     )

@@ -15,6 +15,6 @@ class CalculateMagneticField(BaseModel):
     )
     radius: int = Field(..., description='The radius of the circular loop in meters.')
     permeability: Optional[float] = Field(
-        None,
+        12.57e10,
         description='The magnetic permeability. Default is 12.57e10 (Vacuum Permeability). This is a float type value.',
     )

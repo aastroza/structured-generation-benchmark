@@ -17,5 +17,5 @@ class ModifyPainting(BaseModel):
         ..., description='The medium of the painting, such as oil, acrylic, etc.'
     )
     dominant_color: Optional[str] = Field(
-        None, description="The dominant color of the painting. Default to 'black'."
+        'black', description="The dominant color of the painting. Default to 'black'."
     )

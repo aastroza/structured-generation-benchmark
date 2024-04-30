@@ -14,9 +14,9 @@ class CalculateFinalVelocity(BaseModel):
         ..., description='The height the object is dropped from, in meters.'
     )
     initial_velocity: Optional[int] = Field(
-        None, description='The initial velocity of the object in m/s. Default is zero.'
+        0, description='The initial velocity of the object in m/s. Default is zero.'
     )
     gravity: Optional[float] = Field(
-        None,
+        9.81,
         description="Acceleration due to gravity. Default value is 9.81 m/s^2, earth's gravity. This is a float type value.",
     )

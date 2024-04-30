@@ -13,6 +13,6 @@ class KinematicsFinalVelocityFromDistance(BaseModel):
     acceleration: int = Field(..., description='Acceleration of the object, m/s^2.')
     distance: int = Field(..., description='Distance traveled by the object, m.')
     initial_velocity: Optional[float] = Field(
-        None,
+        0,
         description='Initial velocity of the object. Default is 0, m/s This is a float type value.',
     )

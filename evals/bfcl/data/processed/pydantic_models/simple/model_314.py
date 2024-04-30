@@ -12,10 +12,10 @@ from pydantic import BaseModel, Field
 class SportsCelebrityGetMajorAchievements(BaseModel):
     celebrity_name: str = Field(..., description='Name of the sports celebrity.')
     sports: Optional[str] = Field(
-        None,
+        'Football',
         description='Type of sports the celebrity involved in. Default is Football.',
     )
     team: Optional[str] = Field(
-        None,
+        'all',
         description="Optional. Team where celebrity currently plays. Default is 'all'",
     )

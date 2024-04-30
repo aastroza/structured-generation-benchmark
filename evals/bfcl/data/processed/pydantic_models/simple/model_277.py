@@ -14,6 +14,7 @@ class Information(Enum):
     opening_hours = 'opening_hours'
     ticket_price = 'ticket_price'
     address = 'address'
+    all = 'all'
 
 
 class MuseumInfo(BaseModel):
@@ -23,6 +24,6 @@ class MuseumInfo(BaseModel):
         description="The specific date or date range for which information is needed. It could be specific date such as '2022-12-01' or a date range like 'this weekend', 'next week'. It could also be a recurring time such as 'every Saturday'.",
     )
     information: Optional[List[Information]] = Field(
-        'all',
+        [Information.all],
         description="The type of information needed from the museum. This is optional and defaults to 'all' if not specified.",
     )

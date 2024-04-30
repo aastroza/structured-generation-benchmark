@@ -15,6 +15,6 @@ class CalculateReturnOnEquity(BaseModel):
         ..., description="The company's total shareholder's equity."
     )
     dividends_paid: Optional[int] = Field(
-        None,
+        0,
         description='The total dividends paid by the company. Optional. If not given, default to 0.',
     )

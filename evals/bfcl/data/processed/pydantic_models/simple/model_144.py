@@ -19,6 +19,6 @@ class MarketPerformanceGetData(BaseModel):
         description='Number of days in the past for which the performance data is required.',
     )
     detailed: Optional[bool] = Field(
-        None,
+        False,
         description='Whether to return detailed performance data. If set to true, returns high, low, opening, and closing prices. If false, returns only closing prices. Default is false.',
     )

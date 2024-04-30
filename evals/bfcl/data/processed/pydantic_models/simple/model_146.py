@@ -15,6 +15,6 @@ class StockPrice(BaseModel):
         ..., description='The number of previous days to retrieve data for.'
     )
     data_type: Optional[str] = Field(
-        None,
+        'Close',
         description="The type of price data to retrieve (e.g., 'Open', 'Close', 'High', 'Low'). Default is 'Close'.",
     )

@@ -19,6 +19,6 @@ class SolveQuadratic(BaseModel):
     )
     c: int = Field(..., description='The constant term in the quadratic equation.')
     root_type: Optional[str] = Field(
-        None,
+        'real',
         description="The type of roots to return: 'real' for real roots, 'all' for both real and complex roots. Default value is 'real'.",
     )

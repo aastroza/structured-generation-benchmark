@@ -13,5 +13,5 @@ class GameResultGetWinner(BaseModel):
     teams: List[str] = Field(..., description='List of two teams who played the game.')
     date: str = Field(..., description='The date of the game, formatted as YYYY-MM-DD.')
     venue: Optional[str] = Field(
-        None, description="Optional: The venue of the game. Default is 'home'."
+        'home', description="Optional: The venue of the game. Default is 'home'."
     )

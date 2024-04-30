@@ -19,6 +19,6 @@ class CalculateResonantFrequency(BaseModel):
         description='The capacitance (C) in farads (F). This is a float type value.',
     )
     round_off: Optional[int] = Field(
-        None,
+        2,
         description='Rounding off the result to a certain decimal places, default is 2.',
     )

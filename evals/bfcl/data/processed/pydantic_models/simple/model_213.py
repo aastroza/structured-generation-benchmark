@@ -21,9 +21,9 @@ class FlightBook(BaseModel):
         description='The date of the flight. Accepts standard date format e.g., 2022-04-28.',
     )
     time: Optional[str] = Field(
-        None, description="Preferred time of flight. Default is 'morning'."
+        'morning', description="Preferred time of flight. Default is 'morning'."
     )
     direct_flight: Optional[bool] = Field(
-        None,
+        False,
         description='If set to true, only direct flights will be searched. Default is false.',
     )

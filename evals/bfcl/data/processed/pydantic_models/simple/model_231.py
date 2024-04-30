@@ -28,6 +28,6 @@ class HistoryGetKeyEvents(BaseModel):
         ..., description='End year of the period for which history is queried.'
     )
     event_type: Optional[List[EventTypeEnum]] = Field(
-        None,
+        [EventTypeEnum.War, EventTypeEnum.Revolutions, EventTypeEnum.Diplomacy, EventTypeEnum.Economy],
         description="Types of event. Default to 'all', which all types will be considered.",
     )

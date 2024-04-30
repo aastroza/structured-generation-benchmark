@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class ScienceHistoryGetDiscoveryDetails(BaseModel):
     discovery: str = Field(..., description='The name of the discovery, e.g. Gravity')
     method_used: Optional[str] = Field(
-        None,
+        'default',
         description="The method used for the discovery, default value is 'default' which gives the most accepted method.",
     )

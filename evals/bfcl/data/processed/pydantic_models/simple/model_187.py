@@ -12,10 +12,10 @@ from pydantic import BaseModel, Field
 class GetCurrentWeather(BaseModel):
     location: str = Field(..., description='The city name to get the weather for.')
     include_temperature: Optional[bool] = Field(
-        None,
+        True,
         description='Whether to include the temperature in the result. Default is true.',
     )
     include_humidity: Optional[bool] = Field(
-        None,
+        True,
         description='Whether to include the humidity in the result. Default is true.',
     )

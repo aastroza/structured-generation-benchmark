@@ -16,5 +16,5 @@ class FinanceCalculateFutureValue(BaseModel):
     )
     years: int = Field(..., description='The time frame of the investment in years.')
     contribution: Optional[int] = Field(
-        None, description='Optional: Additional regular contributions. Default is 0.'
+        0, description='Optional: Additional regular contributions. Default is 0.'
     )

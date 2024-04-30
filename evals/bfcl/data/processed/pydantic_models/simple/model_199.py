@@ -14,6 +14,6 @@ class EnvironmentalDataAirQualityIndex(BaseModel):
         ..., description='Name of the city or town to retrieve air quality index for.'
     )
     days: Optional[int] = Field(
-        None,
+        1,
         description='Number of days for which to retrieve data. If not provided, default to today.',
     )

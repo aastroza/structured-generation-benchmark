@@ -20,6 +20,6 @@ class GetLawsuitCases(BaseModel):
     company_name: str = Field(..., description='The name of the company.')
     year: int = Field(..., description='The specific year to search for lawsuit cases.')
     status: Optional[Status] = Field(
-        None,
+        Status.all,
         description="The status of the lawsuit cases to retrieve. If not specified, defaults to 'all'.",
     )

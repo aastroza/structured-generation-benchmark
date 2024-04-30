@@ -13,7 +13,7 @@ class ChartSeriesGenerator(BaseModel):
     labels: List[str] = Field(..., description="The labels for the chart's axis.")
     data: List[str] = Field(..., description='The data points for the series.')
     color: Optional[str] = Field(
-        None, description='The default color for the series. Optional parameter.'
+        '', description='The default color for the series. Optional parameter.'
     )
     chartLayout: Dict[str, Any] = Field(
         ...,

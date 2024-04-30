@@ -16,6 +16,6 @@ class CurrentWeatherCondition(BaseModel):
     )
     country: str = Field(..., description='The country of the city you specified.')
     measurement: Optional[str] = Field(
-        None,
+        'c',
         description="You can specify which unit to display the temperature in, 'c' for Celsius, 'f' for Fahrenheit. Default is 'c'.",
     )

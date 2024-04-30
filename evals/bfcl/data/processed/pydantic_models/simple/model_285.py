@@ -25,5 +25,5 @@ class FindConcert(BaseModel):
     )
     price: int = Field(..., description='Maximum ticket price.')
     genre: Optional[Genre] = Field(
-        None, description="Music genre of the concert. Default to 'Jazz'. "
+        Genre.Jazz, description="Music genre of the concert. Default to 'Jazz'. "
     )

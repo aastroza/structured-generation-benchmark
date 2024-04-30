@@ -18,6 +18,6 @@ class AverageTemperature(BaseModel):
         ..., description='The number of days to get the average temperature for.'
     )
     temp_unit: Optional[str] = Field(
-        None,
+        'Fahrenheit',
         description="The temperature unit ('Celsius' or 'Fahrenheit'). Default is 'Fahrenheit'.",
     )

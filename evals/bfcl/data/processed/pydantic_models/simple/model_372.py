@@ -14,8 +14,8 @@ class WholeFoodsFindTopBrands(BaseModel):
         ..., description='The product for which the top brands should be fetched.'
     )
     number: Optional[int] = Field(
-        None, description='Number of top brands to be fetched. Default is 5'
+        5, description='Number of top brands to be fetched. Default is 5'
     )
     organic: Optional[bool] = Field(
-        None, description='If the product should be organic. Default is false'
+        False, description='If the product should be organic. Default is false'
     )

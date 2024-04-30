@@ -11,13 +11,13 @@ from pydantic import BaseModel, Field
 
 class CalculateFinalSpeed(BaseModel):
     initial_speed: Optional[int] = Field(
-        None,
+        0,
         description='The initial speed of the object in m/s. Default is 0 for an object at rest.',
     )
     time: int = Field(
         ..., description='The time in seconds for which the object is in free fall.'
     )
     gravity: Optional[float] = Field(
-        None,
+        -9.81,
         description='The acceleration due to gravity. Default is -9.81 m/s^2. This is a float type value.',
     )

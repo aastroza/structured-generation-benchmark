@@ -24,6 +24,6 @@ class BoardgameGetInfo(BaseModel):
         ..., description='Game characteristics interested.'
     )
     language: Optional[str] = Field(
-        None,
+        'English',
         description='The preferred language for the game information, default is English',
     )

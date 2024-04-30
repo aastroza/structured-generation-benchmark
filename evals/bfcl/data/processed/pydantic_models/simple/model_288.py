@@ -13,5 +13,5 @@ class ConcertBookingBookTicket(BaseModel):
     artist: str = Field(..., description='The artist you want to book tickets for.')
     city: str = Field(..., description='The city where the concert is.')
     num_tickets: Optional[int] = Field(
-        None, description='Number of tickets required. Default is 1.'
+        1, description='Number of tickets required. Default is 1.'
     )

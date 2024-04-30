@@ -13,6 +13,6 @@ class CalculateClockAngle(BaseModel):
     hours: int = Field(..., description='The hour on the clock face.')
     minutes: int = Field(..., description='The minutes on the clock face.')
     round_to: Optional[int] = Field(
-        None,
+        2,
         description='The number of decimal places to round the result to, default is 2.',
     )

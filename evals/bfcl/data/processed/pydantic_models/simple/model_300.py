@@ -17,6 +17,6 @@ class MusicCalculateNoteDuration(BaseModel):
         ..., description='The frequency of the second note in Hz.'
     )
     tempo: Optional[int] = Field(
-        None,
+        120,
         description='The tempo of the music in beats per minute. Defaults to 120 beats per minute.',
     )

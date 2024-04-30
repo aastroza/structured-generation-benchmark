@@ -12,5 +12,5 @@ from pydantic import BaseModel, Field
 class GetPersonalityTraits(BaseModel):
     hobby: str = Field(..., description='The hobby or activity of interest.')
     trait_count: Optional[int] = Field(
-        None, description='The number of top traits to return, default is 5'
+        5, description='The number of top traits to return, default is 5'
     )

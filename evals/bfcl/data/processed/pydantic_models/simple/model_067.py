@@ -20,5 +20,5 @@ class IdentifyBird(BaseModel):
     color: str = Field(..., description='Color of the bird.')
     habitat: str = Field(..., description='Habitat of the bird.')
     size: Optional[Size] = Field(
-        None, description="Size of the bird. Default is 'small'"
+        Size.small, description="Size of the bird. Default is 'small'"
     )

@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 class CalcAbsolutePressure(BaseModel):
     atm_pressure: Optional[int] = Field(
-        None,
+        1,
         description='The atmospheric pressure in atmospheres (atm). Default is 1 atm if not provided.',
     )
     gauge_pressure: int = Field(

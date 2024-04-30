@@ -21,5 +21,5 @@ class GetTrafficInfo(BaseModel):
     start_location: str = Field(..., description='The starting point of the route.')
     end_location: str = Field(..., description='The destination of the route.')
     mode: Optional[Mode] = Field(
-        None, description="Preferred method of transportation, default to 'driving'."
+        Mode.driving, description="Preferred method of transportation, default to 'driving'."
     )

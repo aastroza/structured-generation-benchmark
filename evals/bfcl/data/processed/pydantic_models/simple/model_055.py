@@ -12,5 +12,5 @@ from pydantic import BaseModel, Field
 class BiologyGetCellInfo(BaseModel):
     cell_type: str = Field(..., description='Type of cell you want information about')
     detailed: Optional[bool] = Field(
-        'false', description='Indicate if you want a detailed description of the cell'
+        False, description='Indicate if you want a detailed description of the cell'
     )

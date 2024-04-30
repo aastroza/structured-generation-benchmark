@@ -16,6 +16,6 @@ class GetSculptureInfo(BaseModel):
         description='Year of the sculpture. This is optional. Default is the most recent year.',
     )
     detail: Optional[bool] = Field(
-        None,
+        False,
         description='If True, it provides detailed description of the sculpture. Defaults to False.',
     )

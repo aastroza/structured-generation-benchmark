@@ -17,6 +17,6 @@ class FindRecipes(BaseModel):
         ..., description="The type of meal, e.g., 'dinner', 'breakfast'."
     )
     ingredients: Optional[List[str]] = Field(
-        None,
+        [],
         description='The preferred ingredients. If left blank, it will default to return general recipes.',
     )

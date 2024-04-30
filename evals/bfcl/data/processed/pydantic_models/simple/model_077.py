@@ -21,5 +21,5 @@ class DietaryPreferenceEnum(Enum):
 class RestaurantFindNearby(BaseModel):
     location: str = Field(..., description='The city and state, e.g. Los Angeles, CA')
     dietary_preference: Optional[List[DietaryPreferenceEnum]] = Field(
-        None, description='Dietary preference. Default is empty list.'
+        [], description='Dietary preference. Default is empty list.'
     )

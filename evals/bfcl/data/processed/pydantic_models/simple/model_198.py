@@ -12,10 +12,10 @@ from pydantic import BaseModel, Field
 class CalculateDailyWaterIntake(BaseModel):
     weight: int = Field(..., description='The weight of the person in kilograms.')
     activity_level: Optional[str] = Field(
-        None,
+        'moderate',
         description="The level of physical activity of the person. Default is 'moderate'.",
     )
     climate: Optional[str] = Field(
-        None,
+        'temperate',
         description="The climate of the area where the person lives. Default is 'temperate'.",
     )

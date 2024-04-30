@@ -17,6 +17,6 @@ class FindRestaurants(BaseModel):
     food_type: str = Field(..., description='The type of food preferred.')
     number: int = Field(..., description='Number of results to return.')
     dietary_requirements: Optional[List[str]] = Field(
-        None,
+        [],
         description='Special dietary requirements, e.g. vegan, gluten-free. Default is empty list.',
     )

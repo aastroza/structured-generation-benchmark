@@ -13,6 +13,6 @@ class SportsRankingGetCurrent(BaseModel):
     team: str = Field(..., description='The name of the team whose ranking is sought.')
     league: str = Field(..., description='The league in which the team participates.')
     season: Optional[str] = Field(
-        None,
+        '2024',
         description='The season for which the ranking is sought. Defaults to the current season if not provided.',
     )

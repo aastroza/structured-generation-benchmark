@@ -12,6 +12,6 @@ class AirQuality(BaseModel):
         ..., description='The city that you want to get the air quality index for.'
     )
     date: str = Field(
-        ...,
+        'today',
         description='The date you want to get the air quality index for. Default is today.',
     )

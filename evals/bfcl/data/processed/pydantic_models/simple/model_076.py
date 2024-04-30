@@ -15,6 +15,6 @@ class PredictionEvolution(BaseModel):
     )
     years: int = Field(..., description='Number of years for the prediction.')
     model: Optional[str] = Field(
-        None,
+        'Darwin',
         description="The model used to make the prediction, options: 'Darwin', 'Lamarck', default is 'Darwin'.",
     )

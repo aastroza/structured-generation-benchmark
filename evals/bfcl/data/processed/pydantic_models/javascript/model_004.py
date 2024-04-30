@@ -15,6 +15,6 @@ class EmailFormatValidator(BaseModel):
         description='The email address to validate against the standard email format.',
     )
     domain: Optional[str] = Field(
-        None,
+        '',
         description='An optional parameter for domain-specific validation. Default is an empty string, which means no custom domain validation.',
     )

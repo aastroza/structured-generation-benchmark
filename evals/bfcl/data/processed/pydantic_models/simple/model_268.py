@@ -13,6 +13,6 @@ class SculptureLocatorFindByArtist(BaseModel):
     artist: str = Field(..., description='Name of the Artist of the sculpture')
     material: str = Field(..., description='Material of the sculpture.')
     location: Optional[str] = Field(
-        None,
+        'all',
         description="The location where you want to find the sculpture. Default is 'all' if not specified.",
     )

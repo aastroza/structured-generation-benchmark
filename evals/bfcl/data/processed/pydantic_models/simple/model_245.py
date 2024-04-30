@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 class DiscovererGet(BaseModel):
     element_name: str = Field(..., description='The name of the element.')
     year: Optional[int] = Field(
-        None,
+        0,
         description='Optional parameter that refers to the year of discovery. It could be helpful in case an element was discovered more than once. Default to 0, which means not use it.',
     )
     first: Optional[bool] = Field(

@@ -17,6 +17,6 @@ class CalculateSpeed(BaseModel):
         ..., description='The time it took for the object to travel in seconds.'
     )
     to_unit: Optional[str] = Field(
-        None,
+        'm/s',
         description='The unit in which the speed should be calculated, default is m/s.',
     )

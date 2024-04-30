@@ -22,5 +22,5 @@ class TravelItineraryGenerator(BaseModel):
     days: int = Field(..., description='Number of days for the trip.')
     daily_budget: int = Field(..., description='The maximum daily budget for the trip.')
     exploration_type: Optional[ExplorationType] = Field(
-        'urban', description='The preferred exploration type.'
+        ExplorationType.urban, description='The preferred exploration type.'
     )

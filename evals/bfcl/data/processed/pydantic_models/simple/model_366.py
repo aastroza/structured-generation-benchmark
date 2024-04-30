@@ -20,6 +20,6 @@ class RecipeUnitConversion(BaseModel):
         description="The unit to convert to. Supports 'teaspoon', 'tablespoon', 'cup', etc.",
     )
     precision: Optional[int] = Field(
-        None,
+        0,
         description='The precision to round the output to, in case of a non-integer result. Optional, default is 0.',
     )

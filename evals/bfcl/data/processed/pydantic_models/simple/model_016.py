@@ -17,6 +17,6 @@ class CalculusDerivative(BaseModel):
         ..., description='The value where the derivative needs to be calculated at.'
     )
     function_variable: Optional[str] = Field(
-        None,
+        'x',
         description="The variable present in the function, for instance x or y, etc. Default is 'x'.",
     )

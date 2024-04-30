@@ -20,7 +20,7 @@ class DietEnum(Enum):
 class RecipeSearch(BaseModel):
     diet: List[DietEnum] = Field(..., description='Specific dietary need.')
     time_limit: Optional[int] = Field(
-        None,
+        60,
         description='The maximum time to prepare the recipe in minutes. Default is 60 minutes.',
     )
     dish: str = Field(

@@ -16,6 +16,6 @@ class SetText(BaseModel):
         description='The starting position for the new text. This is a float type value.',
     )
     length: Optional[float] = Field(
-        None,
+        0.0,
         description='The length of text to replace. Optional parameter. Default 0.0 This is a float type value.',
     )

@@ -27,5 +27,5 @@ class LawsuitSearch(BaseModel):
         description='Location where the lawsuit was filed in the format of full state name.',
     )
     status: Optional[Status] = Field(
-        None, description="The status of the lawsuit. Default is 'ongoing'."
+        Status.ongoing, description="The status of the lawsuit. Default is 'ongoing'."
     )

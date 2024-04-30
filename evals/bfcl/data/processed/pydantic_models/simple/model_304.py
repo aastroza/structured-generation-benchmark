@@ -21,6 +21,6 @@ class PlayerStatsGetlastgame(BaseModel):
     player_name: str = Field(..., description='The name of the basketball player.')
     team: str = Field(..., description='The team that player currently plays for.')
     metrics: Optional[List[Metric]] = Field(
-        None,
+        [Metric.Points, Metric.Rebounds, Metric.Assists, Metric.Blocks],
         description='Specific metrics to retrieve. If no value is specified, all available metrics will be returned by default.',
     )

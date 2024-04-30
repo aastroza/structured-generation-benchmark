@@ -16,5 +16,5 @@ class LawsuitSearch(BaseModel):
         description='The jurisdiction for the lawsuit search for example Alameda county.',
     )
     state: Optional[str] = Field(
-        None, description='The state for the lawsuit search. Default is California.'
+        'California', description='The state for the lawsuit search. Default is California.'
     )

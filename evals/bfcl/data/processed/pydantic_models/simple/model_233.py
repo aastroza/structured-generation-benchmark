@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class EuropeanHistoryGetEventDate(BaseModel):
     event_name: str = Field(..., description='The name of the event.')
     format: Optional[str] = Field(
-        None,
+        'MM-DD-YYYY',
         description="Optional format of the returned date. Default is 'MM-DD-YYYY'.",
     )

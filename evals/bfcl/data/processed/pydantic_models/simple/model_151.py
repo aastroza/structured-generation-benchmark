@@ -13,5 +13,5 @@ class HighestGrossingBanks(BaseModel):
     country: str = Field(..., description='The country to get the data from.')
     year: int = Field(..., description='The year to get the data from.')
     top_n: Optional[int] = Field(
-        None, description='Top n banks in terms of grossing. Default is 5'
+        5, description='Top n banks in terms of grossing. Default is 5'
     )

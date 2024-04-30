@@ -13,6 +13,6 @@ class GeometryAreaTriangle(BaseModel):
     base: int = Field(..., description='The length of the base of the triangle.')
     height: int = Field(..., description='The height of the triangle from the base.')
     unit: Optional[str] = Field(
-        None,
+        'square meters',
         description='The measurement unit for the area. Defaults to square meters.',
     )

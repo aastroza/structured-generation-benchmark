@@ -15,6 +15,6 @@ class ProbabilityOfEvent(BaseModel):
         ..., description='The total number of possible outcomes.'
     )
     format_as_ratio: Optional[bool] = Field(
-        None,
+        False,
         description='When true, formats the output as a ratio instead of a decimal. Default is false.',
     )

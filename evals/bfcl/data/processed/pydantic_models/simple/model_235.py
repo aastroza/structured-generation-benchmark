@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class GetEventDate(BaseModel):
     event: str = Field(..., description='The name of the historical event.')
     location: Optional[str] = Field(
-        None,
+        'global',
         description='Location where the event took place. Default to global if not specified.',
     )

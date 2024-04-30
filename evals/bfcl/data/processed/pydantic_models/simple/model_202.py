@@ -13,5 +13,5 @@ class CalculateEmissionSavings(BaseModel):
     energy_type: str = Field(..., description='Type of the renewable energy source.')
     usage_duration: int = Field(..., description='Usage duration in months.')
     region: Optional[str] = Field(
-        None, description="The region where you use energy. Default is 'Texas'."
+        'Texas', description="The region where you use energy. Default is 'Texas'."
     )

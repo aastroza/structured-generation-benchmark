@@ -21,6 +21,6 @@ class EmployeeFetchData(BaseModel):
     company_name: str = Field(..., description='The name of the company.')
     employee_id: int = Field(..., description='The unique ID of the employee.')
     data_field: Optional[List[DataFieldEnum]] = Field(
-        None,
+        [DataFieldEnum.Personal_Info],
         description="Fields of data to be fetched for the employee (Optional). Default is ['Personal Info']",
     )

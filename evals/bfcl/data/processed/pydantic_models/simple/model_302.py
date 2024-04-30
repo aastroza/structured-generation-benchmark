@@ -13,6 +13,6 @@ class CalculateBattingAverage(BaseModel):
     hits: int = Field(..., description='The number of hits.')
     at_bats: int = Field(..., description='The number of at-bats.')
     decimal_places: Optional[int] = Field(
-        None,
+        3,
         description='The number of decimal places to return in the batting average. Default is 3.',
     )

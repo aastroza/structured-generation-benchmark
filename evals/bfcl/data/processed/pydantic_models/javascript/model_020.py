@@ -17,6 +17,6 @@ class ButtonAddClickHandler(BaseModel):
         ..., description='The function to be called when the button is clicked.'
     )
     options: Optional[Dict[str, Any]] = Field(
-        None,
+        {},
         description='An options object to specify characteristics about the event listener, such as stopping propagation. Optional parameter. Default to be empty dictionary',
     )

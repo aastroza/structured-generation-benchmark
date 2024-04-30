@@ -26,5 +26,5 @@ class CalculateSlopeGradient(BaseModel):
         description='The geographic coordinates for the second point [Latitude, Longitude].',
     )
     unit: Optional[Unit] = Field(
-        None, description="The unit for the slope gradient. Default is 'degree'."
+        Unit.degree, description="The unit for the slope gradient. Default is 'degree'."
     )

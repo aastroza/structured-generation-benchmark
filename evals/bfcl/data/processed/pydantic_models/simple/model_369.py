@@ -22,6 +22,6 @@ class Category(Enum):
 class GroceryStoreFindNearby(BaseModel):
     location: str = Field(..., description='The city and state, e.g. Houston, TX')
     categories: Optional[List[Category]] = Field(
-        None,
+        [Category.Organic, Category.Vegetables, Category.Fruits, Category.Dairy, Category.Seafood, Category.Bakery],
         description='Categories of items to be found in the grocery store. Default is all if not specified.',
     )

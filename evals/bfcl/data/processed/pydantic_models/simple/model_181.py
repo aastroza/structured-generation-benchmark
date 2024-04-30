@@ -15,6 +15,6 @@ class GetLawsuitDetails(BaseModel):
         ..., description='The location of the court where the lawsuit was filed.'
     )
     with_verdict: Optional[bool] = Field(
-        None,
+        False,
         description='Flag to include verdict details if available. Default is False',
     )

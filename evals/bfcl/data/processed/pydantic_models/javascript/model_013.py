@@ -21,6 +21,6 @@ class DynamicChartGenerator(BaseModel):
         ..., description='The dashboard where the chart will be displayed.'
     )
     options: Optional[Dict[str, Any]] = Field(
-        None,
+        {},
         description='Additional configuration options for the chart. Default empty dict',
     )

@@ -18,5 +18,5 @@ class ParkingLotFindNearest(BaseModel):
         description='The maximum distance from the location in miles. Default is 5 miles',
     )
     type: Optional[str] = Field(
-        None, description="The type of parking lot. Default is 'public'."
+        'public', description="The type of parking lot. Default is 'public'."
     )

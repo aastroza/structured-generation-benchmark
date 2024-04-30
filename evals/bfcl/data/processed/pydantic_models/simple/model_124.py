@@ -13,6 +13,6 @@ class TTest(BaseModel):
     dataset_A: List[int] = Field(..., description='Dataset A for comparison.')
     dataset_B: List[int] = Field(..., description='Dataset B for comparison.')
     alpha: Optional[float] = Field(
-        None,
+        0.05,
         description='Significance level for the test. Default is 0.05. This is a float type value.',
     )

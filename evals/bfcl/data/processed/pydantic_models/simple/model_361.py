@@ -13,6 +13,6 @@ class RestaurantFinder(BaseModel):
     city: str = Field(..., description='City where you are looking for the restaurant.')
     cuisine: str = Field(..., description='Type of cuisine you are interested in.')
     diet: Optional[str] = Field(
-        None,
+        'Vegetarian',
         description="Dietary preferences. e.g. 'Vegetarian', 'Gluten-free', etc. Default 'Vegetarian'.",
     )

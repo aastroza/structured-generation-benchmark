@@ -16,6 +16,6 @@ class GetTopCases(BaseModel):
     )
     top_number: int = Field(..., description='The number of top cases to retrieve.')
     country: Optional[str] = Field(
-        None,
+        'United States of America',
         description='The country where the law cases should be retrieved from. Default is United States of America.',
     )

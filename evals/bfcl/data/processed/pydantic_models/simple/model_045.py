@@ -16,6 +16,6 @@ class ThermoCalculateEnergy(BaseModel):
         description="Phase transition. Can be 'melting', 'freezing', 'vaporization', 'condensation'.",
     )
     substance: Optional[str] = Field(
-        None,
+        'water',
         description="The substance which is undergoing phase change, default is 'water'",
     )

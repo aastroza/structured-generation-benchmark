@@ -19,6 +19,6 @@ class GetInstrumentDetails(BaseModel):
     instrument: str = Field(..., description='The name of the instrument.')
     manufacturer: str = Field(..., description='The manufacturer of the instrument.')
     features: Optional[List[Feature]] = Field(
-        None,
+        [Feature.price],
         description="The features to retrieve about the instrument. Default is 'price'",
     )

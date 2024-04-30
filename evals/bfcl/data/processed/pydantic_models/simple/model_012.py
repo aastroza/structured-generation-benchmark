@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class GeometryCircumference(BaseModel):
     radius: int = Field(..., description='The radius of the circle.')
     units: Optional[str] = Field(
-        None,
+        'cm',
         description="Units for the output circumference measurement. Default is 'cm'.",
     )

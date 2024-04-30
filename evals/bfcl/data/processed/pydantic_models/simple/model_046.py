@@ -19,6 +19,6 @@ class CalculateFinalTemperature(BaseModel):
         ..., description='The initial temperature of the second body (Celsius).'
     )
     specific_heat_capacity: Optional[float] = Field(
-        None,
+        4.2,
         description='The specific heat capacity of the bodies in kJ/kg/K. If not provided, will default to that of water at room temperature, which is 4.2 kJ/kg/K. This is a float type value.',
     )

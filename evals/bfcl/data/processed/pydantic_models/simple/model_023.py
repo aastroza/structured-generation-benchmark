@@ -14,6 +14,6 @@ class PrimeFactorize(BaseModel):
         ..., description='The number for which to calculate the prime factorization.'
     )
     return_type: Optional[str] = Field(
-        None,
+        'list',
         description="Determines the format of the returned prime factorization. Can be 'list' for a list of all prime factors or 'dictionary' for a count of each prime factor. Default is 'list'.",
     )

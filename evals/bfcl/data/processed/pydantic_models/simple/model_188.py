@@ -15,6 +15,6 @@ class WeatherHumidityForecast(BaseModel):
     )
     days: int = Field(..., description='Number of days for the forecast.')
     min_humidity: Optional[int] = Field(
-        None,
+        0,
         description='Minimum level of humidity (in percentage) to filter the result. Default is 0.',
     )

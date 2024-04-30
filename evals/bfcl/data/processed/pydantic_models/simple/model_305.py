@@ -22,6 +22,6 @@ class SportsStatsGetPerformance(BaseModel):
     tournament: str = Field(..., description='Name of the soccer tournament.')
     season: str = Field(..., description="Specific season in format 'YYYY-YYYY'.")
     performance_indicator: Optional[List[PerformanceIndicatorEnum]] = Field(
-        None,
+        [PerformanceIndicatorEnum.Goals_Scored, PerformanceIndicatorEnum.Assists_Made, PerformanceIndicatorEnum.Saves_Made, PerformanceIndicatorEnum.Cards_Received],
         description='Array of performance indicators. Use as much as possible. Default to use all if not specified.',
     )

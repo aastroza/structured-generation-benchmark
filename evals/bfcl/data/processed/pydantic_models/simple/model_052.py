@@ -12,4 +12,4 @@ from pydantic import BaseModel, Field
 class CalcHeatCapacity(BaseModel):
     temp: int = Field(..., description='The temperature of the gas in Kelvin.')
     volume: int = Field(..., description='The volume of the gas in m^3.')
-    gas: Optional[str] = Field(None, description="Type of gas, with 'air' as default.")
+    gas: Optional[str] = Field('air', description="Type of gas, with 'air' as default.")

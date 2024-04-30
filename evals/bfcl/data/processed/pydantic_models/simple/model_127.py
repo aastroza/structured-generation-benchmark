@@ -15,5 +15,5 @@ class CalculateNPV(BaseModel):
         ..., description='The discount rate to use. This is a float type value.'
     )
     initial_investment: Optional[int] = Field(
-        None, description='The initial investment. Default is 0 if not specified.'
+        0, description='The initial investment. Default is 0 if not specified.'
     )

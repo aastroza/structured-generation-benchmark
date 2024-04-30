@@ -18,6 +18,6 @@ class CalculateVelocity(BaseModel):
         ..., description='The duration of the journey, typically in hours.'
     )
     unit: Optional[str] = Field(
-        None,
+        'km/h',
         description='Optional parameter. The unit to return the velocity in. If not provided, the default is km/h.',
     )

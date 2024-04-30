@@ -14,6 +14,6 @@ class LightTravelTime(BaseModel):
         ..., description='The distance between the two celestial bodies in light years.'
     )
     speed_of_light: Optional[int] = Field(
-        None,
+        299792458,
         description='The speed of light in vacuum, in m/s. Default value is 299792458 m/s.',
     )

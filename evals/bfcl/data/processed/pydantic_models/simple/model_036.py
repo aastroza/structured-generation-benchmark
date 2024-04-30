@@ -19,5 +19,5 @@ class GetShortestDrivingDistance(BaseModel):
         description='End point of the journey. You should format it as city name like Boston.',
     )
     unit: Optional[str] = Field(
-        None, description="Preferred unit of distance (optional, default is 'km')."
+        'km', description="Preferred unit of distance (optional, default is 'km')."
     )

@@ -10,11 +10,11 @@ from pydantic import BaseModel, Field
 
 
 class Conditions(BaseModel):
-    department: Optional[str] = Field(
-        None, description='The name of the department of students.'
+    department: str = Field(
+        ..., description='The name of the department of students.'
     )
-    school: Optional[str] = Field(
-        None, description='The name of the school students are enrolled in.'
+    school: str = Field(
+        ..., description='The name of the school students are enrolled in.'
     )
 
 
@@ -27,6 +27,6 @@ class DbFetchRecords(BaseModel):
         ..., description='The conditions based on which records are to be fetched.'
     )
     fetch_limit: Optional[int] = Field(
-        None,
+        0,
         description='Limits the number of records to be fetched. Default is 0, which means no limit.',
     )

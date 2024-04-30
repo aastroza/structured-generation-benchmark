@@ -23,6 +23,6 @@ class CalculateElectrostaticPotential(BaseModel):
         description='The distance between the two bodies. This is a float type value.',
     )
     constant: Optional[float] = Field(
-        None,
+        8.99e9,
         description='The value of the electrostatic constant. Default is 8.99e9. This is a float type value.',
     )

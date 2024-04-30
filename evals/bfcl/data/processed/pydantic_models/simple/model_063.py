@@ -13,6 +13,6 @@ class GeneticsCalculateSimilarity(BaseModel):
     species1: str = Field(..., description='The first species to compare.')
     species2: str = Field(..., description='The second species to compare.')
     format: Optional[str] = Field(
-        None,
+        'percentage',
         description='The format of the result (percentage or fraction). Default is percentage.',
     )

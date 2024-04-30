@@ -15,6 +15,6 @@ class SportsMatchSchedule(BaseModel):
         ..., description='The number of upcoming matches you want to get.'
     )
     league: Optional[str] = Field(
-        None,
+        'English Premier League',
         description="The sports league of the team. This is an optional parameter. Default is 'English Premier League'.",
     )

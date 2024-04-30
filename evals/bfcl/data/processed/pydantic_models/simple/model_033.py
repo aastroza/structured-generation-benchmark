@@ -19,6 +19,6 @@ class GetDirections(BaseModel):
     start_location: str = Field(..., description='The starting point of the journey.')
     end_location: str = Field(..., description='The destination point of the journey.')
     route_type: Optional[RouteType] = Field(
-        None,
+        RouteType.fastest,
         description="Type of route to use (e.g., 'fastest', 'scenic'). Default is 'fastest'.",
     )

@@ -11,13 +11,13 @@ from pydantic import BaseModel, Field
 
 class RequestConfig(BaseModel):
     method: Optional[str] = Field(
-        None, description='The HTTP method to be used for the request.'
+        [], description='The HTTP method to be used for the request.'
     )
     headers: Optional[Dict[str, Any]] = Field(
-        None, description='Any headers to be included in the request.'
+        [], description='Any headers to be included in the request.'
     )
     body: Optional[str] = Field(
-        None, description='The request payload, if needed for methods like POST.'
+        [], description='The request payload, if needed for methods like POST.'
     )
 
 

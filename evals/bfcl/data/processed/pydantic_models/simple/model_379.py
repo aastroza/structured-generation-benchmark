@@ -13,5 +13,5 @@ class GetCurrentTime(BaseModel):
     location: str = Field(..., description='The name of the city.')
     country: str = Field(..., description='The name of the country.')
     timezone: Optional[str] = Field(
-        None, description='The optional timezone to get current time. Default '
+        '', description='The optional timezone to get current time. Default '
     )

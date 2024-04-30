@@ -16,5 +16,5 @@ class GameScoreHighest(BaseModel):
         description='The platform where the game is played, e.g. PC, Xbox, Playstation',
     )
     region: Optional[str] = Field(
-        None, description="The geographic region of the player. Defaults to 'Global'"
+        'Global', description="The geographic region of the player. Defaults to 'Global'"
     )

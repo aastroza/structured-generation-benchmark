@@ -15,6 +15,6 @@ class PopulationProjections(BaseModel):
     )
     years: int = Field(..., description='Number of years for the projection.')
     growth_rate: Optional[float] = Field(
-        None,
+        1.2,
         description='Optional parameter to specify the growth rate, in percentage. Default is 1.2. This is a float type value.',
     )

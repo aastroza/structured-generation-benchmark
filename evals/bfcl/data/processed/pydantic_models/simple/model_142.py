@@ -15,6 +15,6 @@ class GetStockPrice(BaseModel):
         ..., description='Date of when to get the stock price. Format: yyyy-mm-dd.'
     )
     exchange: Optional[str] = Field(
-        None,
+        'NASDAQ',
         description="Name of the stock exchange market where the company's stock is listed. Default is 'NASDAQ'",
     )

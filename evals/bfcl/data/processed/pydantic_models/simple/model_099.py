@@ -16,8 +16,8 @@ class PlotSineWave(BaseModel):
     )
     frequency: int = Field(..., description='Frequency of the sine wave in Hz.')
     amplitude: Optional[int] = Field(
-        None, description='Amplitude of the sine wave. Default is 1.'
+        1, description='Amplitude of the sine wave. Default is 1.'
     )
     phase_shift: Optional[int] = Field(
-        None, description='Phase shift of the sine wave in radians. Default is 0.'
+        0, description='Phase shift of the sine wave in radians. Default is 0.'
     )

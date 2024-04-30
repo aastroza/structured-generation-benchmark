@@ -18,6 +18,6 @@ class ReligionHistoryInfo(BaseModel):
         ..., description='The century till which historical details are needed.'
     )
     include_people: Optional[bool] = Field(
-        None,
+        False,
         description='To include influential people related to the religion during that time period, default is False',
     )

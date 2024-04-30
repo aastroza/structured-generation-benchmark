@@ -13,6 +13,6 @@ class RestaurantFindNearby(BaseModel):
     location: str = Field(..., description='The city and state, e.g. Seattle, WA')
     cuisine: str = Field(..., description='Preferred type of cuisine in restaurant.')
     max_distance: Optional[int] = Field(
-        None,
+        5,
         description='Maximum distance (in miles) within which to search for restaurants. Default is 5.',
     )

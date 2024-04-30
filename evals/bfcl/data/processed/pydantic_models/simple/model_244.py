@@ -13,5 +13,5 @@ class PublicationYearFind(BaseModel):
     author: str = Field(..., description='Name of the author of the work.')
     work_title: str = Field(..., description='Title of the scientific work.')
     location: Optional[str] = Field(
-        None, description="Place of the publication, if known. Default to 'all'."
+        'all', description="Place of the publication, if known. Default to 'all'."
     )

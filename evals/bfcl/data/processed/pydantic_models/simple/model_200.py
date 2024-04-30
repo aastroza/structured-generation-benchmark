@@ -17,6 +17,6 @@ class CalculateEmissions(BaseModel):
         description="The vehicle's fuel efficiency in miles per gallon. This is a float type value.",
     )
     efficiency_reduction: Optional[int] = Field(
-        None,
+        0,
         description='The percentage decrease in fuel efficiency per year (optional). Default is 0',
     )

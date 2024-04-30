@@ -14,7 +14,7 @@ class GetAirQuality(BaseModel):
         ..., description='The city that you want to get the air quality data for.'
     )
     detail: Optional[bool] = Field(
-        None,
+        False,
         description='If true, additional data like PM2.5, PM10, ozone levels, and pollution sources will be retrieved. Default is false.',
     )
     historical: Optional[str] = Field(

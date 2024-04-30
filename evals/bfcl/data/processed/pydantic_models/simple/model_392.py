@@ -15,6 +15,6 @@ class LatestExchangeRate(BaseModel):
     )
     target_currency: str = Field(..., description='The currency you are converting to.')
     amount: Optional[float] = Field(
-        None,
+        1.0,
         description='The amount to be converted. If omitted, default to exchange rate of 1 unit source currency This is a float type value.',
     )

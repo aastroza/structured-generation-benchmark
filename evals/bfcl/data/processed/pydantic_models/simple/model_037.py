@@ -19,6 +19,6 @@ class RouteEstimateTime(BaseModel):
         description='The destination for the journey. It should be format as city name such as Boston.',
     )
     stops: Optional[List[str]] = Field(
-        None,
+        [],
         description='Additional cities or points of interest to stop at during the journey. Default is an empty list.',
     )

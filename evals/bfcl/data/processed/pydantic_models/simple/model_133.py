@@ -16,7 +16,7 @@ class FinancePredictFutureValue(BaseModel):
         description='The annual interest rate of the investment. This is a float type value.',
     )
     compounding_periods_per_year: Optional[int] = Field(
-        None,
+        1,
         description='The number of times that interest is compounded per year. Default is 1 (annually).',
     )
     time_years: int = Field(..., description='The investment horizon in years.')

@@ -18,6 +18,6 @@ class CalculateCellDensity(BaseModel):
         ..., description='The dilution factor applied during the experiment.'
     )
     calibration_factor: Optional[float] = Field(
-        None,
+        1e9,
         description='The calibration factor to adjust the density, default value is 1e9 assuming cell density is in CFU/mL. This is a float type value.',
     )

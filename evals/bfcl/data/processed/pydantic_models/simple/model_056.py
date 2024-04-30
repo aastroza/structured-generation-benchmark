@@ -12,5 +12,5 @@ from pydantic import BaseModel, Field
 class CellbioGetProteins(BaseModel):
     cell_compartment: str = Field(..., description='The specific cell compartment.')
     include_description: Optional[bool] = Field(
-        'false', description='Set true if you want a brief description of each protein.'
+        False, description='Set true if you want a brief description of each protein.'
     )

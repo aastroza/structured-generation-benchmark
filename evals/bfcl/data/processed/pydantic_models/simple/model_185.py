@@ -17,6 +17,6 @@ class DetailedWeatherForecast(BaseModel):
         ..., description='Duration in hours for the detailed forecast.'
     )
     include_precipitation: Optional[bool] = Field(
-        None,
+        False,
         description='Whether to include precipitation data in the forecast. Default is false.',
     )

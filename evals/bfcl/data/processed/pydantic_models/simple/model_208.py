@@ -20,5 +20,5 @@ class MapServiceGetDirections(BaseModel):
     start: str = Field(..., description='Starting location for the route.')
     end: str = Field(..., description='Ending location for the route.')
     avoid: Optional[List[AvoidEnum]] = Field(
-        None, description="Route features to avoid. Default is ['highways', 'ferries']"
+        [AvoidEnum.highways, AvoidEnum.ferries], description="Route features to avoid. Default is ['highways', 'ferries']"
     )

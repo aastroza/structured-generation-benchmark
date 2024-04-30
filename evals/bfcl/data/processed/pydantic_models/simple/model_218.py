@@ -26,7 +26,7 @@ class Status(Enum):
 class PatientGetMriReport(BaseModel):
     patient_id: str = Field(..., description='The patient identifier.')
     mri_type: Optional[MriType] = Field(
-        None, description="Type of the MRI. Default to be 'brain'."
+        MriType.brain, description="Type of the MRI. Default to be 'brain'."
     )
     status: Status = Field(
         ...,

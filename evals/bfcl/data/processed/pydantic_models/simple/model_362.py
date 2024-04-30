@@ -15,6 +15,6 @@ class GetBestSushiPlaces(BaseModel):
     )
     top: int = Field(..., description='The number of top sushi places to be returned.')
     review_rate: Optional[float] = Field(
-        None,
+        0.00,
         description='The review rating to filter the sushi places. Places with review ratings above this value will be returned. Default 0.00. This is a float type value.',
     )

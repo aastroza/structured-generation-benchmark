@@ -21,6 +21,6 @@ class CrimeStatuteLookup(BaseModel):
     )
     crime: str = Field(..., description='The crime to search for.')
     detail_level: Optional[DetailLevel] = Field(
-        None,
+        DetailLevel.basic,
         description="How detailed of a report to return. Optional, default is 'basic'.",
     )

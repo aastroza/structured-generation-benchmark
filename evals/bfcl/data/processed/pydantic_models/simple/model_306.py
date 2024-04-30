@@ -15,6 +15,6 @@ class AverageBattingScore(BaseModel):
         ..., description='Number of past matches to consider for average calculation.'
     )
     match_format: Optional[str] = Field(
-        None,
+        'T20',
         description="Format of the cricket matches considered (e.g., 'T20', 'ODI', 'Test'). Default is 'T20'.",
     )

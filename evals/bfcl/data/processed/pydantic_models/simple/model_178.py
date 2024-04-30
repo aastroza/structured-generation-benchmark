@@ -24,6 +24,6 @@ class GetLawsuitDetails(BaseModel):
         ..., description='The location of the court where the case is filed.'
     )
     additional_details: Optional[List[AdditionalDetail]] = Field(
-        None,
+        [AdditionalDetail.attorneys, AdditionalDetail.plaintiffs, AdditionalDetail.defendants, AdditionalDetail.charges, AdditionalDetail.court_updates],
         description='Optional. Array containing additional details to be fetched. Default is all.',
     )

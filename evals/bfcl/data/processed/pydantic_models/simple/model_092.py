@@ -13,6 +13,6 @@ class ImdbFindMoviesByActor(BaseModel):
     actor_name: str = Field(..., description='The name of the actor.')
     year: int = Field(..., description='The specific year to search in.')
     category: Optional[str] = Field(
-        None,
+        'all',
         description="The category of the film (e.g. Drama, Comedy, etc). Default is 'all'",
     )

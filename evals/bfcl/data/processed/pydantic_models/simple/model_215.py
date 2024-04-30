@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class MovieDetailsBrief(BaseModel):
     title: str = Field(..., description='Title of the movie')
     extra_info: Optional[bool] = Field(
-        'false',
+        False,
         description='Option to get additional information like Director, Cast, Awards etc.',
     )

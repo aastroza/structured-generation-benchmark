@@ -21,5 +21,5 @@ class RestaurantSearchFindClosest(BaseModel):
     location: str = Field(..., description='The city, for instance Boston, MA')
     cuisine: str = Field(..., description='Type of food like Sushi.')
     amenities: Optional[List[Amenity]] = Field(
-        None, description="Preferred amenities in the restaurant. Default 'Wi-Fi'."
+        [Amenity.Wi_Fi], description="Preferred amenities in the restaurant. Default 'Wi-Fi'."
     )

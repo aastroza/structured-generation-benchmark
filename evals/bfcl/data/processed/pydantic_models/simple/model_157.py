@@ -16,6 +16,6 @@ class CriminalHistoryCheckFelonies(BaseModel):
         description='The birth date of the individual. Must be in MM-DD-YYYY format.',
     )
     state: Optional[str] = Field(
-        None,
+        'None',
         description="The state to search the criminal record in. Default to 'None', which the function will search across all states.",
     )

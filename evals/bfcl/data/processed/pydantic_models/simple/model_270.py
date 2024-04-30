@@ -17,5 +17,5 @@ class Unit(Enum):
 class BuildingGetDimensions(BaseModel):
     building_name: str = Field(..., description='The name of the building.')
     unit: Unit = Field(
-        ..., description='The unit in which you want the dimensions. Default is meter.'
+        Unit.meter, description='The unit in which you want the dimensions. Default is meter.'
     )

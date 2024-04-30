@@ -13,6 +13,6 @@ class CalculateBmi(BaseModel):
     weight: int = Field(..., description='Weight of the person in kilograms.')
     height: int = Field(..., description='Height of the person in centimeters.')
     unit: Optional[str] = Field(
-        None,
+        'metric',
         description="Optional parameter to choose between 'imperial' and 'metric' systems. Default is 'metric'.",
     )

@@ -15,5 +15,5 @@ class TimeZoneConverter(BaseModel):
     )
     country: str = Field(..., description='The country where the city is located.')
     display_format: Optional[str] = Field(
-        None, description="The time display format: '12h' or '24h'. Default is '24h'."
+        '24h', description="The time display format: '12h' or '24h'. Default is '24h'."
     )

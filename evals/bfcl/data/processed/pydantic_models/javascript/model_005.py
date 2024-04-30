@@ -11,17 +11,17 @@ from pydantic import BaseModel, Field
 
 class Store(BaseModel):
     initialState: Optional[Dict[str, Any]] = Field(
-        None, description='The initial state object of the React application.'
+        [], description='The initial state object of the React application.'
     )
     reducers: Optional[Dict[str, Any]] = Field(
-        None, description='A collection of reducer functions to handle state changes.'
+        [], description='A collection of reducer functions to handle state changes.'
     )
     middlewares: Optional[List[str]] = Field(
-        None,
+        [],
         description='An array of middleware functions for intercepting and potentially altering actions or state changes.',
     )
     enhancers: Optional[List[str]] = Field(
-        None,
+        [],
         description='An array of store enhancers for extending store capabilities.',
     )
 

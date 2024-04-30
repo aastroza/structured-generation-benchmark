@@ -18,6 +18,6 @@ class CalculateElectricField(BaseModel):
         description='Distance from the charge in meters where the field is being measured.',
     )
     permitivity: Optional[float] = Field(
-        None,
+        8.854e-12,
         description='Permitivity of the space where field is being calculated, default is 8.854e-12. This is a float type value.',
     )

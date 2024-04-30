@@ -13,5 +13,5 @@ class MapsGetDistanceDuration(BaseModel):
     start_location: str = Field(..., description='Starting point of the journey')
     end_location: str = Field(..., description='Ending point of the journey')
     traffic: Optional[bool] = Field(
-        None, description='If true, considers current traffic. Default is false.'
+        False, description='If true, considers current traffic. Default is false.'
     )

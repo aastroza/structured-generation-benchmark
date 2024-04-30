@@ -17,6 +17,6 @@ class MonopolyOddsCalculator(BaseModel):
         ..., description='The number of dice involved in the roll.'
     )
     dice_faces: Optional[int] = Field(
-        None,
+        6,
         description='The number of faces on a single die. Default is 6 for standard six-faced die.',
     )

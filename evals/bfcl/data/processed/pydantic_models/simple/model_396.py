@@ -24,6 +24,6 @@ class HospitalLocate(BaseModel):
         ..., description='The radius within which you want to find the hospital in kms.'
     )
     department: Optional[Department] = Field(
-        None,
+        Department.General_Medicine,
         description="Specific department within the hospital. Default is 'General Medicine'.",
     )

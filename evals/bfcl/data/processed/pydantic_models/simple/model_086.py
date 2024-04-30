@@ -19,9 +19,9 @@ class CityDistanceFindShortest(BaseModel):
         description='The city you are heading to.The parameter is in the format of city name.',
     )
     transportation: Optional[str] = Field(
-        None, description="Preferred mode of public transportation. Default is 'bus'."
+        'bus', description="Preferred mode of public transportation. Default is 'bus'."
     )
     allow_transfer: Optional[bool] = Field(
-        None,
+        False,
         description='Allows transfer between different transportation if true. Default is false.',
     )

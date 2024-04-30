@@ -19,6 +19,6 @@ class CalculateCompoundInterest(BaseModel):
     )
     time: int = Field(..., description='The time the money is invested for in years.')
     n: Optional[int] = Field(
-        None,
+        1,
         description='The number of times that interest is compounded per time period. Default is 1.',
     )

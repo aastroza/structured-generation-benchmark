@@ -15,7 +15,7 @@ class E(BaseModel):
         description='The starting directory from which the Git command is executed.',
     )
     configuration: Optional[Dict[str, Any]] = Field(
-        None, description='Additional configuration for the Git command.'
+        {}, description='Additional configuration for the Git command.'
     )
 
 

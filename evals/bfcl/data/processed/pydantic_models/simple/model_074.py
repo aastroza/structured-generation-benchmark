@@ -18,6 +18,6 @@ class CalculateBacteriaEvolutionRate(BaseModel):
     )
     duration: int = Field(..., description='Total duration in hours.')
     generation_time: Optional[int] = Field(
-        None,
+        20,
         description='The average generation time of the bacteria in minutes. Default is 20 minutes',
     )

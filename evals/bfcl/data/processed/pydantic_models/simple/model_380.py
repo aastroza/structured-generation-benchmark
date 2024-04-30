@@ -29,6 +29,6 @@ class HotelBooking(BaseModel):
     )
     start_date: str = Field(..., description='The date when your stay begins.')
     preferences: Optional[List[Preference]] = Field(
-        None,
+        [Preference.pet_friendly, Preference.gym, Preference.swimming_pool, Preference.free_breakfast, Preference.parking],
         description='Optional preferences of stay at the hotel. Default to use all if not specified.',
     )

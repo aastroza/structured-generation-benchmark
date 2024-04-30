@@ -15,6 +15,6 @@ class VeganRestaurantFindNearby(BaseModel):
         description='The city and state, e.g. New York, NY, you should format it as City, State.',
     )
     operating_hours: Optional[int] = Field(
-        None,
+        24,
         description='Preferred latest closing time of the restaurant. E.g. if 11 is given, then restaurants that close at or after 11 PM will be considered. This is in 24 hour format. Default is 24.',
     )

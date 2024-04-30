@@ -13,6 +13,6 @@ class ProbDistBinomial(BaseModel):
     trials: int = Field(..., description='The number of independent experiments.')
     successes: int = Field(..., description='The number of success events.')
     p: Optional[float] = Field(
-        None,
+        0.5,
         description='The probability of success on any given trial, defaults to 0.5 This is a float type value.',
     )

@@ -15,8 +15,8 @@ class CalculateCookingTime(BaseModel):
         description='The weight of the chicken in kilograms. This is a float type value.',
     )
     cooking_method: Optional[str] = Field(
-        None, description="The method of cooking, defaults to 'roast'."
+        'roast', description="The method of cooking, defaults to 'roast'."
     )
     temp_celsius: Optional[int] = Field(
-        None, description='The cooking temperature in degrees celsius, defaults to 180.'
+        180, description='The cooking temperature in degrees celsius, defaults to 180.'
     )

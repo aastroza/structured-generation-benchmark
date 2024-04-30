@@ -15,6 +15,6 @@ class GetTeamRanking(BaseModel):
         ..., description='The year for which the ranking is to be retrieved.'
     )
     gender: Optional[str] = Field(
-        None,
+        'men',
         description="The gender of the team. It can be either 'men' or 'women'. Default is 'men'.",
     )

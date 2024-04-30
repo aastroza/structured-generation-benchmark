@@ -15,6 +15,6 @@ class AnalyzeStructure(BaseModel):
     )
     floors: List[int] = Field(..., description='Floor numbers to be analyzed.')
     mode: Optional[str] = Field(
-        None,
+        'static',
         description="Mode of analysis, e.g. 'static' or 'dynamic'. Default is 'static'.",
     )

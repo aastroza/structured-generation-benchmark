@@ -15,5 +15,5 @@ class SculptureSearch(BaseModel):
         ..., description='The time frame during which the sculptures were made.'
     )
     material: Optional[str] = Field(
-        None, description="Optional material of the sculptures. Default is 'all'"
+        'all', description="Optional material of the sculptures. Default is 'all'"
     )

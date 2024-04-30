@@ -13,5 +13,5 @@ class HistoricLeaderSearch(BaseModel):
     location: str = Field(..., description='The country or region in question.')
     date: int = Field(..., description='The year being queried.')
     title: Optional[str] = Field(
-        None, description="The official title of the position. Default is 'King'."
+        'King', description="The official title of the position. Default is 'King'."
     )

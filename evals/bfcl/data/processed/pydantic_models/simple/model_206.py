@@ -20,5 +20,5 @@ class Amenity(Enum):
 class ParksFindNearby(BaseModel):
     location: str = Field(..., description='The city and state, e.g. London, UK')
     amenities: Optional[List[Amenity]] = Field(
-        None, description="Preferred amenities in park. Default is ['Running Track']"
+        [Amenity.Running_Track], description="Preferred amenities in park. Default is ['Running Track']"
     )

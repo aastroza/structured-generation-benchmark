@@ -25,6 +25,6 @@ class CalculateCompoundedInterest(BaseModel):
     )
     period: int = Field(..., description='The period in years.')
     compounding_frequency: Optional[CompoundingFrequency] = Field(
-        None,
+        CompoundingFrequency.Annually,
         description="The frequency of compounding per year. Defaults to 'Annually'.",
     )

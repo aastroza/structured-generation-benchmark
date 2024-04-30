@@ -14,10 +14,10 @@ class SendEmail(BaseModel):
     subject: str = Field(..., description='The subject of the email.')
     body: str = Field(..., description='The body content of the email.')
     cc: Optional[str] = Field(
-        None,
+        '',
         description='The email address to carbon copy. Default is empty if not specified.',
     )
     bcc: Optional[str] = Field(
-        None,
+        '',
         description='The email address to blind carbon copy. Default is empty if not specified.',
     )

@@ -14,5 +14,5 @@ class CalculateEntropyChange(BaseModel):
     final_temp: int = Field(..., description='The final temperature in Kelvin.')
     heat_capacity: int = Field(..., description='The heat capacity in J/K.')
     isothermal: Optional[bool] = Field(
-        None, description='Whether the process is isothermal. Default is True.'
+        True, description='Whether the process is isothermal. Default is True.'
     )

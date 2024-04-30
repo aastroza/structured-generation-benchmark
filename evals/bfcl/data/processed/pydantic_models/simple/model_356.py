@@ -18,6 +18,6 @@ class RecipeFinderFind(BaseModel):
         description="Any dietary restrictions like 'vegan', 'vegetarian', 'gluten-free' etc.",
     )
     prep_time: Optional[int] = Field(
-        None,
+        60,
         description='The maximum amount of time (in minutes) the preparation should take. Default is 60 minutes.',
     )

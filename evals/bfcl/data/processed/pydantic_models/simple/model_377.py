@@ -15,6 +15,6 @@ class GetCurrentTime(BaseModel):
     )
     country: str = Field(..., description='The country where the city is located.')
     format: Optional[str] = Field(
-        None,
+        'HH:MM:SS',
         description="The format in which the time is to be displayed, optional (defaults to 'HH:MM:SS').",
     )

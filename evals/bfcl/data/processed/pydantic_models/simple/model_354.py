@@ -25,6 +25,6 @@ class GetVeganRecipe(BaseModel):
         ..., description='The maximum cooking time for the recipe in minutes.'
     )
     ingredient_preference: Optional[List[str]] = Field(
-        None,
+        [],
         description='Preferred ingredients to be included in the recipe, if any. Default to not use it if not provided.',
     )

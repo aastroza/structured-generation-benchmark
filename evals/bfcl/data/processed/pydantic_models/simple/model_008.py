@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class GeometryAreaCircle(BaseModel):
     radius: int = Field(..., description='The radius of the circle.')
     units: Optional[str] = Field(
-        None,
+        'meters',
         description="The units in which the radius is measured (defaults to 'meters').",
     )

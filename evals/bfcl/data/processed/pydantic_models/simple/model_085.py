@@ -19,6 +19,6 @@ class GeoDistanceCalculate(BaseModel):
         description='The destination location for the distance calculation. Specify the location in the format of City, State.',
     )
     units: Optional[str] = Field(
-        None,
+        'miles',
         description="Optional. The desired units for the resulting distance ('miles' or 'kilometers'). Defaults to 'miles'.",
     )

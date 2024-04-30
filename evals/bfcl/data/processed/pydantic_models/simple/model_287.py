@@ -25,6 +25,6 @@ class ConcertSearch(BaseModel):
         description='Date of the concert, e.g. this weekend, today, tomorrow, or date string.',
     )
     price_range: Optional[PriceRange] = Field(
-        None,
+        PriceRange.free,
         description="Expected price range of the concert tickets. Default is 'free'.",
     )

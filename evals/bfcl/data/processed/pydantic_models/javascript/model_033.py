@@ -18,6 +18,6 @@ class EmitNewLineBeforeLeadingComments(BaseModel):
     )
     node: int = Field(..., description='The position of the node..')
     leadingComments: Optional[str] = Field(
-        None,
+        '',
         description='An array of leading comment objects associated with the node. Default empty array',
     )

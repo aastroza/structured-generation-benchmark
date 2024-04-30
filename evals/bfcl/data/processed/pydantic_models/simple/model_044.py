@@ -15,6 +15,6 @@ class CalculateElectricFieldStrength(BaseModel):
     )
     distance: int = Field(..., description='The distance from the charge in meters.')
     medium: Optional[str] = Field(
-        None,
+        'vacuum',
         description="The medium in which the charge and the point of calculation is located. Default is 'vacuum'.",
     )

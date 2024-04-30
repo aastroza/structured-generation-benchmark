@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class ChessRating(BaseModel):
     player_name: str = Field(..., description='The full name of the chess player.')
     variant: Optional[str] = Field(
-        None,
+        'classical',
         description="The variant of chess for which rating is requested (e.g., 'classical', 'blitz', 'bullet'). Default is 'classical'.",
     )

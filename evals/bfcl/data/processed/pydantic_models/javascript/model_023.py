@@ -10,10 +10,10 @@ from pydantic import BaseModel, Field
 
 
 class Options(BaseModel):
-    issuer: Optional[str] = Field(None, description='The entity that issued the token.')
-    role: Optional[str] = Field(None, description='The role of the user in the system.')
+    issuer: Optional[str] = Field('', description='The entity that issued the token.')
+    role: Optional[str] = Field('', description='The role of the user in the system.')
     algorithm: Optional[str] = Field(
-        None, description='The encoding algorithm to be used for token generation.'
+        '', description='The encoding algorithm to be used for token generation.'
     )
 
 
@@ -22,8 +22,8 @@ class CreateAuthToken(BaseModel):
         ..., description='The username of the user for whom the token is being created.'
     )
     validity: Optional[int] = Field(
-        None, description='The number of seconds the token remains valid.'
+        0, description='The number of seconds the token remains valid.'
     )
     options: Options = Field(
-        ..., description='options dictionary, default empty dictionary'
+        Options(issuer='', role='', algorithm=''), description='options dictionary, default empty dictionary'
     )

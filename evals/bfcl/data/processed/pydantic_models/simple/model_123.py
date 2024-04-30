@@ -13,6 +13,6 @@ class HypothesisTestingTwoSampleTTest(BaseModel):
     group1: List[float] = Field(..., description='Sample observations from group 1.')
     group2: List[float] = Field(..., description='Sample observations from group 2.')
     alpha: Optional[float] = Field(
-        None,
+        0.05,
         description='Significance level for the t-test. Default is 0.05. This is a float type value.',
     )

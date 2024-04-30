@@ -14,6 +14,6 @@ class LawsuitsSearch(BaseModel):
     location: str = Field(..., description='The location where the lawsuit was filed.')
     year: int = Field(..., description='The year when the lawsuit was filed.')
     case_type: Optional[str] = Field(
-        None,
+        'all',
         description="The type of the case. Options include: 'civil', 'criminal', 'small_claims', etc. Default is 'all'.",
     )

@@ -15,6 +15,6 @@ class RunLinearRegression(BaseModel):
     )
     target: str = Field(..., description='The name of target variable.')
     standardize: Optional[bool] = Field(
-        None,
+        False,
         description='Option to apply standardization on the predictors. Defaults to False.',
     )

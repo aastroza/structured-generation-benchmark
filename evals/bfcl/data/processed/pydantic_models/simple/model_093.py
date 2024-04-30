@@ -16,6 +16,6 @@ class GetTheaterMovieReleases(BaseModel):
         description='The number of days for which releases are required from current date.',
     )
     format: Optional[str] = Field(
-        None,
+        'all',
         description="Format of movies - could be 'IMAX', '2D', '3D', '4DX' etc. Default is 'all'",
     )

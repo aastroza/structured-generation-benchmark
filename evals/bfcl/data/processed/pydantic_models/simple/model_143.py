@@ -15,6 +15,6 @@ class GetStockPrice(BaseModel):
         ..., description='Number of past days for which the stock price is required.'
     )
     exchange: Optional[str] = Field(
-        None,
+        'NYSE',
         description='The stock exchange where the company is listed, default is NYSE',
     )

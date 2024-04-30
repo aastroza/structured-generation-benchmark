@@ -16,5 +16,5 @@ class GetStockInfo(BaseModel):
         description="Level of detail for stock information. Can be 'summary' or 'detailed'.",
     )
     market: Optional[str] = Field(
-        None, description="The stock market of interest. Default is 'NASDAQ'"
+        'NASDAQ', description="The stock market of interest. Default is 'NASDAQ'"
     )

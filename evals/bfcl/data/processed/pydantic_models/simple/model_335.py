@@ -20,6 +20,6 @@ class FindCardInDeck(BaseModel):
         ..., description='Suit of the card (e.g. Hearts, Spades, Diamonds, Clubs).'
     )
     deck: Optional[List[DeckItem]] = Field(
-        None,
+        [],
         description='Deck of cards. If not provided, the deck will be a standard 52 card deck',
     )

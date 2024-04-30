@@ -18,6 +18,6 @@ class Queue1(BaseModel):
         description='The maximum number of tasks to be processed concurrently. This is a float type value.',
     )
     payload: Optional[float] = Field(
-        None,
+        0.0,
         description='Optional. The number of tasks each worker function call should process at most. Default 0.0 This is a float type value.',
     )

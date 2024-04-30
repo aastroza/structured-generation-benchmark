@@ -14,6 +14,6 @@ class MutationTypeFind(BaseModel):
         ..., description='The ID of the Single Nucleotide Polymorphism (SNP) mutation.'
     )
     species: Optional[str] = Field(
-        None,
+        'Homo sapiens',
         description="Species in which the SNP occurs, default is 'Homo sapiens' (Humans).",
     )

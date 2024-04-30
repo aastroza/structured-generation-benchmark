@@ -10,6 +10,6 @@ from pydantic import BaseModel, Field
 class CelebrityNetWorthGet(BaseModel):
     name: str = Field(..., description='The full name of the sports celebrity.')
     currency: str = Field(
-        ...,
+        'USD',
         description="The currency in which the net worth will be returned. Default is 'USD'.",
     )

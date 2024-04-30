@@ -15,6 +15,6 @@ class ForestGrowthForecast(BaseModel):
     )
     years: int = Field(..., description='The number of years for the forecast.')
     include_human_impact: Optional[bool] = Field(
-        None,
+        False,
         description='Whether or not to include the impact of human activities in the forecast. If not provided, defaults to false.',
     )

@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class GetThirdChord(BaseModel):
     key: str = Field(..., description='The key of the scale.')
     type: Optional[str] = Field(
-        None,
+        'major',
         description="Type of the scale, either major or minor. Default is 'major'.",
     )

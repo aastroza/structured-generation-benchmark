@@ -13,5 +13,5 @@ class DrawRectangle(BaseModel):
     width: int = Field(..., description='The width of the rectangle.')
     height: int = Field(..., description='The height of the rectangle.')
     color: Optional[str] = Field(
-        None, description="The color of the rectangle. Default is 'black'."
+        'black', description="The color of the rectangle. Default is 'black'."
     )

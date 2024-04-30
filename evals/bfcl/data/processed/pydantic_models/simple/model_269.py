@@ -19,6 +19,6 @@ class CalculateCompoundInterest(BaseModel):
         ..., description='The time, in years, the money is invested or borrowed for.'
     )
     compounds_per_year: Optional[int] = Field(
-        None,
+        1,
         description='The number of times the interest is compounded per year. Default is 1 (interest is compounded yearly).',
     )

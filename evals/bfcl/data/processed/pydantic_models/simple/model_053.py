@@ -14,10 +14,10 @@ class FetchDNASequence(BaseModel):
         ..., description='Unique ID of the DNA molecule in the database.'
     )
     format: Optional[str] = Field(
-        None,
+        'fasta',
         description="Optional parameter to get sequence in specific format (default to 'fasta').",
     )
     upstream: Optional[int] = Field(
-        None,
+        0,
         description='Optional parameter to include certain number of base pairs upstream the DNA sequence (default to 0).',
     )

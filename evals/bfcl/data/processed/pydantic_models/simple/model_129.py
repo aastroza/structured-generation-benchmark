@@ -18,5 +18,5 @@ class CalculateDiscountedCashFlow(BaseModel):
         ..., description='The discount rate. This is a float type value.'
     )
     face_value: Optional[int] = Field(
-        None, description='The face value of the bond, default is 1000.'
+        1000, description='The face value of the bond, default is 1000.'
     )

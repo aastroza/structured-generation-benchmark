@@ -18,5 +18,5 @@ class CalculateCarbonFootprint(BaseModel):
         ..., description='The yearly weight of trash production in pounds.'
     )
     flights_per_year: Optional[int] = Field(
-        None, description='The number of flights taken per year. Default is 0.'
+        0, description='The number of flights taken per year. Default is 0.'
     )

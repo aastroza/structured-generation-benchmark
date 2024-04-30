@@ -13,5 +13,5 @@ class CalculateDensity(BaseModel):
     mass: int = Field(..., description='The mass of the substance in kilograms.')
     volume: int = Field(..., description='The volume of the substance in cubic meters.')
     unit: Optional[str] = Field(
-        None, description='The unit of density. Default is kg/m³'
+        'kg/m³', description='The unit of density. Default is kg/m³'
     )

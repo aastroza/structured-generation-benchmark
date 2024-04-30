@@ -20,6 +20,6 @@ class AnalyzeDnaSequence(BaseModel):
     sequence: str = Field(..., description='The DNA sequence to be analyzed.')
     reference_sequence: str = Field(..., description='The reference DNA sequence.')
     mutation_type: Optional[MutationType] = Field(
-        None,
+        MutationType.substitution,
         description="Type of the mutation to be looked for in the sequence. Default to 'substitution'.",
     )

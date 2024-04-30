@@ -16,6 +16,6 @@ class CalculateAreaUnderCurve(BaseModel):
         description='An array that defines the interval to calculate the area under the curve from the start to the end point.',
     )
     method: Optional[str] = Field(
-        None,
+        'trapezoidal',
         description="The numerical method to approximate the area under the curve. The default value is 'trapezoidal'.",
     )

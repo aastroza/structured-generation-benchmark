@@ -22,5 +22,5 @@ class GameValuation(BaseModel):
     game_name: str = Field(..., description='The name of the game.')
     release_year: int = Field(..., description='The year the game was released.')
     condition: Optional[Condition] = Field(
-        None, description="The condition of the game. Default is 'Used'."
+        Condition.Used, description="The condition of the game. Default is 'Used'."
     )

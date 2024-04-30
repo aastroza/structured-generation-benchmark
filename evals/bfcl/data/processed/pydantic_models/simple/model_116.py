@@ -15,6 +15,6 @@ class ProbabilitiesCalculateSingle(BaseModel):
         ..., description='The number of outcomes where the event occurs.'
     )
     round: Optional[int] = Field(
-        None,
+        2,
         description='Round the answer to a specified number of decimal places. Defaults to 2.',
     )

@@ -10,20 +10,20 @@ from pydantic import BaseModel, Field
 
 
 class Area(BaseModel):
-    width: Optional[int] = Field(
-        None, description='The width of the area to be painted in feet.'
+    width: int = Field(
+        ..., description='The width of the area to be painted in feet.'
     )
-    height: Optional[int] = Field(
-        None, description='The height of the area to be painted in feet.'
+    height: int = Field(
+        ..., description='The height of the area to be painted in feet.'
     )
 
 
 class Exclusion(BaseModel):
-    type: Optional[str] = Field(
-        None, description='The type of the exclusion e.g window, door etc.'
+    type: str = Field(
+        ..., description='The type of the exclusion e.g window, door etc.'
     )
-    area: Optional[int] = Field(
-        None, description='The area of the exclusion in square feet.'
+    area: int = Field(
+        ..., description='The area of the exclusion in square feet.'
     )
 
 

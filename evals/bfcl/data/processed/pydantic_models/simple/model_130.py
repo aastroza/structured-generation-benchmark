@@ -16,6 +16,6 @@ class FinanceCalculatorNpv(BaseModel):
         description='The annual interest rate used to discount the cash flows. This is a float type value.',
     )
     years: Optional[List[int]] = Field(
-        None,
+        [],
         description='A list of years when the cash flow occurs. Default is empty array.',
     )

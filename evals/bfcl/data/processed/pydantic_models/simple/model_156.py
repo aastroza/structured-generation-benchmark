@@ -13,5 +13,5 @@ class CrimeRecordGetRecord(BaseModel):
     case_number: str = Field(..., description='The case number related to the crime.')
     county: str = Field(..., description='The county in which the crime occurred.')
     details: Optional[bool] = Field(
-        None, description='To get a detailed report, set as true. Defaults to false.'
+        False, description='To get a detailed report, set as true. Defaults to false.'
     )

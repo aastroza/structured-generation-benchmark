@@ -17,6 +17,6 @@ class HypothesisTestingTtestInd(BaseModel):
         ..., description='Second set of observations (array of numbers).'
     )
     significance_level: Optional[float] = Field(
-        None,
+        0.05,
         description='Significance level of the test (default: 0.05) This is a float type value.',
     )

@@ -15,6 +15,6 @@ class CalculateFinalSpeed(BaseModel):
     )
     height: int = Field(..., description='The height from which the object is dropped.')
     gravity: Optional[float] = Field(
-        None,
+        9.8,
         description='The gravitational acceleration. Default is 9.8 m/s^2. This is a float type value.',
     )

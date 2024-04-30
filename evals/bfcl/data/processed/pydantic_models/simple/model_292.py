@@ -13,5 +13,5 @@ class ComposeMelody(BaseModel):
     progression: List[str] = Field(..., description='The progression of chords.')
     measures: int = Field(..., description='The number of measures of the melody.')
     instrument: Optional[str] = Field(
-        None, description="The instrument for the composition. Default is 'Piano'."
+        'Piano', description="The instrument for the composition. Default is 'Piano'."
     )

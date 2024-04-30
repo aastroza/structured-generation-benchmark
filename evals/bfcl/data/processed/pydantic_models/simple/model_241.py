@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class USPresidentDuringEvent(BaseModel):
     event: str = Field(..., description='The historical event.')
     country: Optional[str] = Field(
-        None,
+        'USA',
         description="The country the president leads (optional parameter, defaults to 'USA' if not specified).",
     )

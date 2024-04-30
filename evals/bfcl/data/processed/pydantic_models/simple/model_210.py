@@ -13,5 +13,5 @@ class GetNews(BaseModel):
     topic: str = Field(..., description='The subject for the news topic.')
     quantity: int = Field(..., description='Number of articles to fetch.')
     region: Optional[str] = Field(
-        None, description="The geographical region for the news. Default is 'US'."
+        'US', description="The geographical region for the news. Default is 'US'."
     )

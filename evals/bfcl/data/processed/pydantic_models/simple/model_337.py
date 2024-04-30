@@ -11,10 +11,10 @@ from pydantic import BaseModel, Field
 
 class PokerGameWinner(BaseModel):
     players: List[str] = Field(..., description='Names of the players in a list.')
-    cards: Dict[str, Any] = Field(
+    cards: Dict[str, List[Any]] = Field(
         ...,
         description='An object containing the player name as key and the cards as values in a list.',
     )
     type: Optional[str] = Field(
-        None, description="Type of poker game. Defaults to 'Texas Holdem'"
+        'Texas Holdem', description="Type of poker game. Defaults to 'Texas Holdem'"
     )

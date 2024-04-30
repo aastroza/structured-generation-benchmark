@@ -12,5 +12,5 @@ from pydantic import BaseModel, Field
 class CalculateCircumference(BaseModel):
     radius: int = Field(..., description='The radius of the circle in the unit given.')
     unit: Optional[str] = Field(
-        None, description="The unit of measurement for the radius. Default is 'cm'."
+        'cm', description="The unit of measurement for the radius. Default is 'cm'."
     )

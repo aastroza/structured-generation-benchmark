@@ -18,5 +18,5 @@ class Source(Enum):
 class GetEarliestReference(BaseModel):
     name: str = Field(..., description='The name of the person.')
     source: Optional[Source] = Field(
-        None, description="Source to fetch the reference. Default is 'scriptures'"
+        Source.scriptures, description="Source to fetch the reference. Default is 'scriptures'"
     )

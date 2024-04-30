@@ -13,5 +13,5 @@ class MuseumWorkingHoursGet(BaseModel):
     museum: str = Field(..., description='The name of the museum.')
     location: str = Field(..., description='The location of the museum.')
     day: Optional[str] = Field(
-        None, description="Specific day of the week. Default is 'Monday'"
+        'Monday', description="Specific day of the week. Default is 'Monday'"
     )

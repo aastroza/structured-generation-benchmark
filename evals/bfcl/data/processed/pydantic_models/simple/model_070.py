@@ -16,6 +16,6 @@ class CalculateVehicleEmission(BaseModel):
     )
     miles_driven: int = Field(..., description='The number of miles driven per year.')
     emission_factor: Optional[float] = Field(
-        None,
+        355.48,
         description='Optional emission factor to calculate emissions, in g/mile. Default factor is 355.48. This is a float type value.',
     )

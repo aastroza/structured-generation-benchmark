@@ -13,6 +13,6 @@ class MixPaintColor(BaseModel):
     color1: str = Field(..., description='The first primary color to be mixed.')
     color2: str = Field(..., description='The second primary color to be mixed.')
     lightness: Optional[int] = Field(
-        None,
+        50,
         description='The desired lightness level of the resulting color in percentage. The default level is set to 50.',
     )

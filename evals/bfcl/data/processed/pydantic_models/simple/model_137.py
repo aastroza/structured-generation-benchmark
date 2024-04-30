@@ -19,6 +19,6 @@ class CalculateStockReturn(BaseModel):
         ..., description='The number of years you intend to hold the stock.'
     )
     dividends: Optional[bool] = Field(
-        None,
+        False,
         description='Optional. True if the calculation should take into account potential dividends. Default is false.',
     )

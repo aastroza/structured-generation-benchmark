@@ -17,6 +17,6 @@ class HistoricalContribGetContrib(BaseModel):
         ..., description='The date when the contribution was made in yyyy-mm-dd format.'
     )
     category: Optional[str] = Field(
-        None,
+        'all',
         description="The field of the contribution, such as 'Physics' or 'Chemistry'. Default is 'all'.",
     )

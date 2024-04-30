@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class SoccerGetLastMatch(BaseModel):
     team_name: str = Field(..., description='The name of the soccer club.')
     include_stats: Optional[bool] = Field(
-        None,
+        False,
         description='If true, include match statistics like possession, shots on target etc. Default is false.',
     )

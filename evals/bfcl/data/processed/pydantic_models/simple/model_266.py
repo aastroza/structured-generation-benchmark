@@ -15,6 +15,6 @@ class GetSculptureValue(BaseModel):
         ..., description='The name of the artist who created the sculpture.'
     )
     year: Optional[int] = Field(
-        None,
+        2024,
         description='The year the sculpture was created. This is optional and is not required for all sculptures. Default is the most recent year.',
     )

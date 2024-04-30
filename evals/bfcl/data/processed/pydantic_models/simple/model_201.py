@@ -15,6 +15,6 @@ class EstimatePopulation(BaseModel):
     )
     country: str = Field(..., description='The country where the species lives.')
     year: Optional[int] = Field(
-        None,
+        2024,
         description='The year for which population estimate is sought. Default is the current year.',
     )

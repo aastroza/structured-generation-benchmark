@@ -21,7 +21,7 @@ class GetReligionHistory(BaseModel):
         ..., description='The century in which the event(s) took place.'
     )
     sort_by: Optional[SortBy] = Field(
-        'chronological',
+        SortBy.chronological,
         description='Order of sorting the events. Default is chronological.',
     )
     count: Optional[int] = Field(

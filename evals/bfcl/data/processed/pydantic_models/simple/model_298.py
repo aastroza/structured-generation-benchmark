@@ -18,6 +18,6 @@ class ScaleType(Enum):
 class MusicTheoryKeySignature(BaseModel):
     key: str = Field(..., description="The root of the scale, e.g., 'C', 'F#', 'Ab'.")
     scale_type: Optional[ScaleType] = Field(
-        None,
+        ScaleType.major,
         description="Type of the scale, either 'major' or 'minor'. Default is 'major'.",
     )

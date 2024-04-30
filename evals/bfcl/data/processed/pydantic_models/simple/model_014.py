@@ -12,6 +12,6 @@ from pydantic import BaseModel, Field
 class CalculateDerivative(BaseModel):
     function: str = Field(..., description='The polynomial function.')
     x_value: Optional[float] = Field(
-        None,
+        0.0,
         description='The x-value at which the derivative is calculated. Optional, default to 0.00. This is a float type value.',
     )

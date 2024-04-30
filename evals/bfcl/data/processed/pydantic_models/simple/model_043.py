@@ -18,6 +18,6 @@ class CalculateMagneticFieldStrength(BaseModel):
         description='The perpendicular distance from the wire to the point where the magnetic field is being calculated.',
     )
     permeability: Optional[float] = Field(
-        None,
+        12.57e-7,
         description='The permeability of the medium. Default is 12.57e-7 (Vacuum Permeability). This is a float type value.',
     )

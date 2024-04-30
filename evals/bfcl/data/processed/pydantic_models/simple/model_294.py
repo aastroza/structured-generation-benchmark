@@ -13,6 +13,6 @@ class MusicGenerationCreateChordProgression(BaseModel):
     key: str = Field(..., description='The key for the chord progression.')
     chords: int = Field(..., description='Number of chords in the progression.')
     progression_type: Optional[str] = Field(
-        None,
+        'major',
         description="The type of the chord progression. Optional parameter. Default is 'major'.",
     )

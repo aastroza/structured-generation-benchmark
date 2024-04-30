@@ -15,5 +15,5 @@ class ProbabilityDiceRoll(BaseModel):
         ..., description='How many times you want to roll that number in a row.'
     )
     die_sides: Optional[int] = Field(
-        None, description='The number of sides on the die (optional; default is 6).'
+        6, description='The number of sides on the die (optional; default is 6).'
     )

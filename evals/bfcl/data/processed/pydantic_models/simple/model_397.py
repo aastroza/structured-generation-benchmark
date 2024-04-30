@@ -17,6 +17,6 @@ class DistanceCalculatorCalculate(BaseModel):
         ..., description='Destination location of the distance measurement.'
     )
     consider_terrain: Optional[bool] = Field(
-        None,
+        False,
         description='Whether to account for terrain in distance calculation, defaults to false.',
     )

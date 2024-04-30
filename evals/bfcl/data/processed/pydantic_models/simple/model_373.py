@@ -15,6 +15,6 @@ class WalmartPurchase(BaseModel):
         ..., description='Items to be purchased listed in an array.'
     )
     pack_size: Optional[List[int]] = Field(
-        None,
+        [],
         description='Size of the product pack if applicable. The size of the array should be equal to product_list. Default is not use it if not specified.',
     )

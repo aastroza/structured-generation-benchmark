@@ -13,6 +13,6 @@ class SculptureGetDetails(BaseModel):
     artist: str = Field(..., description='The artist who made the sculpture.')
     title: str = Field(..., description='The title of the sculpture.')
     detail: Optional[str] = Field(
-        None,
+        'general information',
         description="The specific detail wanted about the sculpture. Default is 'general information'.",
     )

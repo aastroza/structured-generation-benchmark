@@ -12,8 +12,8 @@ from pydantic import BaseModel, Field
 class SocialMediaAnalyticsMostFollowed(BaseModel):
     topic: str = Field(..., description='The main topic of interest.')
     sub_topics: Optional[List[str]] = Field(
-        None, description='Sub-topics related to main topic. Default is empty.'
+        [], description='Sub-topics related to main topic. Default is empty.'
     )
     region: Optional[str] = Field(
-        None, description="Region of interest for twitter search. Default is 'all'."
+        'all', description="Region of interest for twitter search. Default is 'all'."
     )

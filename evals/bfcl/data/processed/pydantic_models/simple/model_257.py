@@ -12,5 +12,5 @@ from pydantic import BaseModel, Field
 class IdentifyColorRgb(BaseModel):
     color_name: str = Field(..., description='Name of the color.')
     standard: Optional[str] = Field(
-        None, description="The color standard (e.g. basic, pantone). Default is 'basic'"
+        'basic', description="The color standard (e.g. basic, pantone). Default is 'basic'"
     )

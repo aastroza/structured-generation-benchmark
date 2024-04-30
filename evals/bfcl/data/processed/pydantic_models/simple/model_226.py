@@ -19,6 +19,6 @@ class GetZodiacCompatibility(BaseModel):
     sign1: str = Field(..., description='The first Zodiac sign.')
     sign2: str = Field(..., description='The second Zodiac sign.')
     scale: Optional[Scale] = Field(
-        None,
+        Scale.percentage,
         description="The scale on which compatibility should be shown. Default is 'percentage'.",
     )

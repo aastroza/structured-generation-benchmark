@@ -13,5 +13,5 @@ class GenerateCircleImage(BaseModel):
     radius: int = Field(..., description='The radius of the circle in pixels.')
     color: str = Field(..., description='The color of the circle.')
     background: Optional[str] = Field(
-        None, description='Optional: The color of the background, default is white.'
+        'white', description='Optional: The color of the background, default is white.'
     )

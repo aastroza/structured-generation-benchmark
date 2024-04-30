@@ -16,5 +16,5 @@ class CourtCaseSearch(BaseModel):
         description='The location where the case is registered, in the format: state, e.g., Texas',
     )
     full_text: Optional[bool] = Field(
-        'false', description='Option to return the full text of the case ruling.'
+        False, description='Option to return the full text of the case ruling.'
     )

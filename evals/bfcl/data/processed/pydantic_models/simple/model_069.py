@@ -12,8 +12,8 @@ from pydantic import BaseModel, Field
 class EcologyGetTurtlePopulation(BaseModel):
     location: str = Field(..., description='The name of the location.')
     year: Optional[int] = Field(
-        None, description='The year of the data requested. Default is 2001.'
+        2001, description='The year of the data requested. Default is 2001.'
     )
     species: Optional[bool] = Field(
-        None, description='Whether to include species information. Default is false.'
+        False, description='Whether to include species information. Default is false.'
     )

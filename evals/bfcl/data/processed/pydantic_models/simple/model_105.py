@@ -13,6 +13,6 @@ class MathPower(BaseModel):
     base: int = Field(..., description='The base number.')
     exponent: int = Field(..., description='The exponent.')
     mod: Optional[int] = Field(
-        None,
+        1,
         description='The modulus. Default is 1. Calculates pow(base, exponent) % mod when provided.',
     )

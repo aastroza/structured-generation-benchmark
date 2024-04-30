@@ -21,5 +21,5 @@ class GetBigfiveScores(BaseModel):
         ..., description="List of user's behavioural characteristics."
     )
     scale: Optional[Scale] = Field(
-        None, description='The scoring scale of traits (default is medium).'
+        Scale.medium, description='The scoring scale of traits (default is medium).'
     )

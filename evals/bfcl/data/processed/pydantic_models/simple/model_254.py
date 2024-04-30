@@ -22,6 +22,6 @@ class GetReligionHistory(BaseModel):
     start_year: int = Field(..., description='The starting year of the period.')
     end_year: int = Field(..., description='The end year of the period.')
     event_type: Optional[EventType] = Field(
-        None,
+        EventType.all,
         description="Optional parameter specifying the type of event. Default is 'all'.",
     )

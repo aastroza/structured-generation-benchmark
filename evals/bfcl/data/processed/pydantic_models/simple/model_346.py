@@ -15,6 +15,6 @@ class GetCollectablesInSeason(BaseModel):
         ..., description='The season for which to retrieve the collectable items.'
     )
     item_type: Optional[str] = Field(
-        None,
+        'all',
         description="The type of item to search for. Default is 'all'. Possible values: 'all', 'bug', 'fish', 'sea creatures', etc.",
     )

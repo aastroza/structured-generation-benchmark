@@ -13,5 +13,5 @@ class MathHypot(BaseModel):
     x: int = Field(..., description='The x-coordinate value.')
     y: int = Field(..., description='The y-coordinate value.')
     z: Optional[int] = Field(
-        None, description='Optional. The z-coordinate value. Default is 0.'
+        0, description='Optional. The z-coordinate value. Default is 0.'
     )

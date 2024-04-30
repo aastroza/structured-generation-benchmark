@@ -20,6 +20,6 @@ class ElectromagneticForce(BaseModel):
         ..., description='The distance between the two charges in meters.'
     )
     medium_permittivity: Optional[float] = Field(
-        None,
+        8.854e-12,
         description='The relative permittivity of the medium in which the charges are present. Default is 8.854e-12 (Vacuum Permittivity). This is a float type value.',
     )

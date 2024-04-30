@@ -19,6 +19,6 @@ class SortBy(Enum):
 class MetropolitanMuseumGetTopArtworks(BaseModel):
     number: int = Field(..., description='The number of artworks to fetch')
     sort_by: Optional[SortBy] = Field(
-        None,
+        SortBy.popularity,
         description="The criteria to sort the results on. Default is 'popularity'.",
     )

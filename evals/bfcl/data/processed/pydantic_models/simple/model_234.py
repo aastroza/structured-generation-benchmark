@@ -31,5 +31,5 @@ class HistoryEuFetchEvents(BaseModel):
         ..., description='The region of Europe you are interested in.'
     )
     category: Optional[Category] = Field(
-        None, description="Category of the historical events. Default is 'Culture'."
+        Category.Culture, description="Category of the historical events. Default is 'Culture'."
     )

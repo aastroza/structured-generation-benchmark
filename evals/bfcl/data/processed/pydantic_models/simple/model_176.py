@@ -13,6 +13,6 @@ class LawsuitDetailsFind(BaseModel):
     company_name: str = Field(..., description='Name of the company.')
     year: int = Field(..., description='Year of the lawsuit.')
     case_type: Optional[str] = Field(
-        None,
+        'all',
         description="Type of the lawsuit, e.g., 'IPR', 'Patent', 'Commercial', etc. Default is 'all'.",
     )

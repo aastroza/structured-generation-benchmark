@@ -15,7 +15,7 @@ class CalculateNeuronalActivity(BaseModel):
         description='The synaptic input rate, usually represented as number of inputs per second.',
     )
     weight: Optional[float] = Field(
-        None,
+        1.0,
         description="The weight of the input, denoting its influence on the neuron's state. Default is 1.0. This is a float type value.",
     )
     decay_rate: float = Field(

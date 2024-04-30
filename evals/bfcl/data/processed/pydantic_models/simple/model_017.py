@@ -12,6 +12,6 @@ class GetPrimeFactors(BaseModel):
         ..., description='Number for which prime factors need to be calculated'
     )
     formatted: bool = Field(
-        ...,
+        True,
         description='Return formatted string if true, array if false. Default is true.',
     )

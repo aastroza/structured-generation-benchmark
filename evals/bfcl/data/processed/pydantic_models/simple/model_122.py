@@ -14,6 +14,6 @@ class ChiSquaredTest(BaseModel):
         ..., description='A 2x2 contingency table presented in array form.'
     )
     alpha: Optional[float] = Field(
-        None,
+        0.05,
         description='Significance level for the Chi-Squared test. Default is 0.05. This is a float type value.',
     )

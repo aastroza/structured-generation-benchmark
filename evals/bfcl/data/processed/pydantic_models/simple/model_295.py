@@ -24,5 +24,5 @@ class GetSongLyrics(BaseModel):
         ..., description='The name of the artist who performed the song.'
     )
     lang: Optional[Lang] = Field(
-        None, description='The language of the lyrics. Default is English.'
+        Lang.English, description='The language of the lyrics. Default is English.'
     )
