@@ -24,3 +24,11 @@ The ability of the LLM to call functions.
 
 - [Outlines Function Calling Evaluation](reports/bfcl_outlines.md)
 - [Instructor Function Calling Evaluation](reports/bfcl_instructor.md)
+
+## Synthetic Data Generation
+
+Using an LLM to create artificial data.
+
+### Reports
+
+- [Outlines Synthetic Data Generation](reports/sdg_outlines.md)
