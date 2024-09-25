@@ -15,6 +15,6 @@ class WalmartCheckPrice(BaseModel):
         ..., description='Quantity of each item corresponding to the items list.'
     )
     store_location: Optional[str] = Field(
-        'all',
+        '',
         description='The store location for specific pricing (optional). Default to all if not specified.',
     )

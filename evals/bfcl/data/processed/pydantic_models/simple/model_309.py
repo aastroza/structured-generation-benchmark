@@ -13,6 +13,6 @@ class NflDataPlayerRecord(BaseModel):
     player_name: str = Field(..., description='The name of the NFL player.')
     season_year: int = Field(..., description='The year of the NFL season.')
     team: Optional[str] = Field(
-        'all',
+        '',
         description='The NFL team that the player played for in that season. Default is all teams if not specified.',
     )

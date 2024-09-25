@@ -15,6 +15,6 @@ class SoccerStatGetPlayerStats(BaseModel):
         ..., description='Soccer season, usually specified by two years.'
     )
     league: Optional[str] = Field(
-        'all',
+        '',
         description='Optional - the soccer league, defaults to all leagues if not specified.',
     )

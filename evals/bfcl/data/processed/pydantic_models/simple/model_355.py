@@ -13,6 +13,6 @@ class RecipeInfoGetCalories(BaseModel):
     website: str = Field(..., description='The food website that has the recipe.')
     recipe: str = Field(..., description='Name of the recipe.')
     optional_meal_time: Optional[str] = Field(
-        'all',
+        '',
         description="Specific meal time of the day for the recipe (optional, could be 'Breakfast', 'Lunch', 'Dinner'). Default is all if not specified.",
     )

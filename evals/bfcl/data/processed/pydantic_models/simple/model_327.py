@@ -19,6 +19,6 @@ class SportsTeamGetSchedule(BaseModel):
         description='The name of the sports league. If not provided, the function will fetch the schedule for all games, regardless of the league.',
     )
     location: Optional[str] = Field(
-        'all',
+        '',
         description='Optional. The city or venue where games are to be held. If not provided, default that all venues will be considered.',
     )

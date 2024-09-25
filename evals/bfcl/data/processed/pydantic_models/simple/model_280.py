@@ -13,6 +13,6 @@ class FindInstrument(BaseModel):
     budget: int = Field(..., description='Your budget for the instrument.')
     type: str = Field(..., description='Type of the instrument')
     make: Optional[str] = Field(
-        'Not use',
+        '',
         description='Maker of the instrument. Default to not use if not specified.',
     )

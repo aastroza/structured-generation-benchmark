@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 class CreatePlayerProfile(BaseModel):
     player_name: str = Field(..., description='The desired name of the player.')
-    field_class: str = Field(
+    character_class: str = Field(
         ..., alias='_class', description='The character class for the player'
     )
     starting_level: Optional[int] = Field(

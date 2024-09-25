@@ -21,6 +21,6 @@ class CalculateFutureValue(BaseModel):
         ..., description='The time period in years for which the investment is made.'
     )
     compounds_per_year: Optional[int] = Field(
-        None,
+        1,
         description='The number of times the interest is compounded per year. Default is 1 (annual compounding).',
     )

@@ -13,6 +13,6 @@ class SportsMatchResults(BaseModel):
     team1: str = Field(..., description='The name of the first team.')
     team2: str = Field(..., description='The name of the second team.')
     season: Optional[str] = Field(
-        '2024',
+        '',
         description='The season when the match happened. Default is the current season.',
     )

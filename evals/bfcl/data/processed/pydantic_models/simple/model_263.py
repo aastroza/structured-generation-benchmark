@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 class GetSculptureInfo(BaseModel):
     artist_name: str = Field(..., description='The name of the artist.')
     year: Optional[int] = Field(
-        None,
+        '',
         description='Year of the sculpture. This is optional. Default is the most recent year.',
     )
     detail: Optional[bool] = Field(

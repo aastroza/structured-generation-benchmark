@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 class PokerGameWinner(BaseModel):
     players: List[str] = Field(..., description='Names of the players in a list.')
-    cards: Dict[str, List[Any]] = Field(
+    cards: Dict[str, List[str]] = Field(
         ...,
         description='An object containing the player name as key and the cards as values in a list.',
     )

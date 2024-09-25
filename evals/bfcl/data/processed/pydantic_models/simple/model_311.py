@@ -20,7 +20,7 @@ class Sport(Enum):
 class SportsDbFindAthlete(BaseModel):
     name: str = Field(..., description='The full name of the athlete.')
     team: Optional[str] = Field(
-        'all',
+        '',
         description='The team the athlete belongs to. Default to all teams if not specified.',
     )
     sport: Sport = Field(..., description='The sport that athlete plays.')

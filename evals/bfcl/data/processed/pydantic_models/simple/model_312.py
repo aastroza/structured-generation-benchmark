@@ -15,6 +15,6 @@ class PlayerStatistic(BaseModel):
         ..., description='Year for which the statistics will be displayed.'
     )
     team_name: Optional[str] = Field(
-        'not use',
+        '',
         description='The name of the team(optional). Default to not use it if not specified.',
     )

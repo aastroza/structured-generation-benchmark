@@ -13,6 +13,6 @@ class SportsRanking(BaseModel):
     team: str = Field(..., description='The name of the team.')
     league: str = Field(..., description='The name of the league.')
     season: Optional[int] = Field(
-        2024,
+        '',
         description='Optional parameter to specify the season, default is the current season if not specified.',
     )
